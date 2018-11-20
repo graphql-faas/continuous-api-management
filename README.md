@@ -1,5 +1,7 @@
 # continuous-api-management
 
+[![CircleCI](https://circleci.com/gh/graphql-faas/continuous-api-management/tree/master.svg?style=svg)](https://circleci.com/gh/graphql-faas/continuous-api-management/tree/master)
+
 continuous-api-management chinese  docs
 
 ## how to build
