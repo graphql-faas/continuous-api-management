@@ -2,4 +2,4 @@
 continuous-api-management chinese  docs
 
 
-## how to build .  
+## how to build
