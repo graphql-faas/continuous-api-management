@@ -99,13 +99,13 @@ const Features = () => (
   <Block layout="fourColumn">
     {[
       {
-        content: 'This is the content of my feature',
+        content: 'api 如何进行治理',
         image: imgUrl('cover.jpg'),
         imageAlign: 'top',
         title: 'Feature One',
       },
       {
-        content: 'The content of my second feature',
+        content: 'api 生命周期如何管理',
         image: imgUrl('cover.jpg'),
         imageAlign: 'top',
         title: 'Feature Two',
@@ -118,8 +118,8 @@ const FeatureCallout = () => (
   <div
     className="productShowcaseSection paddingBottom"
     style={{textAlign: 'center'}}>
-    <h2>Feature Callout</h2>
-    <MarkdownBlock>These are features of this project</MarkdownBlock>
+    <h2>包含的内容</h2>
+    <MarkdownBlock>教会我们演进的进行api开发管理</MarkdownBlock>
   </div>
 );
 
