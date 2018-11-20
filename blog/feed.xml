@@ -20,12 +20,5 @@
             <pubDate>Tue, 20 Nov 2018 06:00:00 GMT</pubDate>
             <description><![CDATA[<p>召集人马，一起开始翻译持续api管理&lt;Continuous API Management - Mike Amundsen&gt;</p> ]]></description>
         </item>
-        <item>
-            <title><![CDATA[New Version 1.0.0]]></title>
-            <link>https://graphql-faas.github.io/continuous-api-management/https://graphql-faas.github.io/continuous-api-management/blog/2017/10/24/new-version-1.0.0.html</link>
-            <guid>https://graphql-faas.github.io/continuous-api-management/https://graphql-faas.github.io/continuous-api-management/blog/2017/10/24/new-version-1.0.0.html</guid>
-            <pubDate>Tue, 24 Oct 2017 06:00:00 GMT</pubDate>
-            <description><![CDATA[<p>This blog post will test file name parsing issues when periods are present.</p> ]]></description>
-        </item>
     </channel>
 </rss>
