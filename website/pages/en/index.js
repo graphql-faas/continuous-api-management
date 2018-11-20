@@ -200,7 +200,6 @@ class Index extends React.Component {
           {/* <LearnHow />
           <TryOut /> */}
           <Description />
-          <Showcase language={language} />
         </div>
       </div>
     );
