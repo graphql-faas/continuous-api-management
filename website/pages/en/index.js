@@ -119,7 +119,7 @@ const FeatureCallout = () => (
     className="productShowcaseSection paddingBottom"
     style={{textAlign: 'center'}}>
     <h2>包含的内容</h2>
-    <MarkdownBlock>教会我们演进的进行api开发管理</MarkdownBlock>
+    <MarkdownBlock>教会我们如何使用演进的方式进行api开发管理</MarkdownBlock>
   </div>
 );
 
@@ -153,10 +153,12 @@ const Description = () => (
   <Block background="dark">
     {[
       {
-        content: 'This is another description of how this project is useful',
+        content: `api 如何开发&& api 如何治理 
+        &&api 生命周期是怎么的
+                `,
         image: imgUrl('cover.jpg'),
         imageAlign: 'right',
-        title: 'Description',
+        title: '包含的内容',
       },
     ]}
   </Block>
