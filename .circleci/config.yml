@@ -1,14 +1,15 @@
 version: 2
 jobs:
-  build:
+  deploy-website:
     docker:
+      # specify the version you desire here
       - image: circleci/node:8.11.4
-    working_directory: ~/app
-
     steps:
       - checkout
-      - run:  git config --global user.email "1141591465@qq.com"
-      - run:  git config --global user.name "dalongrong"
-      - run:  cd ~/app/website && yarn install
-      - run:  cd ~/app/website && yarn build
-      - run:  cd ~/app/website && GIT_USER=rongfengliang USE_SSH=true yarn run publish-gh-pages
+      - run:
+          name: Deploying to GitHub Pages
+          command: |
+            git config --global user.email "1141591465@qq.com"
+            git config --global user.name "1141591465@qq.com"
+            echo "machine github.com login 1141591465@qq.com password $GITHUB_TOKEN" > ~/.netrc
+            cd website && yarn install && GIT_USER=1141591465@qq.com yarn run publish-gh-pages
