@@ -10,6 +10,6 @@ jobs:
           name: Deploying to GitHub Pages
           command: |
             git config --global user.email "1141591465@qq.com"
-            git config --global user.name "1141591465@qq.com"
-            echo "machine github.com login 1141591465@qq.com password $GITHUB_TOKEN" > ~/.netrc
+            git config --global user.name "rongfengliang"
+            echo "machine github.com login rongfengliang password $GITHUB_TOKEN" > ~/.netrc
             cd website && yarn install && GIT_USER=rongfengliang yarn run publish-gh-pages
