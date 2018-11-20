@@ -4,6 +4,8 @@ jobs:
     docker:
       # specify the version you desire here
       - image: circleci/node:8.11.4
+    branches:
+      ignore: gh-pages
     steps:
       - checkout
       - run:
