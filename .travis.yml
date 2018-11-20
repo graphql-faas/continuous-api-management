@@ -1,0 +1,11 @@
+language: node_js
+node_js:
+  - "8.11.4"
+before_install:
+  - echo "website is building"
+  - ls 
+install:
+  - cd website && yarn 
+script:
+  - yarn build
+  - yarn publish-gh-pages
