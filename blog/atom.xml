@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://graphql-faas.github.io/continuous-api-management/https://graphql-faas.github.io/continuous-api-management/blog</id>
-    <title>文档博客 Blog</title>
+    <title>持续API管理 Blog</title>
     <updated>2017-10-24T06:00:00Z</updated>
     <generator>Feed for Node.js</generator>
     <link rel="alternate" href="https://graphql-faas.github.io/continuous-api-management/https://graphql-faas.github.io/continuous-api-management/blog"/>
-    <subtitle>The best place to stay up-to-date with the latest 文档博客 news and events.</subtitle>
+    <subtitle>The best place to stay up-to-date with the latest 持续API管理 news and events.</subtitle>
     <logo>https://graphql-faas.github.io/continuous-api-management/https://graphql-faas.github.io/continuous-api-management/img/docusaurus.svg</logo>
     <rights>Copyright © 2018 Your Name or Your Company Name</rights>
     <entry>

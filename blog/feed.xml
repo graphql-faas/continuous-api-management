@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0">
     <channel>
-        <title>文档博客 Blog</title>
+        <title>持续API管理 Blog</title>
         <link>https://graphql-faas.github.io/continuous-api-management/https://graphql-faas.github.io/continuous-api-management/blog</link>
-        <description>The best place to stay up-to-date with the latest 文档博客 news and events.</description>
+        <description>The best place to stay up-to-date with the latest 持续API管理 news and events.</description>
         <lastBuildDate>Tue, 24 Oct 2017 06:00:00 GMT</lastBuildDate>
         <docs>http://blogs.law.harvard.edu/tech/rss</docs>
         <generator>Feed for Node.js</generator>
         <image>
-            <title>文档博客 Blog</title>
+            <title>持续API管理 Blog</title>
             <url>https://graphql-faas.github.io/continuous-api-management/https://graphql-faas.github.io/continuous-api-management/img/docusaurus.svg</url>
             <link>https://graphql-faas.github.io/continuous-api-management/https://graphql-faas.github.io/continuous-api-management/blog</link>
         </image>
