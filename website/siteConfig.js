@@ -24,7 +24,7 @@ const siteConfig = {
   title: '文档博客', // Title for your website.
   tagline: '文档博客',
   url: 'https://your-docusaurus-test-site.com', // Your website URL
-  baseUrl: 'https://graphql-faas.github.io', // Base URL for your project */
+  baseUrl: 'https://graphql-faas.github.io/continuous-api-management/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
   //   url: 'https://facebook.github.io',
   //   baseUrl: '/test-site/',
