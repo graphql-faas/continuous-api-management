@@ -1,6 +1,6 @@
 ---
 id: doc2
-title: document number 2
+title: 第一章
 ---
 
 This is a link to [another document.](doc3.md)  
