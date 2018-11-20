@@ -100,13 +100,13 @@ const Features = () => (
     {[
       {
         content: 'This is the content of my feature',
-        image: imgUrl('docusaurus.svg'),
+        image: imgUrl('cover.jpg'),
         imageAlign: 'top',
         title: 'Feature One',
       },
       {
         content: 'The content of my second feature',
-        image: imgUrl('docusaurus.svg'),
+        image: imgUrl('cover.jpg'),
         imageAlign: 'top',
         title: 'Feature Two',
       },
@@ -128,7 +128,7 @@ const LearnHow = () => (
     {[
       {
         content: 'Talk about learning how to use this',
-        image: imgUrl('docusaurus.svg'),
+        image: imgUrl('cover.jpg'),
         imageAlign: 'right',
         title: 'Learn How',
       },
@@ -141,7 +141,7 @@ const TryOut = () => (
     {[
       {
         content: 'Talk about trying this out',
-        image: imgUrl('docusaurus.svg'),
+        image: imgUrl('cover.jpg'),
         imageAlign: 'left',
         title: 'Try it Out',
       },
@@ -154,7 +154,7 @@ const Description = () => (
     {[
       {
         content: 'This is another description of how this project is useful',
-        image: imgUrl('docusaurus.svg'),
+        image: imgUrl('cover.jpg'),
         imageAlign: 'right',
         title: 'Description',
       },
@@ -194,14 +194,14 @@ class Index extends React.Component {
     return (
       <div>
         <HomeSplash language={language} />
-        {/* <div className="mainContainer">
+        <div className="mainContainer">
           <Features />
           <FeatureCallout />
-          <LearnHow />
-          <TryOut />
+          {/* <LearnHow />
+          <TryOut /> */}
           <Description />
           <Showcase language={language} />
-        </div> */}
+        </div>
       </div>
     );
   }
