@@ -12,4 +12,4 @@ jobs:
             git config --global user.email "1141591465@qq.com"
             git config --global user.name "1141591465@qq.com"
             echo "machine github.com login 1141591465@qq.com password $GITHUB_TOKEN" > ~/.netrc
-            cd website && yarn install && GIT_USER=1141591465@qq.com yarn run publish-gh-pages
+            cd website && yarn install && GIT_USER=1141591465@qq.com && yarn run publish-gh-pages
