@@ -14,15 +14,15 @@ const users = [
     caption: 'User1',
     // You will need to prepend the image path with your baseUrl
     // if it is not '/', like: '/test-site/img/docusaurus.svg'.
-    image: '/img/docusaurus.svg',
-    infoLink: 'https://www.facebook.com',
+    image: '/img/cover.jpg',
+    infoLink: 'https://graphql-faas.github.io',
     pinned: true,
   },
 ];
 
 const siteConfig = {
-  title: '文档博客', // Title for your website.
-  tagline: '文档博客',
+  title: '持续演进的API管理', // Title for your website.
+  tagline: '持续演进的API管理',
   url: 'https://graphql-faas.github.io/continuous-api-management/', // Your website URL
   baseUrl: 'https://graphql-faas.github.io/continuous-api-management/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
@@ -38,8 +38,8 @@ const siteConfig = {
 
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
-    {doc: 'doc1', label: 'Docs'},
-    {doc: 'doc4', label: 'API'},
+    {doc: 'doc1', label: '内容'},
+    {doc: 'doc4', label: '参考资料'},
     {page: 'help', label: '帮助'},
     {blog: true, label: '博客'},
   ],
@@ -48,8 +48,8 @@ const siteConfig = {
   users,
 
   /* path to images for header/footer */
-  headerIcon: 'img/docusaurus.svg',
-  footerIcon: 'img/docusaurus.svg',
+  headerIcon: 'img/cover.jpg',
+  footerIcon: 'img/cover.jpg',
   favicon: 'img/favicon.png',
 
   /* Colors for website */
@@ -100,7 +100,7 @@ const siteConfig = {
 
   // You may provide arbitrary config keys to be used as needed by your
   // template. For example, if you need your repo's URL...
-  //   repoUrl: 'https://github.com/facebook/test-site',
+  repoUrl: 'https://github.com/graphql-faas/continuous-api-management',
 };
 
 module.exports = siteConfig;

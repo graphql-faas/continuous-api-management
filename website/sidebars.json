@@ -1,10 +1,11 @@
 {
   "docs": {
-    "Docusaurus": ["doc1"],
-    "First Category": ["doc2"],
-    "Second Category": ["doc3"]
+    "前言": ["doc1"],
+    "目录": ["chapters"],
+    "第一章": ["doc2"],
+    "第二章": ["doc3"]
   },
   "docs-other": {
-    "First Category": ["doc4", "doc5"]
+    "相关参考": ["doc4", "doc5"]
   }
 }
