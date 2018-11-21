@@ -113,7 +113,7 @@ Incremental improvement means that you have an idea of the direction you want to
 
 This concept of continually making small improvements is a well-established change pattern with foundations in the manufacturing industry. In the 1980s, quality management pioneer W. Edwards Deming articulated his version of this idea with a philosophy he called the “System of Profound Knowledge.” Deming’s system embraces the complex nature of large organizations of workers and applies a scientific method for improving the way they produce products. One of the cornerstones of his approach is the Plan-Do-Study-Act (PDSA) cycle that defines an iterative, experiment-driven method for improving a process (Figure 5-1).
 
-![](img/5/capi_0501.png "Plan, Do, Study, Act")
+![](../img/5/capi_0501.png "Plan, Do, Study, Act")
 Figure 5-1. Deming’s PDSA cycle
 The PDSA process defines four steps for applying improvements. First you come up with a plan—a theory of how you can improve the system in accordance with a goal, along with the changes you’ll need to make to test that theory out. Next, you do, implementing the changes that you’ve outlined in your plan. Following that, you study, monitoring and measuring the impact of those changes and comparing the results to the plan. Finally, armed with this new information you can act, by updating the goal, theory, or change actions to further improve the system.
 

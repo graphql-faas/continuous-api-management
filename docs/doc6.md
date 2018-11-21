@@ -97,7 +97,7 @@ A general model for understanding the maturity of a product already exists. Itâ€
 
 As we mentioned at the beginning of this chapter, the API product lifecycle is a model that can help you chart the progress of your API and adapt your management as it matures.
 
-![](img/6/capi_0601.png "Five stages: Create, Publish, Realize, Maintain and Retire")
+![](../img/6/capi_0601.png "Five stages: Create, Publish, Realize, Maintain and Retire")
 Figure 6-1. The API product lifecycle
 In Chapter 5 we described the release lifecycle of an API. The product lifecycle is a superset of those releases. Each stage of the API product lifecycle may contain many individual releases. Releases or changes donâ€™t cause the API product to reach the next stage of maturity, but those incremental improvements will indirectly help the API to mature to the next stage.
 
