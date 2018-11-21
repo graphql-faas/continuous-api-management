@@ -172,10 +172,10 @@ There are a number of elements of an API that can represent risk from the develo
 <p>However, sometimes it can be difficult to mitigate the risk through API design changes. There may be some cases where executing an API call is simply inherently risky. Any API call that deletes data is risky, no matter how many design changes you make to it. Some API calls might always take a long time to execute, possibly consuming lots of server-side resources. Other APIs might execute quickly and result in quite a lot of data in return. For example, a filter query might potentially return hundreds of thousands of records.</p>
 <p>In cases where API calls represent unavoidable risk, you can reduce negative impacts by adding warnings to the API documentation itself. In this way, you can make it easier for API consumers to recognize potential dangers ahead of time and possibly avoid making critical mistakes. There are lots of ways you can format documentation to help point out possible dangers. Highlighted text telling the user of the problem (“Warning: This API call may return over a million records, depending on your filter settings”) is one way to do it. Another way to warn API users is to adopt a kind of labeling method using symbols. This way, there is no need to add lots of text to your documentation: readers can just recognize the warning label instead.</p>
 <p>Physical products use information and warning symbols quite often (see Figure 3-1).</p>
-<p><img src="/img/3/capi_0301.png" alt="">
+<p><img src="img/3/capi_0301.png" alt="">
 Figure 3-1. Examples of household product labels
 You can adopt a similar approach for your APIs, too (see Figure 3-2).</p>
-<p><img src="/img/3/capi_0302.png" alt="">
+<p><img src="img/3/capi_0302.png" alt="">
 Figure 3-2. Examples of API labels
 Easy-to-read warning symbols combined with design changes to make it more unlikely for API users to make regrettable mistakes are good practices for increasing the safety of your API product.</p>
 <p>MAKING APIS EASY TO USE
