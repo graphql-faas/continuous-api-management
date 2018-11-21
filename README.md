@@ -15,3 +15,10 @@ yarn publish-gh-pages
 ```code
 docker-compose build
 ```
+
+## 启动:
+* 安装依赖包(进入website目录)
+`npm install`
+
+* 运行
+`npm start`
