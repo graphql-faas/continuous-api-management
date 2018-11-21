@@ -6,9 +6,7 @@ sidebar_label: 目录
 
 Table of Contents
 	Foreword
-	
-	Chapter
-	
+	Chapter	
 	1. The Challenge of API Management
 		What Is API Management?
 			What Is an API?
