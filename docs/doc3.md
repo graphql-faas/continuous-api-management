@@ -256,11 +256,11 @@ In cases where API calls represent unavoidable risk, you can reduce negative imp
 
 Physical products use information and warning symbols quite often (see Figure 3-1).
 
-![] https://www.safaribooksonline.com/library/view/continuous-api-management/9781492043546/assets/capi_0301.png
+![](/img/3/capi_0301.png)
 Figure 3-1. Examples of household product labels
 You can adopt a similar approach for your APIs, too (see Figure 3-2).
 
-![] https://www.safaribooksonline.com/library/view/continuous-api-management/9781492043546/assets/capi_0302.png
+![](/img/3/capi_0302.png)
 Figure 3-2. Examples of API labels
 Easy-to-read warning symbols combined with design changes to make it more unlikely for API users to make regrettable mistakes are good practices for increasing the safety of your API product.
 
