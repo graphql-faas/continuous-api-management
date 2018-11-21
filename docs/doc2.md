@@ -118,14 +118,14 @@ But the pond doesn’t have a manager, and there is no evidence that the frogs, 
 
 As we established earlier, your organization is also a complex adaptive system. It’s a product of all the collective individual decisions made by your employees. Just like in a human body or a pond ecosystem, if you were to allow individual workers to have complete freedom and autonomy, the organization as a whole would become more resilient and adaptive. You’d have a bossless, decentralized organization that could find its way thanks to the individual decisions of its employees (see Figure 2-1).
 
-All decisions being made by everyone
-Figure 2-1. A decentralized organization
+![](../img/2/capi_0201.png "All decisions being made by everyone")
+<center>Figure 2-1. A decentralized organization</center>
 You could do this, but you might run into some problems, primarily because it’s difficult to succeed with a free-market organization in exactly the same way that complex systems succeed in nature. The biosystem of a pond is directed by the hand of natural selection. Every agent in the system has become optimized for the survival of its species. There’s no system-level goal beyond survival. On top of that, in nature it’s normal for systems to fail. For example, if an invasive species is introduced the entire pond system might die. In the natural world, that can be OK because something else might take its place—the system as a whole remains resilient.
 
 However, businesses leaders don’t respond well to this level of uncertainty and lack of control. Chances are you’ll need to steer your system toward specific goals that go beyond survival. Also, it’s likely that you aren’t willing to risk letting your company die for the sake of a better company taking its place. You’ll almost certainly want to reduce the risk that any individual agent can destroy the whole company because of a bad decision. That means you’ll need to reduce decision-making freedom for individuals and introduce some accountability. One way of doing that is to introduce decision centralization (Figure 2-2).
 
-All decisions being made by a single person
-Figure 2-2. A centralized organization
+![](../img/2/capi_0202.png "All decisions being made by a single person")
+<center>Figure 2-2. A centralized organization</center>
 By this, we mean that decision making is constrained to a particular person or team in your organization. That centralized team makes a decision that the rest of the company will need to adhere to. Decentralization is the opposite case: individual teams can make decisions that only they need to adhere to.
 
 The truth is that there is no perfectly centralized or perfectly decentralized organization. Instead, different types of decisions are distributed within the organization in different ways—some are more centralized while others are more decentralized. You’ll need to decide how to distribute the decisions that impact your system the most. So, which ones should be more centralized and which ones should be more decentralized?
@@ -174,8 +174,8 @@ It’s difficult to distribute a decision in the way we’ve described so far be
 
 Instead of distributing the entire decision, you can distribute parts of the decision. That way you can get the benefits of system-level optimization along with highly contextual local optimization at the same time. Some parts of a decision can be centralized while other parts are decentralized. To help you accomplish distribution with this kind of precision, we’ve broken down API decisions into the six decision elements you’ll need to distribute (see Figure 2-3):
 
-Inception, Choice Generation, Selection, Authorization, Implementation and Challenge
-Figure 2-3. Decision elements
+![](../img/2/capi_0203.png "Inception, Choice Generation, Selection, Authorization, Implementation and Challenge")
+<center>Figure 2-3. Decision elements</center>
 This isn’t meant to be an authoritative, universal model for decision making. Instead, it’s a model that we’ve developed to distinguish the parts of a decision that have the biggest impact on a system when they are either centralized or decentralized. These parts are based on the various five-, six-, and seven-step models of decision-making that abound in the business management domain. Although the steps we’ll describe could be applied to a decision made by a single person, they’re most useful when we are talking about decisions made in coordination between a group of people.
 
 Let’s start by taking a look at how distributing the inception of a decision impacts your system.

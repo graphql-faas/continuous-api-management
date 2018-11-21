@@ -51,8 +51,8 @@ The third term in our list is instance. An API instance is a combination of the 
 
 Figure 1-1 clarifies the relationship between the three elements. Often in this book, when we write “API” we’re talking about the instance of the API: a fully operational combination of interface and implementation. In cases where we want to highlight just the interface or only the implementation, we’ll call that out in the text.
 
-Interface, Implementation and Instance
-Figure 1-1. Three API elements
+![](../img/1/capi_0101.png "Interface, Implementation and Instance")
+<center>Figure 1-1. Three API elements</center>
 More Than Just the API
 The API itself—the technical details of interface and implementation—is just part of the story, too. The traditional elements of design-build-deploy are, of course, critical to the life of your APIs. But actually managing APIs also means testing them, documenting them, and publishing them to a portal so that the right audience (internal developers, partners, third-party anonymous app developers, etc.) can find and learn how to use them properly. You also need to secure your APIs, monitor them at runtime, and maintain them (including handling changes) over their lifetime. All these additional elements of an API are what we call API pillars: elements that all APIs need and all API program managers need to deal with. We’ll dig into pillars in Chapter 4, where we walk through the list of ten key practices vital to creating and maintaining healthy APIs.
 

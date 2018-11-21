@@ -163,5 +163,4 @@ Table of Contents
 11. Continuing the Journey
 	- Prepare for the Future
 	- Start Managing Today
-- Index
 

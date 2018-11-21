@@ -23,8 +23,8 @@ const users = [
 const siteConfig = {
   title: '持续演进的API管理', // Title for your website.
   tagline: '持续演进的API管理',
-  url: 'https://graphql-faas.github.io/continuous-api-management/', // Your website URL
-  baseUrl: 'https://graphql-faas.github.io/continuous-api-management/', // Base URL for your project */
+  url: 'https://graphql-faas.github.io', // Your website URL
+  baseUrl: '/continuous-api-management/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
   //   url: 'https://facebook.github.io',
   //   baseUrl: '/test-site/',
