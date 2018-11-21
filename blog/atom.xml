@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://graphql-faas.github.io/continuous-api-management/https://graphql-faas.github.io/continuous-api-management/blog</id>
+    <id>https://graphql-faas.github.io/continuous-api-management/blog</id>
     <title>持续演进的API管理 Blog</title>
     <updated>2018-11-20T06:00:00Z</updated>
     <generator>Feed for Node.js</generator>
-    <link rel="alternate" href="https://graphql-faas.github.io/continuous-api-management/https://graphql-faas.github.io/continuous-api-management/blog"/>
+    <link rel="alternate" href="https://graphql-faas.github.io/continuous-api-management/blog"/>
     <subtitle>The best place to stay up-to-date with the latest 持续演进的API管理 news and events.</subtitle>
-    <logo>https://graphql-faas.github.io/continuous-api-management/https://graphql-faas.github.io/continuous-api-management/img/cover.jpg</logo>
+    <logo>https://graphql-faas.github.io/continuous-api-management/img/cover.jpg</logo>
     <rights>Copyright © 2018 翻译小组</rights>
     <entry>
         <title type="html"><![CDATA[开始持续演进的api管理书籍翻译]]></title>
-        <id>https://graphql-faas.github.io/continuous-api-management/https://graphql-faas.github.io/continuous-api-management/blog/2018/11/20/开始翻译工作.html</id>
-        <link href="https://graphql-faas.github.io/continuous-api-management/https://graphql-faas.github.io/continuous-api-management/blog/2018/11/20/开始翻译工作.html">
+        <id>https://graphql-faas.github.io/continuous-api-management/blog/2018/11/20/开始翻译工作.html</id>
+        <link href="https://graphql-faas.github.io/continuous-api-management/blog/2018/11/20/开始翻译工作.html">
         </link>
         <updated>2018-11-20T06:00:00Z</updated>
         <summary type="html"><![CDATA[<p>召集人马，一起开始翻译持续api管理 &lt; Continuous API Management &gt; 书籍</p> ]]></summary>
