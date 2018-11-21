@@ -1,7 +1,7 @@
 ---
 id: foreword
 title: foreword
-sidebar_label: 序
+sidebar_label: foreword
 ---
 
 APIs are a journey for any company, organization, institution, or government agency learning to properly manage their digital resources across an ever expanding and evolving competitive digital landscape. This digital transformation that has been building over the last five years is beginning to result in a shift across the API landscape, where companies are beginning to stop asking if they should be doing APIs and have begun seeking more knowledge on how to do APIs properly. Organizations are realizing that there’s more to APIs than just creating them; it’s everything that goes into delivering APIs throughout the entire API lifecycle. The API Academy authors behind Continuous API Management possess a unique understanding of what it takes to move an API from ideation to realization, consistently, at scale, and in a repeatable way—providing the makings for a pretty unique learning opportunity.
