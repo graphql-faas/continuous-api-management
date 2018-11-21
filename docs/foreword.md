@@ -1,6 +1,6 @@
 ---
 id: foreword
-title: 序
+title: foreword
 sidebar_label: 序
 ---
 

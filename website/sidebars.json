@@ -1,6 +1,6 @@
 {
   "docs": {
-    "序": ["foreword"],
+    "序": ["foreword","foreword1"],
     "目录": ["contents"],
     "章节": ["chapters"],
     "第一章": ["doc1"],
