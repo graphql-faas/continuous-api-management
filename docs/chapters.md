@@ -1,7 +1,7 @@
 ---
 id: chapters
-title: 章节
-sidebar_label: 章节
+title: chapters
+sidebar_label: chapters
 ---
 
 Chapter 1 introduces the API management domain and explains why it’s so difficult to manage APIs effectively.
