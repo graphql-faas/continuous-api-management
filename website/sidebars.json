@@ -3,7 +3,7 @@
     "序": ["foreword","foreword1"],
     "目录": ["contents"],
     "章节": ["chapters","chapters1"],
-    "第一章": ["doc1"],
+    "第一章": ["doc1","doc1.1"],
     "第二章": ["doc2"],
     "第三章": ["doc3"],
     "第四章": ["doc4"],
