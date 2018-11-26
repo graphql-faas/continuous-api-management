@@ -55,15 +55,15 @@ API本身--接口和实现的技术细节--也是故事的一部分.当然传统
 
 这些实践领域的好消息是它们超越任何单API.如:记录API技术可以很好的从一个API团队迁移到下一个API团队.学习适当的测试技术,安全模式等也是如此.这也意味着即使每一个单独的团队(销售团队,产品团队,后台团队等)都有自己的API域,你依旧有交叉点可以绑定不同团队的人.这也是管理API的另一个重要的方面--支持和设计构建它们的团队.我们将在第七章讨论它们如何在不同的组织中工作.
 
-API成熟期
+- API成熟期
 了解和理解API核心并不是这个图片的全部.你程序中的每个API都有自己的"生命周期"--一系列可预测的和有用的阶段.了解你的API所处阶段可以帮助你确定当前API需要投入的时间和资源.理解API是如何成熟的有助于你识别各种API相同的阶段,帮助你准备和响应每个阶段不同的时间和能源需求.
 
-On the surface, it makes sense to consider that all of the API pillars need to be dealt with when designing, building, and releasing your APIs. But reality is different. Often, for early-stage APIs it is most important to focus on the design and build aspects and reduce efforts on documentation, for example. At other stages (e.g., once a prototype is in the hands of beta testers), spending more time on monitoring the use of the API and securing it against misuse is more important. Understanding maturity stages will help you determine how to allocate limited resources for maximum effect. We’ll walk you through this process in Chapter 6.
+表面上,在设计,构建和发布API时处理所有API核心是有意义的.但事实却相反.在API早期时,更多关注的是设计和构建方面,减少记录方面的工作.如:在其他阶段(验收测试人员获取到原型)花费更多的时间在监控API的使用和保护它不备滥用更重要.理解成熟阶段将帮你最大限度的分配有限的资源.我们将在第六章让你们了解这个过程.
 
-More Than a Single API
-As many readers may already know, things change when you start managing a lot of APIs. We have customers with thousands of APIs that they need to build, monitor, and manage over time. In this situation, you focus less on the details of how a single API is implemented and more on the details of how these APIs coexist in an ever-growing, dynamic ecosystem. As mentioned earlier, we call this ecosystem the API landscape, and we devote several chapters to this concept in the second half of the book.
+- 不止一个API
+许多读者可能已经知道,当你开始管理大量的API时,情况就会发生改变.随着时间的推移,我们的客户需要构建,监控和管理数千个API.在这种情况下,你将更少的关注单个API的实现细节,而是更多的关注在不断增长的动态系统中如何保持这些API的和平共处.正如前面提到的,我们将这个生态系统称为API景观,在本书的后半部分中,我们将花几个章节介绍这个概念.
 
-Much of the challenge here is how to assure some level of consistency without causing bottlenecks and slowdowns due to centralized management and review of all the API details. This is usually accomplished by extending responsibility for those details to the individual API teams and focusing central management/governance efforts on normalizing the way APIs interact with each other, ensuring that there is a core set of shared services or infrastructure (security, monitoring, etc.) in place and available for all API teams, and generally providing guidance and coaching to more autonomous teams. That is, it’s often necessary to move away from the usual centralized command-and-control model.
+这里的大部分挑战是如何确保一定程度的一致性,不会因为集中化管理和检查所有API细节而造成瓶颈和降速.这一般通过向各个API团队扩展这些细节的责任,将核心管理和统治致力于API间交互方式的标准化,确保存在一组核心共享服务或者基础设施(安全,监控等)对于所有API团队是可用的,并且通常为更自主的团队提供指导和训练.也就是说,远离通常的集中式命令控制模型是必要的.
 
 One of the challenges when working toward distributing decision making and autonomy deeper in the organization is that it can be easy for those higher up in the organization to lose visibility into important activities happening at the team level. Whereas in the past a team might have had to ask permission to take an action, companies that extend additional autonomy to the individual teams will encourage them to act without waiting for upper-level review and permission.
 
