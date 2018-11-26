@@ -55,8 +55,8 @@ API本身--接口和实现的技术细节--也是故事的一部分.当然传统
 
 这些实践领域的好消息是它们超越任何单API.如:记录API技术可以很好的从一个API团队迁移到下一个API团队.学习适当的测试技术,安全模式等也是如此.这也意味着即使每一个单独的团队(销售团队,产品团队,后台团队等)都有自己的API域,你依旧有交叉点可以绑定不同团队的人.这也是管理API的另一个重要的方面--支持和设计构建它们的团队.我们将在第七章讨论它们如何在不同的组织中工作.
 
-API Maturity Stages
-Knowing and understanding the API pillars is not the entire picture, either. Each API in your program goes through its own “lifecycle”—a series of predictable and useful stages. Knowing where you are in the API journey can help you determine how much time and resources to invest in the API at the moment. Understanding how APIs mature allows you to recognize the same stages for a wide range of APIs and helps you prepare for and respond to the varying requirements of time and energy at each stage.
+API成熟期
+了解和理解API核心并不是这个图片的全部.你程序中的每个API都有自己的"生命周期"--一系列可预测的和有用的阶段.了解你的API所处阶段可以帮助你确定当前API需要投入的时间和资源.理解API是如何成熟的有助于你识别各种API相同的阶段,帮助你准备和响应每个阶段不同的时间和能源需求.
 
 On the surface, it makes sense to consider that all of the API pillars need to be dealt with when designing, building, and releasing your APIs. But reality is different. Often, for early-stage APIs it is most important to focus on the design and build aspects and reduce efforts on documentation, for example. At other stages (e.g., once a prototype is in the hands of beta testers), spending more time on monitoring the use of the API and securing it against misuse is more important. Understanding maturity stages will help you determine how to allocate limited resources for maximum effect. We’ll walk you through this process in Chapter 6.
 
