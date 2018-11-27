@@ -65,8 +65,9 @@ API本身--接口和实现的技术细节--也是故事的一部分.当然传统
 
 这里的大部分挑战是如何确保一定程度的一致性,不会因为集中化管理和检查所有API细节而造成瓶颈和降速.这一般通过向各个API团队扩展这些细节的责任,将核心管理和统治致力于API间交互方式的标准化,确保存在一组核心共享服务或者基础设施(安全,监控等)对于所有API团队是可用的,并且通常为更自主的团队提供指导和训练.也就是说,远离通常的集中式命令控制模型是必要的.
 
-One of the challenges when working toward distributing decision making and autonomy deeper in the organization is that it can be easy for those higher up in the organization to lose visibility into important activities happening at the team level. Whereas in the past a team might have had to ask permission to take an action, companies that extend additional autonomy to the individual teams will encourage them to act without waiting for upper-level review and permission.
+另一个挑战是:当企业的工作向着分散决策和深度自治时,企业的高层很容易对发生在团队级别的重要活动失去可见性.然而在过去,一个团队可能必须获取许可才能去做,企业只赋予指定团队自治权,以鼓励他们采取行动,而不用等待上级审查和许可.
 
+管理API景观的大部分挑战都与规模和范围有关.
 Most of the challenges of managing a landscape of APIs have to do with scale and scope. It turns out that as your API program grows, it doesn’t just get bigger; it also changes in shape. We’ll discuss this in more detail later in this chapter (see “Why Is API Management Difficult?”).
 
 The Business of APIs
