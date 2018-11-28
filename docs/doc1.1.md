@@ -67,13 +67,12 @@ API本身--接口和实现的技术细节--也是故事的一部分.当然传统
 
 另一个挑战是:当企业的工作向着分散决策和深度自治时,企业的高层很容易对发生在团队级别的重要活动失去可见性.然而在过去,一个团队可能必须获取许可才能去做,企业只赋予指定团队自治权,以鼓励他们采取行动,而不用等待上级审查和许可.
 
-管理API景观的大部分挑战都与规模和范围有关.
-Most of the challenges of managing a landscape of APIs have to do with scale and scope. It turns out that as your API program grows, it doesn’t just get bigger; it also changes in shape. We’ll discuss this in more detail later in this chapter (see “Why Is API Management Difficult?”).
+管理API景观的大部分挑战都与规模和范围有关.事实证明,随着你的API程序的增长,它不仅仅是变大,而且还会改变形状.我们将在本章后面更详细的讨论这个问题(参考:"为什么API管理困难?").
 
-The Business of APIs
-Beyond the details of creating APIs and managing them in a landscape, it is important to keep in mind that all this work is meant to support business goals and objectives. APIs are more than the technical details of JSON or XML, synchronous or asynchronous, etc. They are a way to connect business units together, to expose important functionality and knowledge in a way that helps the company be effective. APIs are often a way to unlock value that is already there in the organization, for example through creating new applications, enabling new revenue streams, and initiating new business.
+- API的业务
+除了API的创建和在API景观中管理他们之外,重要的是谨记:所以的工作为了支持业务目标和目的.API不仅仅是JSON,XML,同步,异步等技术细节.它们是联系业务的纽带,帮助公司以有效的方式公开重要的功能和知识.API通常是一种解锁组织中已有价值的方法.如:通过创建新应用,启用新的收入流和初始化新业务.
 
-This kind of thinking focuses more on the needs of API consumers instead of those producing and publishing the APIs. This consumer-centric approach is commonly referred to as “Jobs to Be Done,” or JTBD. It was introduced by Harvard Business School’s Clayton Christensen, whose books The Innovator’s Dilemma and The Innovator’s Solution (Harvard Business Review Press) explore the power of this approach in depth. For the purposes of launching and managing a successful API program, it serves as a clear reminder that APIs exist to solve business problems. In our experience, companies that are good at applying APIs to business problems treat their APIs as products that are meant to “get a job done” in the same sense that Christensen’s JTBD framework solves consumer problems.
+这是更多的关注API消费者的需求而不是生产和发布API的理念.以消费者为中心的方法通常被称为"待完成工作(JTBD)".它由哈佛商学院的克莱顿·克里斯藤森提出,他的著作<创新者的困境和创新者的解决方案>(哈佛商业评论出版社)深入的探讨了这种方法的力量.为了启动和管理一个成功的API程序,它明确的提醒着API的存在是为了解决业务问题.根据我们的经验,善于将API应用于解决业务问题的公司,会将其API作为"完成工作"的产品.就像克里斯藤森的JTBD框架解决消费者问题一样.
 
 One way an API program can help the business is by creating a flexible set of “tools” (the APIs) to build new solutions without incurring a high cost. For example, if you have an OnlineSales API that allows key partners to manage and track their sales activity and a MarketingPromotions API—that allows the marketing team to design and track product promotional campaigns, you have an opportunity to create a new partner solution: the SalesAndPromotions tracking application.
 
