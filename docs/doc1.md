@@ -23,7 +23,7 @@ Finally, we touch on the process of decision making when managing your API ecosy
 
 Before we dive into the details on how you can learn to deal with both challenges—your individual APIs and your API landscape—let’s take a look at two important questions: what is API management, and why is it so hard?
 
-** What Is API Management?
+**What Is API Management?**
 
 As mentioned, API management involves more than just governing the design, implementation, and release of APIs. It also includes the management of an API ecosystem, the distribution of decisions within your organization, and even the process of migrating existing APIs into your growing API landscape. In this section, we’ll spend time on each of these concepts—but first, a short explanation of what we mean by “API.”
 
@@ -32,7 +32,7 @@ Sometimes when people use the term “API” they are talking about not only the
 
 To try to clear up the distinction and make it easier for us to talk about both the interface and the functionality, we are going to introduce some additional terms: interface, implementation, and instance.
 
-** INTERFACE, IMPLEMENTATION, AND INSTANCE
+**INTERFACE, IMPLEMENTATION, AND INSTANCE**
 The acronym API stands for application programming interface. We use interfaces to gain access to something running “behind” the API. For example, you may have an API that exposes tasks for managing user accounts. This interface might allow developers to:
 - Onboard a new account.
 - Edit an existing account profile.
@@ -53,7 +53,7 @@ Figure 1-1 clarifies the relationship between the three elements. Often in this 
 More Than Just the API
 The API itself—the technical details of interface and implementation—is just part of the story, too. The traditional elements of design-build-deploy are, of course, critical to the life of your APIs. But actually managing APIs also means testing them, documenting them, and publishing them to a portal so that the right audience (internal developers, partners, third-party anonymous app developers, etc.) can find and learn how to use them properly. You also need to secure your APIs, monitor them at runtime, and maintain them (including handling changes) over their lifetime. All these additional elements of an API are what we call API pillars: elements that all APIs need and all API program managers need to deal with. We’ll dig into pillars in Chapter 4, where we walk through the list of ten key practices vital to creating and maintaining healthy APIs.
 
-The good news about these practice areas is that they transcend any single API. For example, the skill of documenting APIs well is transferable from one API team to the next. The same goes for learning proper testing skills, security patterns, and so forth. That also means that even when you have separate teams for each API domain (sales team, product team, backoffice team, etc.), you also have “cross-cutting” interests that bind people within teams to other people in other teams.1 And this is another important aspect of managing APIs—enabling and engineering the teams that build them. We talk more about how this works in different organizations in Chapter 7.
+The good news about these practice areas is that they transcend any single API. For example, the skill of documenting APIs well is transferable from one API team to the next. The same goes for learning proper testing skills, security patterns, and so forth. That also means that even when you have separate teams for each API domain (sales team, product team, backoffice team, etc.), you also have “cross-cutting” interests that bind people within teams to other people in other teams. And this is another important aspect of managing APIs—enabling and engineering the teams that build them. We talk more about how this works in different organizations in Chapter 7.
 
 API Maturity Stages
 Knowing and understanding the API pillars is not the entire picture, either. Each API in your program goes through its own “lifecycle”—a series of predictable and useful stages. Knowing where you are in the API journey can help you determine how much time and resources to invest in the API at the moment. Understanding how APIs mature allows you to recognize the same stages for a wide range of APIs and helps you prepare for and respond to the varying requirements of time and energy at each stage.

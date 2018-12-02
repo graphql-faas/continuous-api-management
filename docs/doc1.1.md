@@ -23,7 +23,7 @@ Coleman Parkes在2017年发布了一项调查,它显示10家全球企业中近9�
 
 在我们深入讨论如何学习处理这两个挑战(单API和API景观)的细节之前,让我们先看看这两个重要的问题:什么是API管理?为什么它这么难搞?
 
-** API管理是什么? **
+**API管理是什么?**
 
 如前所述,API管理不仅仅涉及管理API的设计,实现和发布,还包括API生态系统的管理,组织内的决策分配,甚至包括迁移已有API到不断增长的API景观中的过程.在本节中,我们将花时间讨论以上每一个概念.但是首先,先简单解释一下我们所说的"API"是什么意思.
 
@@ -32,7 +32,7 @@ Coleman Parkes在2017年发布了一项调查,它显示10家全球企业中近9�
 
 为了明确区别,使我们更容易的讨论接口和功能,我们将介绍一些额外的术语:接口,实现,实例.
 
-** 接口,实现,实例
+**接口,实现,实例**
 API是应用程序编程接口的缩写.我们使用接口来访问API后面的东西.如:你可能有一个API来公开管理用户的任务.这个接口可能允许开发人员去:
 - 创建新账户.
 - 编辑已存在账户的配置文件.
@@ -89,32 +89,32 @@ API可以帮助企业的另一个方式是使访问重要客户或者市场数�
 > 当管理API时,核心软件架构团队应该关注些什么?
 
 规模
-> Often, what works when companies are just starting out on their API journey doesn’t scale as the program grows from a few small teams to a global initiative.
+> 通常,当公司刚开始他们的API之旅时,有效的东西并不会随着团队的规模而扩展;
 
 标准
-> What we find is that, as programs mature, management and governance efforts need to move from detailed advice on API design and implementation to more general standardization of the API landscape, freeing teams to make more of their own decisions at a detailed level.
+> 我们发现,随着程序的成熟,管理和治理工作的重心需要从API设计和实现的细节移到API景观的标准化上,使团队在细节上更自由地做出他们的决定;
 
-Essentially, it is the continued balance of these three elements—scope, scale, and standards—that powers a healthy, growing API management program. For this reason, it is worth digging into these a bit more.
+本质上,范围,规模和标准这三要素促进了API管理程序的健康发展.由于这个原因,它值得我们深入研究一下.
 
-Scope
-One of the big challenges of operating a healthy API management program is achieving the proper level of central control. And, to make it even more challenging, the proper level changes as the program matures.
+- 范围
+运营一个健康的API管理程序的一大挑战是实现适当的中央控制水平.而且,为了其更具挑战性,这个适当级别还要随着程序的成熟而改变;
 
-Early in the program, it makes sense to focus on the details of designing the API directly. In cases where APIs are in their infancy, these design details might come directly from the team creating the API—they look at existing programs “in the wild,” adopt tooling and libraries that make sense for the style of API they plan to create, and go ahead and implement that API.
+在项目初期,直接关注API设计的细节是有意义的.在构建API的初期,这些设计细节可能直接来源于API的创建团队,他们看重现实中已存在的项目,采纳对计划创建的API样式有意义的工具和库,并实施与实现该API.
 
-In this “early-stage” API program everything is new; all problems are encountered (and solved) for the first time. These initial experiences often end up being chronicled as the company’s “API Best Practices” or company guidelines, etc. And they make sense for a small team working on a few APIs for the very first time. However, those initial guidelines may turn out to be incomplete.
+API程序在早期状态时,所有东西都是新的;所有出现和解决的问题也是第一次遇到.这些初始经验经常被记录为公司的"API最佳实现"或者公司指南等.对于一个小团队来说,首次开发一些API是有意义的.然而,这些最初的指南可能是不完整的.
 
-As the number of teams working on APIs at the company grows, so does the variety of styles, experiences, and points of view. It gets more difficult to maintain consistency across all the teams—and not just because some teams are not adhering to the published company guidelines. It may be that a new team is working with a different set of off-the-shelf products that constrain their ability to follow the initial guidelines. Maybe they don’t work in an event-streaming environment and are supporting XML-based call-and-response-style APIs. They need guidance, of course, but it needs to fit their domain, their customers’ needs.
+随着公司中API团队人数的增加,对于API的风格,经验和观点也随之增加;这时很难维护API的全局一致性,这不仅仅是因为一些团队没有坚持公司指南,还因为一些团队正在与不同的现成产品集合作,这些产品限制了他们遵循原始的指南.也许他们在事件流中不起作用,并且支持以XML为基础的访问和响应API.当然,它们需要指导,但是这需要符合他们的领域和客户的需求.
 
-There are certainly some guidelines that all teams need to share, but that guidance needs to fit their problem domains as well as their API customers’ needs. As your community widens, your diversity increases, and it is essential that you don’t make the mistake of trying to eliminate that diversity. This is where your lever of control needs to move from giving orders (e.g., “All APIs MUST use the following URL patterns…”) to giving guidance (e.g., “APIs running over HTTP SHOULD use one of the following URL templates…”).
+一些指南确实需要所有团队去共享,除此之外这些指南还需要去匹配他们的问题域和客户需求.随着社区的发展,多样性会增加,而且重要的是你不要错误的去消除这些多样性.这正是你的控制能力需要从发出指令(如:所有API必须使用下面的URL模式...)转换为给出指导(如:运行在HTTP上的API应该使用下面的URL模式..)的地方.
 
-In other words, as your program’s scope expands, your collection of guidelines needs to expand appropriately. This is especially important for global enterprises where local culture, language, and history play an important role in the way teams think, create, and solve problems.
+换句话说:随着程序范围的扩张,你的指南集也需要适当的扩展.这对于全球企业来说尤其重要,因为地方文化,语言和历史在团队的思考,创造和解决问题方面发挥着重要的角色.
 
-And that leads us to the next key element: scale.
+同时这也引导我们进入到了下一个核心元素:规模
 
-Scale
-Another big challenge for creating and maintaining a healthy API management program is dealing with changes in scale over time. As we discussed in the previous section, growing the number of teams and the number of APIs created by those teams can be a challenge. The processes needed to monitor and manage the APIs at runtime will also change as the system matures. The tooling needed to keep track of a handful of APIs all built by the same team in a single physical location is very different from the tooling needed to keep track of hundreds or thousands of API entry points scattered across multiple time zones and countries.
+- 规模
+创建和维护一个健康API管理程序的另一个大挑战是处理规模随时间的变化.正如我们在上一节讨论的,团队人数增加和他们创建的API数量可能成为一个挑战.在运行时监视和管理API所需的过程也将随着系统的成熟而变化.因为单团队在单区域使用的对少数API的全部构建的追踪工具和追踪跨越多时区和国家的成百上千的API终端的工具有很大不同.
 
-In this book we talk about this aspect of API management as the “landscape.” As your program scales up, you need to be able to keep an eye on lots of processes by lots of teams in lots of locations. You’ll rely more on monitoring runtime behavior to get a sense of how healthy your system is at any one moment. In the second part of this book (starting with Chapter 8) we’ll explore how the notion of managing the API landscape can help you figure out which elements deserve your focus and what tools and processes can help you keep a handle on your growing API platform.
+在这本书中,我们将API管理方面称为"景观".随着你的程序规模的增加,你需要关注多地,多团队的多过程.你将更依赖监控运行行为,以了解你的系统在任何时的健康情况.在本书的第二部分(从第8章开始)我们将探讨如何管理API景观,可以帮你指出哪些元素值得你关注,哪些工具和流程可以帮你掌握不断增长的API平台.
 
 API landscapes pose a new set of challenges. The processes you use to design, implement, and maintain a single API are not always the same when you need to scale your ecosystem. This is basically a game of numbers: the more APIs you have in your system, the more likely it is that they will interact with each other, and that increases the likelihood that some of those interactions will result in unexpected behavior (or “errors”). This is the way large systems work—there are more interactions and more unexpected results. Trying to remove these unexpected results only gets you part of the way. You can’t eliminate all the bugs.
 
