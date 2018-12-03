@@ -115,12 +115,14 @@ API本身--接口和实现的技术细节--也是故事的一部分.当然传统
 创建和维护一个健康API管理程序的另一个大挑战是处理规模随时间的变化.正如我们在上一节讨论的,团队人数增加和他们创建的API数量可能成为一个挑战.在运行时监视和管理API所需的过程也将随着系统的成熟而变化.因为单团队在单区域使用的对少数API的全部构建的追踪工具和追踪跨越多时区和国家的成百上千的API终端的工具有很大不同.</li>
 </ul>
 <p>在这本书中,我们将API管理方面称为&quot;景观&quot;.随着你的程序规模的增加,你需要关注多地,多团队的多过程.你将更依赖监控运行行为,以了解你的系统在任何时的健康情况.在本书的第二部分(从第8章开始)我们将探讨如何管理API景观,可以帮你指出哪些元素值得你关注,哪些工具和流程可以帮你掌握不断增长的API平台.</p>
-<p>API landscapes pose a new set of challenges. The processes you use to design, implement, and maintain a single API are not always the same when you need to scale your ecosystem. This is basically a game of numbers: the more APIs you have in your system, the more likely it is that they will interact with each other, and that increases the likelihood that some of those interactions will result in unexpected behavior (or “errors”). This is the way large systems work—there are more interactions and more unexpected results. Trying to remove these unexpected results only gets you part of the way. You can’t eliminate all the bugs.</p>
-<p>And that leads to the third challenge most growing API programs encounter: how can you reduce unexpected changes by applying the appropriate level of standards within your API program?</p>
-<p>Standards
-One of the key shifts that happen when you begin managing at the landscape level instead of the API level is in the power of standards in providing consistent guidance for teams designing, implementing, and deploying APIs in your organization.</p>
-<p>As groups grow larger—including the group of teams responsible for your organization’s APIs—there is a coordination cost that is incurred (see “Decisions”). The growing scale requires a change in scope. And a key way to deal with this challenge is to rely more on general standards instead of specific design constraints.</p>
-<p>For example, one of the reasons the World Wide Web has been able to continue to function well since its inception in 1990 is that its designers decided early on to rely on general standards that apply to all types of software platforms and languages instead of creating tightly focused implementation guidance based on any single language or framework. This allows creative teams to invent new languages, architecture patterns, and even runtime frameworks without breaking any existing implementations.</p>
+<p>API景观构成了一系列的挑战.当你需要扩展API生态系统时,你用于设计,实现和维持的单API流程不总是相同.这基本是一个数字游戏:你系统中拥有的API越多,它们之间的交互也越多,它们之间发生未知行为(或者说错误)也就越多.这就是大型系统的工作方式--交互越多,错误越多.尝试去消除这些错误也仅仅是延续API使用,因为并不能根除所有漏洞.</p>
+<p>这就导致了API程序所面临的第三大挑战:如何在你的API程序中应用适当的标准去减少意外的变化?</p>
+<ul>
+<li>标准
+当你将管理等级从API级别提高到景观级别时,一个关键的转变是:标准化会为你的团队设计,实现和部署API提供一致性的指导.</li>
+</ul>
+<p>随着团队的增长(包括负责机构API的团队),相互之间的沟通成本会增加(参考&quot;决策&quot;).不断增长的规模需要改变范围.解决这个挑战的关键方法是采纳通用标准而不是特定的设计约束.</p>
+<p>例如:万维网(World Wide Web)自1990年创立以来能够一直良好运行的原因之一是:它的设计者很早就决定依赖于适用于所有类型的软件平台和语言的通用标准,而不是创建基于任何单语言或框架的具体实现的指导.这就允许创新团队在不破坏现有实现的基础上去开发新语言,架构模型,甚至运行时框架.</p>
 <p>A common thread that runs through the long-lived standards that have helped the web continue to be successful is the focus on standardizing the interaction between components and systems. Instead of standardizing the way components are implemented internally (e.g., use this library, this data model, etc.), web standards aim to make it easy for parties to understand each other over the wire. Similarly, as your API program grows to a more mature level, the guidance you provide to your API community needs to focus more on general interaction standards instead of specific implementation details.</p>
 <p>This can be a tough transition to make, but it is essential to moving up the ladder to a healthy API landscape where it is possible for teams to build APIs that can easily interact with both the existing and the future APIs in your system.</p>
 <p>Managing the API Landscape
