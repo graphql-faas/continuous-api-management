@@ -127,24 +127,19 @@ API景观构成了一系列的挑战.当你需要扩展API生态系统时,你用
 
 例如:万维网(World Wide Web)自1990年创立以来能够一直良好运行的原因之一是:它的设计者很早就决定依赖于适用于所有类型的软件平台和语言的通用标准,而不是创建基于任何单语言或框架的具体实现的指导.这就允许创新团队在不破坏现有实现的基础上去开发新语言,架构模型,甚至运行时框架.
 
-A common thread that runs through the long-lived standards that have helped the web continue to be successful is the focus on standardizing the interaction between components and systems. Instead of standardizing the way components are implemented internally (e.g., use this library, this data model, etc.), web standards aim to make it easy for parties to understand each other over the wire. Similarly, as your API program grows to a more mature level, the guidance you provide to your API community needs to focus more on general interaction standards instead of specific implementation details.
+帮助万维网持续成功的长寿标准的共同点是关注组件和系统交互的标准化.不同于在内部标准化组件的方式,万维网的标准化是致力于网络间的组件可以更容易的相互理解.同样,随着你的API程序成熟度的提高,你提供给API社区的指导方针需要更关注通用交互标准而不是特有实现细节.
 
-This can be a tough transition to make, but it is essential to moving up the ladder to a healthy API landscape where it is possible for teams to build APIs that can easily interact with both the existing and the future APIs in your system.
+这可能是一个艰难的过渡,但这是获取健康API景观必须走的路.只有这样你的团队才有可能去构建让已有的和未来的API之间更容易进行交互的API.
 
-Managing the API Landscape
-As mentioned at the start of this chapter, there are two key challenges in the API management space: managing the life of a single API and managing the landscape of all the APIs. In our visits to many companies and our research into API management in general, we find many versions of the “managing a single API” story. There are lots of “lifecycles” and “maturity models” out there that provide solid advice on identifying and mitigating the challenges of designing, building, and deploying an API. But we have not found much in the way of guidance when it comes to an ecosystem (we call it a landscape) of APIs.
+- 管理API景观
+如本章开头所述,API管理空间中存在两个关键挑战:管理单API的生命周期和管理所有API景观.根据我们对于API管理的研究和观察,发现了许多"管理单API"版本的故事.它们关于"生命周期"和"成熟模型"的记录为识别和降低设计,构建和部署API的挑战提供了切实可行的建议.但是它们并没有太多对于API生态系统(这里称为"景观")的指导.
 
-Landscapes have their own challenges; their own behaviors and tendencies. What you need to take into account when you design a single API is not the same as what you must consider when you have to support tens, hundreds, or even thousands of APIs. There are new challenges at scale that happen in an ecosystem—things that don’t happen for a single instance or implementation of an API. We dive deep into the API landscape later in the book, but we want to point out three ways in which API landscapes present unique challenges for API management here at the start of the book:
+景观也有它自己的挑战:它自己的行为和倾向.当你设计单API时需要考虑与你要支持十个,百个甚至千个API所要考虑的内容并不相同.在生态系统中的规模是新的挑战,这些是不会发生在单实例或API实现上的.我们将在后面深入研究API景观,但是我们想在本书的开头指出三种方式,根据API景观对API管理呈现出的独特挑战:
+> - 缩放技术
+> - 缩放团队
+> - 尺度治理
 
-Scaling technology
-
-Scaling teams
-
-Scaling governance
-
-Let’s take a moment to review each of these aspects of API management with regard to landscapes.
-
-Technology
+- 技术
 When you are first starting your API program, there are a series of technical decisions to make that will affect all your APIs. The fact that “all” your APIs is just a small set at this point is not important. What is important is that you have a consistent set of tools and technologies that you can rely upon as you build out your initial API program. As you’ll see when we get into the details of the API lifecycle (Chapter 6) and API maturity, API programs are not cheap, and you need to carefully monitor your investments of time and energy into activities that will have a high impact on your API’s success without risking lots of capital too early in the process. This usually means selecting and supporting a small set of tools and providing a very clear, often detailed set of guidance documents to help your API teams design and build APIs that both solve your business problems and work well together. In other words, you can gain early wins by limiting your technical scope.
 
 This works well at the start, for all the reasons we’ve mentioned. However, as your program scales up in volume (see “Volume”) and its scope widens (e.g., more teams building more APIs to serve more business domains in more locations, etc.). the challenges also change. As you grow your API program, relying on a limited set of tools and technologies can become one of the key things that slow you down. While at the beginning, when you had a small set of teams, limiting choices made things move faster, placing limits on a large set of teams is a costly and risky enterprise. This is especially true if you start to add teams in geographically distant locations and/or when you embrace new business units or acquire new companies to add to your API landscape. At this point variety (see “Variety”) becomes a much more important success driver for your ecosystem.
