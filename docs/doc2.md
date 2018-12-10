@@ -3,9 +3,9 @@ id: doc2
 title: Chapter 2. API Governance
 ---
 
-Hey, a rule is a rule, and let’s face it, without rules there’s chaos.
-
-Cosmo Kramer
+> Hey, a rule is a rule, and let’s face it, without rules there’s chaos.
+> 
+> Cosmo Kramer
 
 Governance isn’t the kind of thing people get excited about. It’s also a topic that carries a bit of emotional baggage. After all, few people want to be governed and most people have had bad experiences with poorly designed governance policies and non-sensical rules. Bad governance (like bad design) makes life harder. But in our experience, it’s difficult to talk about API management without addressing it.
 

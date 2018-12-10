@@ -3,15 +3,15 @@ id: doc2.1
 title: 第二章 API治理
 ---
 
-Hey, a rule is a rule, and let’s face it, without rules there’s chaos.
+> 嘿,规则就是规则,让我们面对它,没有规则就有混乱.
+> 
+> 科斯莫 克莱默(Cosmo Kramer)
 
-Cosmo Kramer
+治理不是让人们兴奋的事情.这也是带有一些情歌包袱的话题.毕竟,很少人愿意被治理,而且大多数人都有糟糕治理策略和无意义的规则的经历.糟糕的治理(如"糟糕的设计")让生活更加艰难.但是在我们的经验中,对于API管理我们很难只说不做.
 
-Governance isn’t the kind of thing people get excited about. It’s also a topic that carries a bit of emotional baggage. After all, few people want to be governed and most people have had bad experiences with poorly designed governance policies and non-sensical rules. Bad governance (like bad design) makes life harder. But in our experience, it’s difficult to talk about API management without addressing it.
+事实上,我们甚至会说:没有API治理,你就不可能去管理你的API.
 
-In fact, we’ll go as far as saying that it’s impossible to manage your APIs without governing them.
-
-Sometimes, API governance happens in a company, but the term “governance” is never used. That’s perfectly fine. Names matter, and in some organizations governance implies a desire to be highly centralized and authoritative. That can run counter to a culture that embraces decentralization and worker empowerment, so it makes sense that governance is a bad word in those kinds of places. No matter what it’s called, even in this type of decentralized work culture, some form of decision governance is taking place—but it will probably look radically different from the governance system at a more traditional, top-down organization.
+有时,API治理虽然发生在你的公司,但是你从来没有使用过"治理"术语.这是一个好现象.命名确实很重要,但是在一些组织,治理往往按时这高度集中化和命令式的期望.这可能与去中心化和权利下放的文化背道而驰,所以在那些地方,治理是个贬义词是有道理的.无论管它叫什么,即使在这种去中心化的文化中,某种形式的决策治理正在发生,但是它看起来可能与传统的自上而上的组织的治理系统完全不同.
 
 The question “Should you govern your APIs?” isn’t very interesting, because in our opinion, the answer is always yes. Instead, ask yourself: “Which decisions need to be governed?” and “Where should that governance happen?” Deciding on the answers to these types of questions is the work of designing a governance system. Different styles of governance can produce vastly different working cultures, productivity rates, product quality, and strategic value. You’ll need to design a system that works for you. Our goal in this chapter is to give you the building blocks to do that.
 
