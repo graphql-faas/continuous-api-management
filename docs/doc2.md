@@ -19,7 +19,7 @@ We’ll start by exploring the three foundational elements of good API governanc
 
 Governance is a core part of API management, and the concepts we introduce in this chapter will be built upon throughout the rest of this book. So, it’s worthwhile to spend some time understanding what API governance really means and how it can help you build a better API management system.
 
-Understanding API Governance
+- Understanding API Governance
 Technology work is the work of making decisions—lots of decisions, in fact. Some of those decisions are vitally important, while others are trivial. All this decision making is the reason that we can say a technology team’s work is knowledge work. The key skill for a knowledge worker is to make many high-quality decisions, over and over again. That’s a fairly obvious concept, but also one that’s easy to forget when you’re managing APIs.
 
 No matter which technologies you introduce, how you design your architecture, or which companies you choose to partner with, it’s the decision-making abilities of everyone involved that dictate the fate of your business. That’s why governance matters. You need to shape all of those decisions in a way that helps you achieve your organizational goals.
