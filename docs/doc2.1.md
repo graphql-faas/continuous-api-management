@@ -20,26 +20,28 @@ title: 第二章 API治理
 治理是API管理的核心部分,它将贯穿本书的其他部分.所以,API治理的实际含义和它如何帮助你构建更好的API管理系统值得你去花时间理解.
 
 - 理解API治理
+
 事实上,大部分需要做出的决策都是技术活.一些决策是及其重要的,但是其他则是微不足道的.所有这些决策使得技术团队的工作是有技术含量的.一个好开发的核心技能是一遍又一遍的做出许多高质量的决策.这个相当明显的观点,但在管理API时总是很容易被人遗忘.
 
 无论你引进哪种技术,如何进行架构设计或者选择哪家公司去合作,决定你生意命运的都是每个人的决策能力.这也是为什么治理重要的原因.你需要用有利于实现组织目标的方式制定所有的决策.
 
-That’s harder to do than it sounds. To give yourself a better chance of success you’ll need a better understanding of the foundational concepts of governance and how they relate to each other. Let’s start by taking a quick look at API decisions.
+听起来容易,做起来难.你需要深入的理解治理的基本概念,以及他们之间的相互关系,才能加大成功的可能.让我们从快速查看API决策开始.
 
-Decisions
-Your work and the work that many people in your organization perform is primarily the work of making decisions. That’s why governance is so important. If you can make better decisions as a group you can produce better results. But don’t forget that those decisions aren’t just choices about technology—you’ll need to make a broad range of decisions in the API domain. Consider the following list of choices an API team might need to make:
+- 决策
 
-Should our API’s URI be /payments or /PaymentCollection?
+你和大多数人主要的工作就是决策.这也是为什么治理如此重要的原因.总的来说,如果你能做出一个好的决策,就会有一个好的结果.但是决策并不仅仅是技术选型.你还需要在API领域上做出更广泛的决策.API团队可能会面对如下的选择:
 
-Which cloud provider should we host our API in?
+1. 我们API的URI应该是/payments还是/PaymentCollection格式?
 
-We have two customer information APIs—which one do we retire?
+2. 我们应该将API托管给哪个云服务商?
 
-Who’s going to be on the development team?
+3. 我们有两个客户信息应该舍弃哪个?
 
-What should I name this Java variable?
+4. 如何选择开发团队成员?
 
-From this short list of decisions we can make a few observations. First, API management choices span a wide spectrum of concerns and people—making those choices will require a lot of coordination between people and teams. Second, the individual choices people make have different levels of impact—the choice of a cloud provider is likely to affect your API management strategy much more than the name of a Java variable. Third, small choices can have a big impact at scale—if 10,000 Java variables are named poorly, the maintainability of your API implementations will suffer greatly.
+5. 我应该如何命名java变量?
+
+从上面这些问题中,我们可以得出一些简单的结论.第一,API管理的决策涉及复杂的人和关系,做出这些决策需要人和团队之间的密切合作.第二,人做出的不同选择有不同的影响,云服务商的选择对于API管理决策的影响远远大于对于Java变量的命名.第三,量变会引起质变.如果有10000个命名奇葩的Java变量,会极大的影响API实现的可维护性.
 
 All of these choices, spanning multiple domains, being made in coordination and at scale, need to come together to produce the best result. That’s a big and messy job. Later in this chapter we’ll pick this problem apart and give you some guidance for shaping your decision system. But first, let’s take a closer look at what it means to govern these decisions and why governance is so important.
 

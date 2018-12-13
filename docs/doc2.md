@@ -20,24 +20,26 @@ We’ll start by exploring the three foundational elements of good API governanc
 Governance is a core part of API management, and the concepts we introduce in this chapter will be built upon throughout the rest of this book. So, it’s worthwhile to spend some time understanding what API governance really means and how it can help you build a better API management system.
 
 - Understanding API Governance
+
 Technology work is the work of making decisions—lots of decisions, in fact. Some of those decisions are vitally important, while others are trivial. All this decision making is the reason that we can say a technology team’s work is knowledge work. The key skill for a knowledge worker is to make many high-quality decisions, over and over again. That’s a fairly obvious concept, but also one that’s easy to forget when you’re managing APIs.
 
 No matter which technologies you introduce, how you design your architecture, or which companies you choose to partner with, it’s the decision-making abilities of everyone involved that dictate the fate of your business. That’s why governance matters. You need to shape all of those decisions in a way that helps you achieve your organizational goals.
 
 That’s harder to do than it sounds. To give yourself a better chance of success you’ll need a better understanding of the foundational concepts of governance and how they relate to each other. Let’s start by taking a quick look at API decisions.
 
-Decisions
+- Decisions
+
 Your work and the work that many people in your organization perform is primarily the work of making decisions. That’s why governance is so important. If you can make better decisions as a group you can produce better results. But don’t forget that those decisions aren’t just choices about technology—you’ll need to make a broad range of decisions in the API domain. Consider the following list of choices an API team might need to make:
 
-Should our API’s URI be /payments or /PaymentCollection?
+1. Should our API’s URI be /payments or /PaymentCollection?
 
-Which cloud provider should we host our API in?
+2. Which cloud provider should we host our API in?
 
-We have two customer information APIs—which one do we retire?
+3. We have two customer information APIs—which one do we retire?
 
-Who’s going to be on the development team?
+4. Who’s going to be on the development team?
 
-What should I name this Java variable?
+5. What should I name this Java variable?
 
 From this short list of decisions we can make a few observations. First, API management choices span a wide spectrum of concerns and people—making those choices will require a lot of coordination between people and teams. Second, the individual choices people make have different levels of impact—the choice of a cloud provider is likely to affect your API management strategy much more than the name of a Java variable. Third, small choices can have a big impact at scale—if 10,000 Java variables are named poorly, the maintainability of your API implementations will suffer greatly.
 
