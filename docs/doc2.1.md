@@ -43,14 +43,15 @@ title: 第二章 API治理
 
 从上面这些问题中,我们可以得出一些简单的结论.第一,API管理的决策涉及复杂的人和关系,做出这些决策需要人和团队之间的密切合作.第二,人做出的不同选择有不同的影响,云服务商的选择对于API管理决策的影响远远大于对于Java变量的命名.第三,量变会引起质变.如果有10000个命名奇葩的Java变量,会极大的影响API实现的可维护性.
 
-All of these choices, spanning multiple domains, being made in coordination and at scale, need to come together to produce the best result. That’s a big and messy job. Later in this chapter we’ll pick this problem apart and give you some guidance for shaping your decision system. But first, let’s take a closer look at what it means to govern these decisions and why governance is so important.
+所有这些跨领域的选择,都是在大量的协调下做出,需要结合在一起才能产生好的结果.这是个繁复的工作.在本章的后面,我们将针对这个问题,给你一些适合你决策系统的指导.但是首先,让我们进一步了解这些决策治理的含义,以及为什么治理如此重要.
 
-Governing Decisions
-If you’ve ever worked on a small project by yourself, you know that the success or failure of that work relies solely on you. If you make good decisions consistently, you can make something good happen. A single, highly skilled programmer can produce some amazing things. But this way of working doesn’t scale very well. When the thing you produce starts getting used, the demand for more changes and more features grows. That means you need to make many more decisions in a shorter space of time—which means you’ll need more decision makers. Scaling decision making like this requires care. You can’t afford for the quality of your decisions to drop just because there are more people making them.
+- 决策治理
 
-That’s where governance comes in. Governance is the process of managing decision making and decision implementation. Notice that we aren’t saying that governance is about control or authority. Governance isn’t about power. It’s about improving the decision-making quality of your people. In the API domain, high-quality governance means producing APIs that help your organization succeed. You may need some level of control and authority to achieve that, but it’s not the goal.
+如果你曾经独立完成过一些小项目,你会知道这些工作的成功与否完全取决于你.如果你坚定的做出好的决策,你可以得到好的结果.一个大神可以让你惊讶.但是这样的工作方式无法很好的推广.当你开发的东西上线,新功能和新需求也将不断增加.这就意味着你需要短时间内做出许多决策,即你需要更多的决策者.这样的规模式决策需要谨慎.参与决策的人越多,你越无法保证决策的质量.
 
-You can apply governance to your API work in lots of different ways. For example, you could introduce a policy that all API teams in your company must use the same standardized technology stack. Or you could introduce a policy that all APIs need to pass a set of standardized quality measures before they can be launched. One policy is more heavy-handed than the other, but both policies might achieve similar results. In practice, you’ll be managing lots of different types of decisions at the same time and your governance system is going to be a mix of many different constraints, rewards, policies, and processes.
+这就是治理的来由.治理是管理决策制定和执行的过程.注意,我们并不是说控制和权力就是治理.治理与权利无关.它是提高人决策质量的方式.在API领域,高质量的治理往往意味着构建的API有利于组织取得成功.这个过程你可能需要一些控制级别和权力去实现,但这并不是目的.
+
+在API中应用治理有很多方式.例如,你可以提出一种策略,要求公司中所有团队必须使用标准的技术栈.或者要求所有API在发布前必须要通过一系列标准质量检测.策略可能有松紧,但是殊途同归.实际中,你将同时管理大量不同类型的决策,同时你的治理系统将混合许多不同的约束,奖励,政策和流程.
 
 Keep in mind that governance always has a cost. Constraints need to be communicated, enforced, and maintained. Rewards that shape decision-making behavior need to be kept valuable and attractive to your audience. Standards, policies, and processes need to be documented, taught, and kept up to date. On top of that, constant information gathering is needed to observe the impact of all of this on the system. You may even need to hire more people just to support your governance efforts.
 

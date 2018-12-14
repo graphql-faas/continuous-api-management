@@ -45,7 +45,8 @@ From this short list of decisions we can make a few observations. First, API man
 
 All of these choices, spanning multiple domains, being made in coordination and at scale, need to come together to produce the best result. That’s a big and messy job. Later in this chapter we’ll pick this problem apart and give you some guidance for shaping your decision system. But first, let’s take a closer look at what it means to govern these decisions and why governance is so important.
 
-Governing Decisions
+- Governing Decisions
+
 If you’ve ever worked on a small project by yourself, you know that the success or failure of that work relies solely on you. If you make good decisions consistently, you can make something good happen. A single, highly skilled programmer can produce some amazing things. But this way of working doesn’t scale very well. When the thing you produce starts getting used, the demand for more changes and more features grows. That means you need to make many more decisions in a shorter space of time—which means you’ll need more decision makers. Scaling decision making like this requires care. You can’t afford for the quality of your decisions to drop just because there are more people making them.
 
 That’s where governance comes in. Governance is the process of managing decision making and decision implementation. Notice that we aren’t saying that governance is about control or authority. Governance isn’t about power. It’s about improving the decision-making quality of your people. In the API domain, high-quality governance means producing APIs that help your organization succeed. You may need some level of control and authority to achieve that, but it’s not the goal.
