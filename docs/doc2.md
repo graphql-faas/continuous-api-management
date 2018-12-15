@@ -59,7 +59,8 @@ Beyond those general costs of maintaining the machinery of governance, there are
 
 It turns out that these kinds of costs are difficult to predict. That’s because in reality you’re governing a complex system of people, processes, and technology. To govern an API system, you’ll first need to learn what it takes to manage a complex system in general.
 
-Governing Complex Systems
+- Governing Complex Systems
+
 The good news is that you don’t need to control every single decision in your organization to get great results from governance. The bad news is that you’ll need to figure out which decisions you will need to control in order to get those good results. That’s not an easy problem to solve, and you won’t find a definitive answer in this book. That’s because it’s impossible to give you an answer that will fit your unique context and goal.
 
 If all you wanted to do was bake a sponge cake, we could give you a pretty definitive recipe for making one. We’d tell you how much flour and how many eggs you’d need and what temperature to set your oven at. We could even tell you exactly how to check if the cake is done. That’s because there is very little variability in modern baking. The ingredients are reasonably consistent no matter where you purchase them from. Ovens are designed to cook at specific, standardized temperatures. Most importantly, the goal is the same—a specific kind of cake.

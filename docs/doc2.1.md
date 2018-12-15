@@ -53,16 +53,17 @@ title: 第二章 API治理
 
 在API中应用治理有很多方式.例如,你可以提出一种策略,要求公司中所有团队必须使用标准的技术栈.或者要求所有API在发布前必须要通过一系列标准质量检测.策略可能有松紧,但是殊途同归.实际中,你将同时管理大量不同类型的决策,同时你的治理系统将混合许多不同的约束,奖励,政策和流程.
 
-Keep in mind that governance always has a cost. Constraints need to be communicated, enforced, and maintained. Rewards that shape decision-making behavior need to be kept valuable and attractive to your audience. Standards, policies, and processes need to be documented, taught, and kept up to date. On top of that, constant information gathering is needed to observe the impact of all of this on the system. You may even need to hire more people just to support your governance efforts.
+应当谨记治理是有成本的.它需要沟通,强制和维持才能形成约束.对于遵守的决策行为的奖励需要保值,并且有吸引力.标准,政策和过程需要记录,教导,并持续更新.除此之外,还需要研究这些信息对于系统的影响.你甚至需要雇佣更多人维护治理成果.
 
-Beyond those general costs of maintaining the machinery of governance, there are also the hidden costs of applying governance to your system. These are the impact costs that come up when you actually start governing the system. For example, if you mandate the technology stack that all developers must use, what is the organizational cost in terms of technological innovation? Also, what will be the cost to employee happiness? Will it become more difficult to attract good talent?
+除了这些维护治理机制的常规成本外,还有一些隐形成本.这些是当你开始在系统中进行治理时产生的成本.例如,如果你强制统一技术栈,那么在这期间技术创新的组织成本又是多少?同样,员工幸福感的代价又是多少?它是否会加大吸引人才的难度?
 
-It turns out that these kinds of costs are difficult to predict. That’s because in reality you’re governing a complex system of people, processes, and technology. To govern an API system, you’ll first need to learn what it takes to manage a complex system in general.
+事实证明,这种成本很难预测.因为现实中,你治理的是由人,过程和技术组成的复杂系统.为了API系统治理,你首先要学习通常管理复杂系统需要什么.
 
-Governing Complex Systems
-The good news is that you don’t need to control every single decision in your organization to get great results from governance. The bad news is that you’ll need to figure out which decisions you will need to control in order to get those good results. That’s not an easy problem to solve, and you won’t find a definitive answer in this book. That’s because it’s impossible to give you an answer that will fit your unique context and goal.
+- 治理复杂系统
 
-If all you wanted to do was bake a sponge cake, we could give you a pretty definitive recipe for making one. We’d tell you how much flour and how many eggs you’d need and what temperature to set your oven at. We could even tell you exactly how to check if the cake is done. That’s because there is very little variability in modern baking. The ingredients are reasonably consistent no matter where you purchase them from. Ovens are designed to cook at specific, standardized temperatures. Most importantly, the goal is the same—a specific kind of cake.
+好消息是,在组织内获取良好的治理结果并不需要你控制每一个决策.坏消息是,为了好的结果,你需要指出哪些决策你需要控制.这个问题比较难,并且在本书中你也无法找到确切答案.因为不可能有针对特殊情景和目标的通用答案.
+
+如果你只想烤一个枣糕,我们给你十分确切的配方.我们会告诉你需要多长时间,多少鸡蛋,烤箱的温度是多少.甚至可以告诉你如何检查蛋糕是否做好.那是因为现代烘培几乎没有变化.无论你从哪购买,配料都基本相同.烤炉也被设计成在特定,标准温度下烘培.最重要的是,目标是一致的--获取指定的类型的蛋糕.
 
 But you aren’t making a cake, and this isn’t a recipe book. You’ll need to deal with an incredible amount of variability. For example, the people in your company will have varying levels of decision-making talent. The regulatory constraints you operate in wiill be unique to your industry and location. You’ll also be serving your own dynamically changing consumer market with its own consumer culture. On top of all that, your organizational goals and strategy will be entirely unique to you.
 
