@@ -66,25 +66,33 @@
 <p>如果你曾经独立完成过一些小项目,你会知道这些工作的成功与否完全取决于你.如果你坚定的做出好的决策,你可以得到好的结果.一个大神可以让你惊讶.但是这样的工作方式无法很好的推广.当你开发的东西上线,新功能和新需求也将不断增加.这就意味着你需要短时间内做出许多决策,即你需要更多的决策者.这样的规模式决策需要谨慎.参与决策的人越多,你越无法保证决策的质量.</p>
 <p>这就是治理的来由.治理是管理决策制定和执行的过程.注意,我们并不是说控制和权力就是治理.治理与权利无关.它是提高人决策质量的方式.在API领域,高质量的治理往往意味着构建的API有利于组织取得成功.这个过程你可能需要一些控制级别和权力去实现,但这并不是目的.</p>
 <p>在API中应用治理有很多方式.例如,你可以提出一种策略,要求公司中所有团队必须使用标准的技术栈.或者要求所有API在发布前必须要通过一系列标准质量检测.策略可能有松紧,但是殊途同归.实际中,你将同时管理大量不同类型的决策,同时你的治理系统将混合许多不同的约束,奖励,政策和流程.</p>
-<p>应当谨记治理是有成本的.它需要沟通,强制和维持才能形成约束.对于遵守的决策行为的奖励需要保值,并且有吸引力.标准,政策和过程需要记录,教导,并持续更新.除此之外,还需要研究这些信息对于系统的影响.你甚至需要雇佣更多人维护治理成果.</p>
+<p>应当谨记治理是有成本的.它需要沟通,强制和维持才能形成约束.对于遵守的决策行为的奖励需要保值,并且有吸引力.标准,政策和流程需要记录,教导,并持续更新.除此之外,还需要研究这些信息对于系统的影响.你甚至需要雇佣更多人维护治理成果.</p>
 <p>除了这些维护治理机制的常规成本外,还有一些隐形成本.这些是当你开始在系统中进行治理时产生的成本.例如,如果你强制统一技术栈,那么在这期间技术创新的组织成本又是多少?同样,员工幸福感的代价又是多少?它是否会加大吸引人才的难度?</p>
-<p>事实证明,这种成本很难预测.因为现实中,你治理的是由人,过程和技术组成的复杂系统.为了API系统治理,你首先要学习通常管理复杂系统需要什么.</p>
+<p>事实证明,这种成本很难预测.因为现实中,你治理的是由人,流程和技术组成的复杂系统.为了API系统治理,你首先要学习通常管理复杂系统需要什么.</p>
 <ul>
 <li>治理复杂系统</li>
 </ul>
 <p>好消息是,在组织内获取良好的治理结果并不需要你控制每一个决策.坏消息是,为了好的结果,你需要指出哪些决策你需要控制.这个问题比较难,并且在本书中你也无法找到确切答案.因为不可能有针对特殊情景和目标的通用答案.</p>
 <p>如果你只想烤一个枣糕,我们给你十分确切的配方.我们会告诉你需要多长时间,多少鸡蛋,烤箱的温度是多少.甚至可以告诉你如何检查蛋糕是否做好.那是因为现代烘培几乎没有变化.无论你从哪购买,配料都基本相同.烤炉也被设计成在特定,标准温度下烘培.最重要的是,目标是一致的--获取指定的类型的蛋糕.</p>
-<p>But you aren’t making a cake, and this isn’t a recipe book. You’ll need to deal with an incredible amount of variability. For example, the people in your company will have varying levels of decision-making talent. The regulatory constraints you operate in wiill be unique to your industry and location. You’ll also be serving your own dynamically changing consumer market with its own consumer culture. On top of all that, your organizational goals and strategy will be entirely unique to you.</p>
-<p>All this variability makes it tough to prescribe a single correct “recipe” for API governance. To make things even harder, there’s also the small problem of knock-on effects. Every time you introduce a rule, or create a new standard, or apply any form of governance, you’ll have to deal with unintended consequences. That’s because all the various parts of your organization are intertwined and connected. For example, to improve the consistency and quality of your API code, you could introduce a standard technology stack. That new stack might result in bigger code packages as programmers start adding more libraries and frameworks. And that could result in a change to the deployment process because the bigger deployment packages can’t be supported with the existing system.</p>
-<p>With the right information, maybe you could predict and prevent that outcome. But it’s impossible to do that for every possible eventuality, especially within a reasonable amount of time. Instead, you’ll need to accept the fact that you are working with a complex adaptive system. As it turns out, this is a feature, not a bug. You’ll just need to figure out how to use it to your advantage.</p>
-<p>COMPLEX ADAPTIVE SYSTEMS
-When we say that your organization is a complex adaptive system, we mean:</p>
-<p>It has lots of parts that are interdependent (e.g., people, technologies, process, culture).</p>
-<p>Those parts can change their behavior and adapt to system changes (e.g., changing deployment practices when containerization is introduced).</p>
-<p>The universe is full of these kinds of systems, and the study of complexity has become an established scientific discipline. Even you yourself are a complex adaptive system. You might think of yourself as a single unit—a self—but “self” is just an abstraction. In reality, you’re a collection of organic cells, albeit a collection of cells that is capable of amazing feats: thinking, moving, sensing and reacting to external events as an emergent whole “being.” At the cellular level, your individual cells are specialized; old, dying cells are replaced and groups of cells work together to produce big impacts in your body. The complexity of the biological system that you are composed of makes your body highly resilient and adaptable. You’re probably not immortal, but you’re equally likely to be able to withstand massive amounts of environmental change and even bodily damage, thanks to your complex biological system.</p>
-<p>Usually, when we talk about “systems” in technology we focus on software systems and network-based architecture. Those kinds of systems can definitely grow to be complex. For example, the web is a perfect example of system-level complexity and emergence. A network of individual servers run independently, but through their dependencies and interconnections produce an emergent whole that we call “the web.” But most of that software isn’t really adaptive.</p>
-<p>The API software you write today is pretty dumb. That doesn’t mean that your code is of poor quality or that it doesn’t do the job it was designed for. In fact, it’s just the opposite; most of the APIs you implement will do exactly what they’re supposed to do. And that’s the problem. You can make an API that’s smart enough to adapt to a changing traffic pattern or an increasing number of errors, but it’s impractical to make one that can add a new feature without human intervention, or correct a complex bug by itself, or update its own documentation to make it easier to learn.</p>
-<p>Now, all of that might change in the future. But as it stands today, it’s your people that drive the behavior of your software system. The good news is that people are very good at adapting (especially when compared to software). Your API organization is a complex adaptive system. All of the individual people in your organization make many local decisions, sometimes collectively and sometimes individually. When all those decisions happen at scale and over time, a system emerges. Just like your body, that system is capable of adapting to a lot of change.</p>
+<p>但你不是在做蛋糕,也没有所谓的食谱.你需要处理大量的可变性.例如,你公司里的人决策能力参差不齐.你所在的行业和地区特有的监管约束.还有就是你服务的不断变化的消费市场,有它自己消费文化.最重要的是,你的组织目标和策略对你来说是完全独特的.</p>
+<p>这些可变性使得很难给API治理开出一个通用的&quot;配方&quot;.同时小问题的连锁反应,加剧了它的实现难度.当你每次引入规则,创建新标准或者应用任何形式的治理,都需要处理它意外的后果.这是因为组织的各个部分都是相互联系的.例如,为了保证API代码的一致性和质量,你可以引入标准技术栈.随着程序员开始添加更多的库和框架,新技术栈可能产生更大的代码包.同时它还可能造成部署流程的改变,因为现存的系统无法支持更大的部署包.</p>
+<p>有了正确的信息,你可能预测和预防这种结果.但是你不可能每次都能这样,尤其在适当的时间内.相反,你需要面对这个事实--你正在处理一个复杂的自适应系统.事实证明,它是一种特性,而不是漏洞.你只需要弄清楚如何利用它使你获益.</p>
+<ul>
+<li>复杂的自适应系统</li>
+</ul>
+<p>当你我们说你的组织是一个复杂的自适应系统时,我们的意思是:</p>
+<ul>
+<li><ul>
+<li>它有许多相互依赖的部分(如:人员,技术,流程,文化).</li>
+</ul></li>
+<li><ul>
+<li>这些部分可以改变自我行为,并且适应系统变化(如:当引入容器化时,改变部署惯例).</li>
+</ul></li>
+</ul>
+<p>宇宙中充满了这样的系统,复杂性研究已成为一个已设立的科学学科.甚至你自己也是一个复杂的自适应系统.你可能认为自己是一个单独的个体--自我,但是&quot;自我&quot;只是一种抽象.实际上,你是一个有机细胞的集合,虽然只是一组细胞,但它具有令人惊叹的壮举:作为一个自然的整体&quot;人&quot;去思考,移动,感觉和对外部事件做出反应.在细胞层面,每个细胞各司其职,老的,濒临死亡细胞被替换,同时细胞群在你的身体里一起工作以产生具大的影响.这个复杂的生物系统使你身体具有高度的弹性和适应能力.你可能无法长生,但是你能平等的承受大量的环境变化,甚至身体的损害,这要归功于你复杂度生物系统.</p>
+<p>通常,当我们在技术上说到&quot;系统&quot;,我们关注的是软件系统和网络基础架构.这些类型的系统确实会变的复杂.如:web是一个系统级复杂性和突发性的完美例子.我们将单独运行的服务器相互依赖和互联后形成的自然整体称为&quot;web&quot;.但是大多数软件并不是真正的自适应.</p>
+<p>你曾经编写的API软件现在相当愚蠢.并不意味着你的代码质量不高或者它无法完成设计功能.事实恰恰相反.大多数你实现的API将完全按照它们应该做的去做.这恰恰是问题所在,你可以让API足够智能,以适应不断变化的交易模型和越来越多的错误,但是还无法做到让API在没有人为干预的情况下增加新功能,正确的自我修复漏洞,更新文档使其更易于学习.</p>
+<p>在未来一切都可能改变.但是就目前而言,还是人为驱动软件系统.好消息是人的适应性很强(尤其和软件相比).你的API组织是一个复杂的适应性系统.组织内的所有人都会许多(有时集体,有时单独的)局部决策.当这些决策在量和时间上越来越多时,一个系统就产生了.就像你的身体,这个系统能够适应很多变化.</p>
 <p>But working with a complex system requires a special kind of approach. It’s difficult to predict the impact of changes in a complex system—making a change to one part of your system can lead to unintended consequences in another part. That’s because the people in your organization are constantly adapting to the changing environment. For example, introducing a rule that deploying software in “containers” is forbidden would have a wide-reaching impact, affecting software design, hiring, deployment processes, and culture.</p>
 <p>All of this means that you can’t get the outputs you want from the system by implementing large changes and waiting for results. Instead, you’ll need to “nudge” the system by making smaller changes and assessing their impact. It requires an approach of continuous adjustment and improvement, in the same way you might tend to a garden, pruning branches, planting seeds, and watering while continuously observing and adjusting your approach. In Chapter 5, we’ll explore the concept of continuous improvement in more detail.</p>
 <p>Governing Decisions
