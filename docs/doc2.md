@@ -71,12 +71,12 @@ All this variability makes it tough to prescribe a single correct “recipe” f
 
 With the right information, maybe you could predict and prevent that outcome. But it’s impossible to do that for every possible eventuality, especially within a reasonable amount of time. Instead, you’ll need to accept the fact that you are working with a complex adaptive system. As it turns out, this is a feature, not a bug. You’ll just need to figure out how to use it to your advantage.
 
-COMPLEX ADAPTIVE SYSTEMS
+- COMPLEX ADAPTIVE SYSTEMS
+
 When we say that your organization is a complex adaptive system, we mean:
-
-It has lots of parts that are interdependent (e.g., people, technologies, process, culture).
-
-Those parts can change their behavior and adapt to system changes (e.g., changing deployment practices when containerization is introduced).
+  
+- - It has lots of parts that are interdependent (e.g., people, technologies, process, culture).
+- - Those parts can change their behavior and adapt to system changes (e.g., changing deployment practices when containerization is introduced).
 
 The universe is full of these kinds of systems, and the study of complexity has become an established scientific discipline. Even you yourself are a complex adaptive system. You might think of yourself as a single unit—a self—but “self” is just an abstraction. In reality, you’re a collection of organic cells, albeit a collection of cells that is capable of amazing feats: thinking, moving, sensing and reacting to external events as an emergent whole “being.” At the cellular level, your individual cells are specialized; old, dying cells are replaced and groups of cells work together to produce big impacts in your body. The complexity of the biological system that you are composed of makes your body highly resilient and adaptable. You’re probably not immortal, but you’re equally likely to be able to withstand massive amounts of environmental change and even bodily damage, thanks to your complex biological system.
 
