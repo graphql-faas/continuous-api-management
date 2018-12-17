@@ -87,11 +87,12 @@ title: 第二章 API治理
 
 在未来一切都可能改变.但是就目前而言,还是人为驱动软件系统.好消息是人的适应性很强(尤其和软件相比).你的API组织是一个复杂的适应性系统.组织内的所有人都会许多(有时集体,有时单独的)局部决策.当这些决策在量和时间上越来越多时,一个系统就产生了.就像你的身体,这个系统能够适应很多变化.
 
-But working with a complex system requires a special kind of approach. It’s difficult to predict the impact of changes in a complex system—making a change to one part of your system can lead to unintended consequences in another part. That’s because the people in your organization are constantly adapting to the changing environment. For example, introducing a rule that deploying software in “containers” is forbidden would have a wide-reaching impact, affecting software design, hiring, deployment processes, and culture.
+但是处理复杂系统要求一种特殊的方法.当你修改一部分时,可能造成另一部分意外的结果,使得很难预测复杂系统变化的影响.这是因为组织内的人在不断适应环境的变化.如:禁止使用"容器"部署软件将产生广泛的影响:它会影响软件的设计,人员,发布流程,以及文化.
 
-All of this means that you can’t get the outputs you want from the system by implementing large changes and waiting for results. Instead, you’ll need to “nudge” the system by making smaller changes and assessing their impact. It requires an approach of continuous adjustment and improvement, in the same way you might tend to a garden, pruning branches, planting seeds, and watering while continuously observing and adjusting your approach. In Chapter 5, we’ll explore the concept of continuous improvement in more detail.
+所有这些都说明:你无法通过实现大的更改,以及等待结果的方式从系统中获取所需的输出.相反,你需要通过小的修改和评估它们的影响来慢慢"推动"系统的发展.它需要一种不断跳转和改进的方法,就像照料花园一样,修建枝条,播种,浇水,同时不断观察和调整你的方法.在第5章,我们将更详细地探讨持续改进的概念.
 
-Governing Decisions
+- 决策治理
+
 In the last section we introduced the concept of governing decisions inside a complex system. Hopefully, that’s helped you to understand a fundamental rule for API governance: if you want your governance system to be effective, you’ll need to get better at managing decisions. We think one of the best ways to do that is to focus on where decisions are happening and who is making them. It turns out that there isn’t a single best way to map those decisions out. For example, consider how API design governance could be handled in two different fictional companies:
 
 Company A: Pendant Software
