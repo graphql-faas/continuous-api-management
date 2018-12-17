@@ -93,17 +93,16 @@ title: 第二章 API治理
 
 - 决策治理
 
-In the last section we introduced the concept of governing decisions inside a complex system. Hopefully, that’s helped you to understand a fundamental rule for API governance: if you want your governance system to be effective, you’ll need to get better at managing decisions. We think one of the best ways to do that is to focus on where decisions are happening and who is making them. It turns out that there isn’t a single best way to map those decisions out. For example, consider how API design governance could be handled in two different fictional companies:
+在最后一节,我们介绍了复杂系统内决策治理的概念.希望它有助于你理解API治理的基本规则:如果你想有效的治理系统,你需要更好的管理决策.我们它最好的实现方式是关注决策在哪发生以及由谁来做决定.事实证明,没有一种最好的方法能够将这些决策制定出来.如:思考如何在以下两个虚构的公司中进行API设计治理:
 
-Company A: Pendant Software
-At Pendant Software, all API teams are provided with access to the “Pendant Guidelines for API Design” e-book. These guidelines are published quarterly by Pendant’s API Center of Excellence and Enablement—a small team of API experts working inside the company. The guidelines contain highly prescriptive and very specific rules for designing APIs. All teams are expected to adhere to the guidelines and APIs are automatically tested for conformance before they can be published.
+公司A: Pendant Software
+> 在Pendant Software中,所有API团队都可以访问"Pendant API设计指南"电子书.这些指南由Pendant启卓API中心(公司内的API专家工作的小团队)每季度发布一次.这些指南包含了API设计中高度的规范性和非常具体的规则.所有团队都要遵守这些指南,并且在发布API之前进行自动化一致性测试.
+> 由于这些政策,Pendant已经能够发布一组行业领先,高度一致,有利于开发的API.这些API已经帮助Pendant从同市场上的对手中脱颖而出.
 
-As a result of these policies, Pendant has been able to publish a set of industry-leading, highly consistent APIs that developers rate very favorably. These APIs have helped Pendant differentiate itself from competitors in the marketplace.
+公司B: Vandelay Insurance
+> 在Vandelay中,给API团队设立了API产品的公司业绩目标和期望结果.这些目标和结果由执行团队定义并定期更新.每个API团队都可以自由地选择执行方式处理总业绩目标,并且多个团队可以设立相同的目标.API团队可以根据自己的喜好设计和实现API,但是每个产品必须遵守Vandelay的企业测量和监控标准.这些标准由Vandelay系统公社定义,这个公社由来自于各个API团队的自愿加入的人组成,并定义大家都需要遵守的一系列标准.
 
-Company B: Vandelay Insurance
-At Vandelay, API teams are given the company’s business goals and expected results for their API products. These goals and results are defined by the executive teams and are updated regularly. Each API team has the freedom to address an overall business goal in the manner they choose and multiple teams can pursue the same goal. API teams can design and implement APIs however they like, but every product must adhere to Vandelay’s enterprise measurement and monitoring standards. The standards are defined by Vandelay’s System Commune, a group made up of individuals from each of the API teams who join voluntarily and define the set of standards that everyone needs to follow.
-
-As a result of these policies, Vandelay has been able to build a highly innovative, adaptive API architecture. This API system has enabled Vandelay to out-maneuver its competition with innovative business practices that can be delivered very quickly in its technology platform.
+> 由于这些政策,Vandelay已经能够构建高度创新的,自适应API架构.这个API系统使得Vandelay在它的技术平台,可以通过快速交付的创新业务实践在竞争中更胜一筹.
 
 In our fictional case studies, both Pendant and Vandelay were wildly successful in their management of decision making. But the way they governed their work was incredibly different. Pendant found success with a highly centralized, authoritative approach, while Vandelay preferred a results-oriented method. Neither approach is “correct,” and both styles of governance have merit.
 
