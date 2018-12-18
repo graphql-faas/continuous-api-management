@@ -126,6 +126,7 @@ As we established earlier, your organization is also a complex adaptive system. 
 
 ![](../img/2/capi_0201.png "All decisions being made by everyone")
 <center>Figure 2-1. A decentralized organization</center>
+
 You could do this, but you might run into some problems, primarily because it’s difficult to succeed with a free-market organization in exactly the same way that complex systems succeed in nature. The biosystem of a pond is directed by the hand of natural selection. Every agent in the system has become optimized for the survival of its species. There’s no system-level goal beyond survival. On top of that, in nature it’s normal for systems to fail. For example, if an invasive species is introduced the entire pond system might die. In the natural world, that can be OK because something else might take its place—the system as a whole remains resilient.
 
 However, businesses leaders don’t respond well to this level of uncertainty and lack of control. Chances are you’ll need to steer your system toward specific goals that go beyond survival. Also, it’s likely that you aren’t willing to risk letting your company die for the sake of a better company taking its place. You’ll almost certainly want to reduce the risk that any individual agent can destroy the whole company because of a bad decision. That means you’ll need to reduce decision-making freedom for individuals and introduce some accountability. One way of doing that is to introduce decision centralization (Figure 2-2).

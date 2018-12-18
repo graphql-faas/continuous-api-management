@@ -116,16 +116,17 @@ title: 第二章 API治理
 
 我们在本书的后面再深入讨论"哪些决策需要被管理"和"这些决策对于系统的影响".现在,我们先看第二个问题:系统中最重要的决策需要在哪做出.为了帮助你解决决策分配的问题,我们将深入研究决策治理的主题.我们将权衡集中式决策和分散化决策,更仔细的研究分配决策的含义.
 
-- 集中化和分散化
+- 中心化和去中心化
 
-Earlier in this chapter, we introduced the concept of a complex adaptive system and we used the human body as an example. These kinds of systems abound in nature, and you are surrounded by them. For example, the ecosystem of a small pond can be thought of as a complex adaptive system. It continues to survive thanks to the activities and interdependence of the animals and vegetation that live in it. The ecosystem adapts to changing conditions thanks to the localized decision making of each of these living things.
+在前面,我们以人体为例介绍了复杂自适应系统的概念.这种类型的系统在自然界非常多,可以说你的周围都是这种系统.如:小池塘里的生态系统就可以被认为是一个复杂自适应系统.生活在里面的动植物的活动和相互依赖,给予了池塘持续的活力.由于这里的生物的局部决策,赋予了生态系统适应环境变化的能力.
 
-But the pond doesn’t have a manager, and there is no evidence that the frogs, snakes, and fish hold quarterly management meetings. Instead, each agent in the system makes individual decisions and exhibits individual behaviors. Taken together these individual decisions and actions form a collective, emergent whole that can survive even as individual parts of the system change or appear and disappear over time. Like most of the natural world, the pond system succeeds because system-level decisions are decentralized and distributed.
+但是池塘没有管理者,也没有证据证明青蛙,蛇和鱼会每季度举办管理会议.相反,这个系统里的每一个代理都单独做决策,以及展示独立的习性.这些独立的决策和行为整合在一起形成了一个共同的,自然的整体,使得这个整体即使在部分系统变化或者随着时间兴衰交替仍然可以生存.与大多数自然世界一样,池塘系统的成功取决于分散的系统级决策.
 
-As we established earlier, your organization is also a complex adaptive system. It’s a product of all the collective individual decisions made by your employees. Just like in a human body or a pond ecosystem, if you were to allow individual workers to have complete freedom and autonomy, the organization as a whole would become more resilient and adaptive. You’d have a bossless, decentralized organization that could find its way thanks to the individual decisions of its employees (see Figure 2-1).
+正如我们之前确定的,你的组织也是一个复杂自适应系统.它是所有员工做出个人决策后的共同产物.就行人体和池塘生态系统,如果你赋予员工完全的自由和自主,整个组织将变得更有弹性和适应性.由于员工的个人决策,这个无领导,去中心的组织可以发现自己的路.(见图 2-1).
 
-![](../img/2/capi_0201.png "All decisions being made by everyone")
-<center>Figure 2-1. A decentralized organization</center>
+![](../img/2/capi_0201.png "每个人都在做决策")
+<center>图 2-1. 一个去中心化组织</center>
+
 You could do this, but you might run into some problems, primarily because it’s difficult to succeed with a free-market organization in exactly the same way that complex systems succeed in nature. The biosystem of a pond is directed by the hand of natural selection. Every agent in the system has become optimized for the survival of its species. There’s no system-level goal beyond survival. On top of that, in nature it’s normal for systems to fail. For example, if an invasive species is introduced the entire pond system might die. In the natural world, that can be OK because something else might take its place—the system as a whole remains resilient.
 
 However, businesses leaders don’t respond well to this level of uncertainty and lack of control. Chances are you’ll need to steer your system toward specific goals that go beyond survival. Also, it’s likely that you aren’t willing to risk letting your company die for the sake of a better company taking its place. You’ll almost certainly want to reduce the risk that any individual agent can destroy the whole company because of a bad decision. That means you’ll need to reduce decision-making freedom for individuals and introduce some accountability. One way of doing that is to introduce decision centralization (Figure 2-2).
