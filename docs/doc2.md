@@ -108,15 +108,16 @@ In our fictional case studies, both Pendant and Vandelay were wildly successful 
 
 To govern decisions effectively, you’ll need to address three key questions:
 
-Which decisions should be managed?
+1. Which decisions should be managed?
 
-Where should those decisions be made (and by whom)?
+2. Where should those decisions be made (and by whom)?
 
-How will the system be impacted by your decision management strategy?
+3. How will the system be impacted by your decision management strategy?
 
 Later in the book we’ll dig into the questions of which decisions should be managed and how those decisions will impact your system. For now, we’ll focus on the second question of where in the system the most important decisions should be made. To help you address decision distribution, we are going to dig deeper into the subject of governing a decision. We’ll tackle the trade-off between centralized and de-centralized decision making and we’ll take a closer look at what it means to distribute a decision.
 
-Centralization and Decentralization
+- Centralization and Decentralization
+
 Earlier in this chapter, we introduced the concept of a complex adaptive system and we used the human body as an example. These kinds of systems abound in nature, and you are surrounded by them. For example, the ecosystem of a small pond can be thought of as a complex adaptive system. It continues to survive thanks to the activities and interdependence of the animals and vegetation that live in it. The ecosystem adapts to changing conditions thanks to the localized decision making of each of these living things.
 
 But the pond doesn’t have a manager, and there is no evidence that the frogs, snakes, and fish hold quarterly management meetings. Instead, each agent in the system makes individual decisions and exhibits individual behaviors. Taken together these individual decisions and actions form a collective, emergent whole that can survive even as individual parts of the system change or appear and disappear over time. Like most of the natural world, the pond system succeeds because system-level decisions are decentralized and distributed.

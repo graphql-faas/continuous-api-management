@@ -104,19 +104,20 @@ title: 第二章 API治理
 
 > 由于这些政策,Vandelay已经能够构建高度创新的,自适应API架构.这个API系统使得Vandelay在它的技术平台,可以通过快速交付的创新业务实践在竞争中更胜一筹.
 
-In our fictional case studies, both Pendant and Vandelay were wildly successful in their management of decision making. But the way they governed their work was incredibly different. Pendant found success with a highly centralized, authoritative approach, while Vandelay preferred a results-oriented method. Neither approach is “correct,” and both styles of governance have merit.
+通过上面的虚构案例可以发现,Pendant和Vandelay都很成功的管理了决策.但是它们治理的方式却完全不同.Pendant的成功取决于高度集中化,军事化的方法,但是Vandelay倾向于面向结果的方式.两种方式虽然都称不上"正确",但它们的治理方式都有可取之处.
 
-To govern decisions effectively, you’ll need to address three key questions:
+为了有效的治理决策,你需要解决三个关键问题:
 
-Which decisions should be managed?
+1. 哪些决策需要被管理?
 
-Where should those decisions be made (and by whom)?
+2. 需要在哪里(以及由谁)做出这些决策?
 
-How will the system be impacted by your decision management strategy?
+3. 你的决策管理策略将如何影响系统?
 
-Later in the book we’ll dig into the questions of which decisions should be managed and how those decisions will impact your system. For now, we’ll focus on the second question of where in the system the most important decisions should be made. To help you address decision distribution, we are going to dig deeper into the subject of governing a decision. We’ll tackle the trade-off between centralized and de-centralized decision making and we’ll take a closer look at what it means to distribute a decision.
+我们在本书的后面再深入讨论"哪些决策需要被管理"和"这些决策对于系统的影响".现在,我们先看第二个问题:系统中最重要的决策需要在哪做出.为了帮助你解决决策分配的问题,我们将深入研究决策治理的主题.我们将权衡集中式决策和分散化决策,更仔细的研究分配决策的含义.
 
-Centralization and Decentralization
+- 集中化和分散化
+
 Earlier in this chapter, we introduced the concept of a complex adaptive system and we used the human body as an example. These kinds of systems abound in nature, and you are surrounded by them. For example, the ecosystem of a small pond can be thought of as a complex adaptive system. It continues to survive thanks to the activities and interdependence of the animals and vegetation that live in it. The ecosystem adapts to changing conditions thanks to the localized decision making of each of these living things.
 
 But the pond doesn’t have a manager, and there is no evidence that the frogs, snakes, and fish hold quarterly management meetings. Instead, each agent in the system makes individual decisions and exhibits individual behaviors. Taken together these individual decisions and actions form a collective, emergent whole that can survive even as individual parts of the system change or appear and disappear over time. Like most of the natural world, the pond system succeeds because system-level decisions are decentralized and distributed.
