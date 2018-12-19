@@ -133,6 +133,7 @@ However, businesses leaders don’t respond well to this level of uncertainty an
 
 ![](../img/2/capi_0202.png "All decisions being made by a single person")
 <center>Figure 2-2. A centralized organization</center>
+
 By this, we mean that decision making is constrained to a particular person or team in your organization. That centralized team makes a decision that the rest of the company will need to adhere to. Decentralization is the opposite case: individual teams can make decisions that only they need to adhere to.
 
 The truth is that there is no perfectly centralized or perfectly decentralized organization. Instead, different types of decisions are distributed within the organization in different ways—some are more centralized while others are more decentralized. You’ll need to decide how to distribute the decisions that impact your system the most. So, which ones should be more centralized and which ones should be more decentralized?

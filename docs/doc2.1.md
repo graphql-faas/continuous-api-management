@@ -127,12 +127,13 @@ title: 第二章 API治理
 ![](../img/2/capi_0201.png "每个人都在做决策")
 <center>图 2-1. 一个去中心化组织</center>
 
-You could do this, but you might run into some problems, primarily because it’s difficult to succeed with a free-market organization in exactly the same way that complex systems succeed in nature. The biosystem of a pond is directed by the hand of natural selection. Every agent in the system has become optimized for the survival of its species. There’s no system-level goal beyond survival. On top of that, in nature it’s normal for systems to fail. For example, if an invasive species is introduced the entire pond system might die. In the natural world, that can be OK because something else might take its place—the system as a whole remains resilient.
+你可以像上面那样做,但是你可能会遇到一些问题.主要是因为复制自然界复杂系统成功的方式很难应用在自由市场的组织中.池塘的生物系统是自然选择的结果.系统中的每个生物都为了种族延续而进化.它们的系统级目标只是活着.除此之外,在自然中,系统故障是正常现象.如:如果引入外来物种,整个池塘系统可能会被摧毁.在自然界中,这是可以的,因为外来生物会取代原来生物的位置--对于系统来说依旧富有弹性.
 
-However, businesses leaders don’t respond well to this level of uncertainty and lack of control. Chances are you’ll need to steer your system toward specific goals that go beyond survival. Also, it’s likely that you aren’t willing to risk letting your company die for the sake of a better company taking its place. You’ll almost certainly want to reduce the risk that any individual agent can destroy the whole company because of a bad decision. That means you’ll need to reduce decision-making freedom for individuals and introduce some accountability. One way of doing that is to introduce decision centralization (Figure 2-2).
+然而,企业领导不希望这种不确定和失控的局面出现.你需要将系统引导到的特定目标,这可能超越了生存的目的.而且,你可能不愿意为了让更好的公司取代你而冒着让公司倒闭的风险.你完全希望降低因个人的错误决策而毁掉整个公司的风险.这意味着你需要约束个体决策制定的自由,并引入一些职责.一种实现方式就是决策中心化.(图 2-2).
 
-![](../img/2/capi_0202.png "All decisions being made by a single person")
-<center>Figure 2-2. A centralized organization</center>
+![](../img/2/capi_0202.png "一个人做出所有决策")
+<center>图 2-2. 一个中心化组织</center>
+
 By this, we mean that decision making is constrained to a particular person or team in your organization. That centralized team makes a decision that the rest of the company will need to adhere to. Decentralization is the opposite case: individual teams can make decisions that only they need to adhere to.
 
 The truth is that there is no perfectly centralized or perfectly decentralized organization. Instead, different types of decisions are distributed within the organization in different ways—some are more centralized while others are more decentralized. You’ll need to decide how to distribute the decisions that impact your system the most. So, which ones should be more centralized and which ones should be more decentralized?
