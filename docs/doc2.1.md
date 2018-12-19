@@ -134,20 +134,20 @@ title: 第二章 API治理
 ![](../img/2/capi_0202.png "一个人做出所有决策")
 <center>图 2-2. 一个中心化组织</center>
 
-By this, we mean that decision making is constrained to a particular person or team in your organization. That centralized team makes a decision that the rest of the company will need to adhere to. Decentralization is the opposite case: individual teams can make decisions that only they need to adhere to.
+由上可知:做出决策的往往是你组织内的部分人或团队.中心化团队做出的决策公司其他人都要遵守.去中心化恰恰相反:自己遵守自己做出的决策.
 
-The truth is that there is no perfectly centralized or perfectly decentralized organization. Instead, different types of decisions are distributed within the organization in different ways—some are more centralized while others are more decentralized. You’ll need to decide how to distribute the decisions that impact your system the most. So, which ones should be more centralized and which ones should be more decentralized?
+事实上,没有纯粹的中心化或者去中心化组织.相反,在组织内不同类型的决策会被分配不同的实现方式--一些更集中,一些则更分散.你需要决定如何分配对你系统影响最大的决策.那么,哪些应该更集中,哪些又应该更分散那?
 
-Remember, a primary goal of governing decisions is to help your organization succeed and survive. What that means is entirely dependent on your business context, but generally speaking it means that decisions need to be timely enough to enable business agility and of sufficient quality to improve the business (or at the very least avoid damaging it). There are three factors that impact the ability to make decisions:
+记住,决策治理的主要目的是帮助你的组织成功,并活下去.这意味着什么,完全取决于你的业务背景,但是通常来说,它意味着:决策需要足够及时,以实现业务的敏捷性,需要具备足够的质量来改进业务(或至少避免损害业务).影响决策能力的因素有三个:
 
-Availability and accuracy of information
-It’s really difficult to make a good decision if you base it on information that is incorrect or missing. That could mean being misled about the goal or context of the decision, but it could also mean not knowing what the decision’s impact will be on the system. Most of the time, we assume the responsibility for gathering decision-making information rests at the feet of the decision makers. But for the purposes of distributing decisions, we also need to think about how centralizing or decentralizing a decision affects the information that’s available.
+信息的可用性和准确性
+> 如果根据错误或者残缺的信息,很难做出好的决策.这可能意味着误解决策目标或背景,也可能意味着决策会对系统造成意外的影响.大多数情况,相对于决策者,我们负责收集决策制定信息.但是为了决策分配,我们还需要思考集中或分散决策是如何影响可用的信息的.
 
-Decision-making talent
-Generally speaking, decision quality improves if the decision maker is good at making high-quality decisions. Or, in simpler language—highly talented people with lots of experience will make better decisions than less-talented people with no experience. When it comes to distributing decision making, the challenge is to also distribute your talent in a way that helps you the most.
+决策人才
+> 通常来讲,如果决策者擅长做出高质量的决策,那么决策的质量也会提高.简单来说,就是老油条的牛人会比没经验的菜鸟做出更好的决策.当涉及分配决策时,难点在于如何进行最有效的人才分配.
 
-Coordination costs
-Complex decisions can’t be made in a timely manner unless the decision making is shared. But whenever you share decision-making work you’ll incur a coordination cost. If that coordination cost grows too high, you won’t be able to make decisions quickly enough. Centralization and decentralization of decisions can have a big impact on coordination costs.
+协调成本
+> 复杂决策无法及时做出,除非你分散决策.但是当你分散决策工作时,你将发生协调成本.如果协调成本太高,你就无法快速的做出决策.决策的集中和分散会对协调成本产生很大的影响.
 
 Thinking about decisions in terms of these factors will help you decide when a decision should be centralized or decentralized. To help you understand how to do that, we’ll take a look at it from two perspectives: scope of optimization and scale of operation. Let’s start by digging into scope and its relationship with decision-making information.
 
