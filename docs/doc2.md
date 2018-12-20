@@ -151,7 +151,8 @@ Coordination costs
 
 Thinking about decisions in terms of these factors will help you decide when a decision should be centralized or decentralized. To help you understand how to do that, we’ll take a look at it from two perspectives: scope of optimization and scale of operation. Let’s start by digging into scope and its relationship with decision-making information.
 
-SCOPE OF OPTIMIZATION
+- SCOPE OF OPTIMIZATION
+
 The big difference between a centralized decision and a decentralized decision has to do with their scope. When you make a centralized decision, you are making it for the entire organization. So, your scope for the decision includes the whole system and your goal is to make a decision that improves that system. Another way of saying this is that the decision you are making is meant to optimize the system scope. For example, a centralized team might decide on a development methodology for the entire company to follow. The same team might also make decisions about which APIs in the system should be retired. Both of these decisions would be made with the goal of doing what’s best for the entire system.
 
 Conversely, the primary characteristic of a decentralized decision is that it is optimized for a local scope. When you are optimizing for the local scope, you are making a decision that will improve your local context—the set of information that pertains only to your local situation. While your decision might have an impact on the wider system, your goal is to improve your local results. For example, an API team can make a local decision to use a waterfall development process because they’re sharing the work with an external company that insists on it.

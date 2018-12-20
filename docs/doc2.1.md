@@ -149,10 +149,11 @@ title: 第二章 API治理
 协调成本
 > 复杂决策无法及时做出,除非你分散决策.但是当你分散决策工作时,你将发生协调成本.如果协调成本太高,你就无法快速的做出决策.决策的集中和分散会对协调成本产生很大的影响.
 
-Thinking about decisions in terms of these factors will help you decide when a decision should be centralized or decentralized. To help you understand how to do that, we’ll take a look at it from two perspectives: scope of optimization and scale of operation. Let’s start by digging into scope and its relationship with decision-making information.
+根据这些因素来考虑决策,有助于你判断决策应该集中还分散.为了帮你理解时如何做到这一点的,我们将从两个角度分析它:优化范围和操作规模(scope of optimization and scale of operation).让我先从规模和它与决策信息关系开始.
 
-SCOPE OF OPTIMIZATION
-The big difference between a centralized decision and a decentralized decision has to do with their scope. When you make a centralized decision, you are making it for the entire organization. So, your scope for the decision includes the whole system and your goal is to make a decision that improves that system. Another way of saying this is that the decision you are making is meant to optimize the system scope. For example, a centralized team might decide on a development methodology for the entire company to follow. The same team might also make decisions about which APIs in the system should be retired. Both of these decisions would be made with the goal of doing what’s best for the entire system.
+- 优化范围 SCOPE OF OPTIMIZATION
+
+中心化决策和去中心化决策最大的不同与它们的规模有关.当你做出中心化决策时,你是在为整个组织做决策.所以,你的决策范围涵盖了整个系统,你的目标是做出改进系统的决策.换句话说,就是你所做的决策是为了优化系统范围.如:一个中心化团队可能决定整个公司的开发方法.它还可以决定系统中哪些API应该停用.这两项决策的目的都是为系统做出最好的事情.
 
 Conversely, the primary characteristic of a decentralized decision is that it is optimized for a local scope. When you are optimizing for the local scope, you are making a decision that will improve your local context—the set of information that pertains only to your local situation. While your decision might have an impact on the wider system, your goal is to improve your local results. For example, an API team can make a local decision to use a waterfall development process because they’re sharing the work with an external company that insists on it.
 
