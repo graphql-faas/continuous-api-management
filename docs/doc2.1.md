@@ -155,11 +155,11 @@ title: 第二章 API治理
 
 中心化决策和去中心化决策最大的不同与它们的规模有关.当你做出中心化决策时,你是在为整个组织做决策.所以,你的决策范围涵盖了整个系统,你的目标是做出改进系统的决策.换句话说,就是你所做的决策是为了优化系统范围.如:一个中心化团队可能决定整个公司的开发方法.它还可以决定系统中哪些API应该停用.这两项决策的目的都是为系统做出最好的事情.
 
-Conversely, the primary characteristic of a decentralized decision is that it is optimized for a local scope. When you are optimizing for the local scope, you are making a decision that will improve your local context—the set of information that pertains only to your local situation. While your decision might have an impact on the wider system, your goal is to improve your local results. For example, an API team can make a local decision to use a waterfall development process because they’re sharing the work with an external company that insists on it.
+相反的,去中心化决策的主要特征是它针对局部范围进行优化.当你进行本地优化时,你将做出改善本地环境(一组只与本地情况相关的信息)的决策,虽然决策可能对更广泛的系统产生影响,但是你的目标只是改善本地成果.如:API团队可以做出使用瀑布流开发流程的决策,因为他们正在和其他已经使用它的公司共同工作.
 
-The great thing about decentralized decision making is that it can help you make big gains in efficiency, innovation, and agility for your business overall. That’s because decentralized decision makers are able to limit their scope of information to a local context that they understand. This means they can form a decision based on accurate information about their own problem space, which helps them produce better decisions. For any modern business that is trying to succeed with a strategy of agility and innovation, the decentralized decision pattern should be the default approach.
+分散决策的好处是它可以帮你从整体业务的效率,创新和敏捷性方面获得巨大收益.这是因为去中心化的决策者可以把信息范围限制在他们理解的本地环境中.这意味着他们可以根据问题范围内的准确信息做出决策,从而帮助他们做出更好的决策.对于任何想通过敏捷性和创新的方式获取成功的现代企业,去中心化决策方式应该是默认的选择.
 
-However, making decisions that focus only on optimizing the local scope can cause problems, particularly if those decisions have the potential to impact the system negatively and in irreversible ways. When Amazon CEO Jeff Bezos talks about the impact of decisions, he splits them into two types: “type 1” decisions that can be easily reversed if they are wrong and “type 2” decisions that are near impossible to recover from. For example, a lot of big companies choose to centralize decisions about API security configuration to prevent a local optimization from creating a system vulnerability.
+但是,只专注于优化局部范围做出的决策是有问题的,尤其是当这些决策对系统有潜在的不可逆转的负面影响时.亚马逊CEO杰夫·贝佐斯在谈到决策的影响时,将其分为两类:一类是错误的决策很容易被推翻,另一类是几乎是不可能恢复的决策.如:许多大公司在API安全配置上选择中心化决策,以防止本地优化造成的系统漏洞.
 
 Beyond dangers to the system, there are times when system-level consistency is more valuable than local optimization. For example, an individual API team might choose an API style that makes the most sense for their problem domain. But if every API team chooses a different API style, the job of learning to use each API becomes more difficult due to a lack of consistency, especially when many APIs need to be used to accomplish a single task. In this case, optimizing the API style decision for the system scope might be better.
 
