@@ -165,7 +165,8 @@ Beyond dangers to the system, there are times when system-level consistency is m
 
 You’ll need to think about the scope of optimization carefully when you plan where a decision should happen. If a decision has the potential to impact your system in an irreversible way, start by centralizing it so that it can be optimized for system scope. If decision quality could benefit from the local context of information, start by decentralizing it. If decentralizing a decision could result in unacceptable inconsistency at the system level, consider centralizing it.
 
-SCALE OF OPERATION
+- SCALE OF OPERATION
+
 If you had unlimited resources for making good decisions, you’d only need to think about scope for decision making. But you don’t. So, in addition to scope, you’ll need to think about the scale of decisions being made. That’s because if there is a bigger decision demand, there will be more pressure on your decision-making talent supply and an upward pressure on your coordination costs. If you want your API work to scale as your organization grows, you’ll need to plan your decision distribution pattern carefully.
 
 Decentralizing a decision creates a big talent demand when you are operating at scale. When you decentralize a decision you are distributing it to more than one team. If you want all of those decisions to be high quality, you’ll need to fill each of those teams with talented decision makers. If you can’t afford to do that, you’ll end up generating lots of bad decisions. So, it’s worthwhile to hire the best decision-makers you can for every decision making position in your company.

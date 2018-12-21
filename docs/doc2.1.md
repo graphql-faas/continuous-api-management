@@ -149,9 +149,9 @@ title: 第二章 API治理
 协调成本
 > 复杂决策无法及时做出,除非你分散决策.但是当你分散决策工作时,你将发生协调成本.如果协调成本太高,你就无法快速的做出决策.决策的集中和分散会对协调成本产生很大的影响.
 
-根据这些因素来考虑决策,有助于你判断决策应该集中还分散.为了帮你理解时如何做到这一点的,我们将从两个角度分析它:优化范围和操作规模(scope of optimization and scale of operation).让我先从规模和它与决策信息关系开始.
+根据这些因素来考虑决策,有助于你判断决策应该集中还分散.为了帮你理解时如何做到这一点的,我们将从两个角度分析它:优化范围和运营规模.让我先从规模和它与决策信息关系开始.
 
-- 优化范围 SCOPE OF OPTIMIZATION
+- 优化范围
 
 中心化决策和去中心化决策最大的不同与它们的规模有关.当你做出中心化决策时,你是在为整个组织做决策.所以,你的决策范围涵盖了整个系统,你的目标是做出改进系统的决策.换句话说,就是你所做的决策是为了优化系统范围.如:一个中心化团队可能决定整个公司的开发方法.它还可以决定系统中哪些API应该停用.这两项决策的目的都是为系统做出最好的事情.
 
@@ -161,12 +161,13 @@ title: 第二章 API治理
 
 但是,只专注于优化局部范围做出的决策是有问题的,尤其是当这些决策对系统有潜在的不可逆转的负面影响时.亚马逊CEO杰夫·贝佐斯在谈到决策的影响时,将其分为两类:一类是错误的决策很容易被推翻,另一类是几乎是不可能恢复的决策.如:许多大公司在API安全配置上选择中心化决策,以防止本地优化造成的系统漏洞.
 
-Beyond dangers to the system, there are times when system-level consistency is more valuable than local optimization. For example, an individual API team might choose an API style that makes the most sense for their problem domain. But if every API team chooses a different API style, the job of learning to use each API becomes more difficult due to a lack of consistency, especially when many APIs need to be used to accomplish a single task. In this case, optimizing the API style decision for the system scope might be better.
+除了对系统的危害之外,有时系统间的一致性比局部优化更有价值.如:单个团队可能会选择对问题领域内最有意义的API风格.但是如果每个API团队都有自己的API风格,由于缺少一致性,学习去使用每个API将变得更加困难,尤其是当多个API需要公共完成一件事时.在这种情况下,优化系统范围上的API风格决策可能更好.
 
-You’ll need to think about the scope of optimization carefully when you plan where a decision should happen. If a decision has the potential to impact your system in an irreversible way, start by centralizing it so that it can be optimized for system scope. If decision quality could benefit from the local context of information, start by decentralizing it. If decentralizing a decision could result in unacceptable inconsistency at the system level, consider centralizing it.
+当你规划应该在哪里进行决策时,你需要仔细考虑优化范围.如果决策对你的系统有潜在的不可逆转的影响,那么首先对它进行中心化决策,以便它在系统范围进行优化.如果局部环境信息有利于提高决策质量,那么应该先对它进行去中心化决策.如果去中心化决策在系统层面会造成不可接受的不一致性,那么考虑中心化决策.
 
-SCALE OF OPERATION
-If you had unlimited resources for making good decisions, you’d only need to think about scope for decision making. But you don’t. So, in addition to scope, you’ll need to think about the scale of decisions being made. That’s because if there is a bigger decision demand, there will be more pressure on your decision-making talent supply and an upward pressure on your coordination costs. If you want your API work to scale as your organization grows, you’ll need to plan your decision distribution pattern carefully.
+- 运营规模
+
+如果你有无限的资源支持做出好决策,那么你只需要考虑做出决策的范围.但是你没有.所以,除了范围之外,你还需要考虑做出决策的规模.这是因为如果这是更大的决策需求,你的决策人才供应将面临更大的压力,协调成本的压力也将会增大.如果你想API工作随着组织的发展而发展,则需要仔细的规划决策分配模型.
 
 Decentralizing a decision creates a big talent demand when you are operating at scale. When you decentralize a decision you are distributing it to more than one team. If you want all of those decisions to be high quality, you’ll need to fill each of those teams with talented decision makers. If you can’t afford to do that, you’ll end up generating lots of bad decisions. So, it’s worthwhile to hire the best decision-makers you can for every decision making position in your company.
 
