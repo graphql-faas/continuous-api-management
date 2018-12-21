@@ -179,7 +179,8 @@ All of this means that decision distribution will involve a lot of trade-offs. I
 
 That said, there is a way to manage this trade-off in a more nuanced and flexible way. It involves distributing the parts of the decision instead of the entre decision itself, and it’s what we are going to focus on in the next section.
 
-The Elements of a Decision
+- The Elements of a Decision
+
 It’s difficult to distribute a decision in the way we’ve described so far because it’s a bit of an all-or-nothing affair. Do you let your teams decide which development method they want to use, or do you choose one and make every team use it? Do you let the teams decide when their API should retire, or do you take the choice away from them completely? In reality, governance requires more nuance. In this section, we’ll explore a way of distributing decisions with more flexibility by breaking them up into pieces.
 
 Instead of distributing the entire decision, you can distribute parts of the decision. That way you can get the benefits of system-level optimization along with highly contextual local optimization at the same time. Some parts of a decision can be centralized while other parts are decentralized. To help you accomplish distribution with this kind of precision, we’ve broken down API decisions into the six decision elements you’ll need to distribute (see Figure 2-3):
