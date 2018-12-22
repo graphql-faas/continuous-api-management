@@ -187,6 +187,7 @@ Instead of distributing the entire decision, you can distribute parts of the dec
 
 ![](../img/2/capi_0203.png "Inception, Choice Generation, Selection, Authorization, Implementation and Challenge")
 <center>Figure 2-3. Decision elements</center>
+
 This isn’t meant to be an authoritative, universal model for decision making. Instead, it’s a model that we’ve developed to distinguish the parts of a decision that have the biggest impact on a system when they are either centralized or decentralized. These parts are based on the various five-, six-, and seven-step models of decision-making that abound in the business management domain. Although the steps we’ll describe could be applied to a decision made by a single person, they’re most useful when we are talking about decisions made in coordination between a group of people.
 
 Let’s start by taking a look at how distributing the inception of a decision impacts your system.
@@ -197,10 +198,10 @@ Every decision happens because someone thinks that decision needed to be made. I
 Kicking off decisions about API work happens naturally in the course of day-to-day problem solving. For example, choosing which database to use for storing persistent data would be a difficult decision for a typical implementer to ignore. The decision happens because the work can’t continue without it. But there will also be situations where you’ll need to force inception to happen. This is usually for one of two reasons:
 
 Habitualized decision making
-Over time, if a team makes the same decision over and over, the decision may disappear. That is, the possibilities are no longer considered and instead an assumption is made that work will continue in the same way it always has. For example, if every API implementation is written in the Java programming language, it may not occur to anyone to consider a different choice of language.
+> Over time, if a team makes the same decision over and over, the decision may disappear. That is, the possibilities are no longer considered and instead an assumption is made that work will continue in the same way it always has. For example, if every API implementation is written in the Java programming language, it may not occur to anyone to consider a different choice of language.
 
 Decision blindness
-Sometimes, teams will miss opportunities to make impactful decisions. This can happen because of habit, but also because of limited information, experience, or talent. For example, a team may focus on the choice of which database to use for storage, but fail to identify that the API could be designed in a way that doesn’t require persistent storage.
+> Sometimes, teams will miss opportunities to make impactful decisions. This can happen because of habit, but also because of limited information, experience, or talent. For example, a team may focus on the choice of which database to use for storage, but fail to identify that the API could be designed in a way that doesn’t require persistent storage.
 
 Not every decision needs to happen, and it’s perfectly fine for decisions to be missed or for a cultural habit to make them implicit. It’s only a problem if not making a decision negatively impacts the results you are getting from your APIs. Arbitrarily demanding that more decisions happen could have a nightmarish impact on productivity. Instead, the role of API governance is to generate more of the decisions that will lead to optimal results and less of the decisions that will provide little value.
 

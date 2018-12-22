@@ -181,26 +181,28 @@ title: 第二章 API治理
 
 - 决策元素
 
-It’s difficult to distribute a decision in the way we’ve described so far because it’s a bit of an all-or-nothing affair. Do you let your teams decide which development method they want to use, or do you choose one and make every team use it? Do you let the teams decide when their API should retire, or do you take the choice away from them completely? In reality, governance requires more nuance. In this section, we’ll explore a way of distributing decisions with more flexibility by breaking them up into pieces.
+目前用上面我们描述的方式很难去分配决策,因为它们都是一些极端的处理方式.开发方法的选择是团队自己决定还是你来决定?你是让团队决定他们的API什么时候停用还是你来决定?实际上,治理要求的更精细.这本节中,我们将探索一种通过决策分解来更灵活的分配他们的方法.
 
-Instead of distributing the entire decision, you can distribute parts of the decision. That way you can get the benefits of system-level optimization along with highly contextual local optimization at the same time. Some parts of a decision can be centralized while other parts are decentralized. To help you accomplish distribution with this kind of precision, we’ve broken down API decisions into the six decision elements you’ll need to distribute (see Figure 2-3):
+你可以分配部分决策,而不是整个分配.这种方式可以让你同时从系统级优化和其关联的局部优化中获得好处.决策的一部分可以集中,其他部分可以分散.为了帮你完成这种类型的决策分配,我们将API决策分解为6种你需要分配的决策元素(见图2-3).
 
-![](../img/2/capi_0203.png "Inception, Choice Generation, Selection, Authorization, Implementation and Challenge")
-<center>Figure 2-3. Decision elements</center>
-This isn’t meant to be an authoritative, universal model for decision making. Instead, it’s a model that we’ve developed to distinguish the parts of a decision that have the biggest impact on a system when they are either centralized or decentralized. These parts are based on the various five-, six-, and seven-step models of decision-making that abound in the business management domain. Although the steps we’ll describe could be applied to a decision made by a single person, they’re most useful when we are talking about decisions made in coordination between a group of people.
+![](../img/2/capi_0203.png "开始,生成选择,选择,授权,实现和挑战")
+<center>图 2-3. 决策元素</center>
 
-Let’s start by taking a look at how distributing the inception of a decision impacts your system.
+这并不是权威的,通用决策模型.相反,它是我们开发的一个模型,用来区分对系统影响最大的中心化或去中心化的决策部分.这些部分是基于业务管理领域中大量存在的五步,六步和七步决策模型.虽然我们描述的步骤可以应用于个人做出的决策,但是它应用于一群人协商做出的决策时是最有效的.
 
-INCEPTION
-Every decision happens because someone thinks that decision needed to be made. It means that someone has identified that a problem or opportunity exists with more than one possible solution. Sometimes this is obvious, but in many cases spotting a decision-making opportunity requires talent and expertise. You’ll need to think about which decisions will naturally ignite on their own and which ones will need special handling to make sure that they happen.
+首先,让我们看一下决策的初始分配是如何影响你的系统的.
 
-Kicking off decisions about API work happens naturally in the course of day-to-day problem solving. For example, choosing which database to use for storing persistent data would be a difficult decision for a typical implementer to ignore. The decision happens because the work can’t continue without it. But there will also be situations where you’ll need to force inception to happen. This is usually for one of two reasons:
+- 开始
+
+决策的出现是因为有人认为需要做出决策.它意味着有人已经从多个可能的解决方案发现了存在的问题或机会.有时候这是显而易见的,但是大多数时,发现决策机会需要人才和专业知识.你需要考虑哪些决策可以自然出现,哪些需要特殊处理才能确保它发生.
+
+在日常解决问题的过程中,API工作的启动决策很常见.如:对于一个典型的实现人员来说,选择用于存储持久化数据的数据库将是一个难以忽视的决策.这个决策的出现是因为没有它就无法工作.但是也会有需要强制启动的情形,这通常有两个原因:
 
 Habitualized decision making
-Over time, if a team makes the same decision over and over, the decision may disappear. That is, the possibilities are no longer considered and instead an assumption is made that work will continue in the same way it always has. For example, if every API implementation is written in the Java programming language, it may not occur to anyone to consider a different choice of language.
+> Over time, if a team makes the same decision over and over, the decision may disappear. That is, the possibilities are no longer considered and instead an assumption is made that work will continue in the same way it always has. For example, if every API implementation is written in the Java programming language, it may not occur to anyone to consider a different choice of language.
 
 Decision blindness
-Sometimes, teams will miss opportunities to make impactful decisions. This can happen because of habit, but also because of limited information, experience, or talent. For example, a team may focus on the choice of which database to use for storage, but fail to identify that the API could be designed in a way that doesn’t require persistent storage.
+> Sometimes, teams will miss opportunities to make impactful decisions. This can happen because of habit, but also because of limited information, experience, or talent. For example, a team may focus on the choice of which database to use for storage, but fail to identify that the API could be designed in a way that doesn’t require persistent storage.
 
 Not every decision needs to happen, and it’s perfectly fine for decisions to be missed or for a cultural habit to make them implicit. It’s only a problem if not making a decision negatively impacts the results you are getting from your APIs. Arbitrarily demanding that more decisions happen could have a nightmarish impact on productivity. Instead, the role of API governance is to generate more of the decisions that will lead to optimal results and less of the decisions that will provide little value.
 
