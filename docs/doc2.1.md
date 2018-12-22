@@ -198,15 +198,16 @@ title: 第二章 API治理
 
 在日常解决问题的过程中,API工作的启动决策很常见.如:对于一个典型的实现人员来说,选择用于存储持久化数据的数据库将是一个难以忽视的决策.这个决策的出现是因为没有它就无法工作.但是也会有需要强制启动的情形,这通常有两个原因:
 
-Habitualized decision making
-> Over time, if a team makes the same decision over and over, the decision may disappear. That is, the possibilities are no longer considered and instead an assumption is made that work will continue in the same way it always has. For example, if every API implementation is written in the Java programming language, it may not occur to anyone to consider a different choice of language.
+决策惯性
+> 随着时间的推移,如果团队总是做出相同的决策,那么这个决策可能会消失.也就是说,不再考虑各种可能性,而是假设工作将以它一贯的方式进行.如:如果每个API的实现都使用Java语言,其他人可能就不再考虑选择不同的语言.
 
-Decision blindness
-> Sometimes, teams will miss opportunities to make impactful decisions. This can happen because of habit, but also because of limited information, experience, or talent. For example, a team may focus on the choice of which database to use for storage, but fail to identify that the API could be designed in a way that doesn’t require persistent storage.
+决策盲区
+> 有时候,团队可能错失做出有力决策的机会.这可能由于习惯,也有可能是由于信息,经验和能力的限制.如:团队可能关注选择哪一种存储数据库,但是他们并没有看出,API可以设计成不需要持久化存储的方式.
 
-Not every decision needs to happen, and it’s perfectly fine for decisions to be missed or for a cultural habit to make them implicit. It’s only a problem if not making a decision negatively impacts the results you are getting from your APIs. Arbitrarily demanding that more decisions happen could have a nightmarish impact on productivity. Instead, the role of API governance is to generate more of the decisions that will lead to optimal results and less of the decisions that will provide little value.
+并不是每个决策都需要实施,并且当决策被错失或者文化习惯让做出的决策更含蓄时,那就再好不过了.如果错失决策会对你从API获取的结果产生负面影响,这是一个问题.但是片面的要求做出更多决策,可能对生存率产生毁灭性的影响.相反,API治理的作用是产生更多的有益决策,较少的低价值的决策.
 
-CHOICE GENERATION
+- 生成选择
+
 It’s hard to choose if you don’t know your options, and that’s what this element is all about. Choice generation is the work of identifying the choices to choose from.
 
 If you’re making a decision in a domain you have a lot of experience in, generating choices can be pretty easy. But if there are lots of unknowns, you’ll need to spend more time identifying the possibilities. For example, an experienced C programmer already has a good idea of their options when they are deciding on a loop structure, but a beginner will probably need to do some investigation to learn that they can use a for loop or a while loop and the differences between the two.
