@@ -185,7 +185,7 @@ title: 第二章 API治理
 
 你可以分配部分决策,而不是整个分配.这种方式可以让你同时从系统级优化和其关联的局部优化中获得好处.决策的一部分可以集中,其他部分可以分散.为了帮你完成这种类型的决策分配,我们将API决策分解为6种你需要分配的决策元素(见图2-3).
 
-![](../img/2/capi_0203.png "开始,生成选择,选择,授权,实现和挑战")
+![](../img/2/capi_0203.png "开始,生成选项,选择,授权,实现和挑战")
 <center>图 2-3. 决策元素</center>
 
 这并不是权威的,通用决策模型.相反,它是我们开发的一个模型,用来区分对系统影响最大的中心化或去中心化的决策部分.这些部分是基于业务管理领域中大量存在的五步,六步和七步决策模型.虽然我们描述的步骤可以应用于个人做出的决策,但是它应用于一群人协商做出的决策时是最有效的.
@@ -206,17 +206,18 @@ title: 第二章 API治理
 
 并不是每个决策都需要实施,并且当决策被错失或者文化习惯让做出的决策更含蓄时,那就再好不过了.如果错失决策会对你从API获取的结果产生负面影响,这是一个问题.但是片面的要求做出更多决策,可能对生存率产生毁灭性的影响.相反,API治理的作用是产生更多的有益决策,较少的低价值的决策.
 
-- 生成选择
+- 生成选项
 
-It’s hard to choose if you don’t know your options, and that’s what this element is all about. Choice generation is the work of identifying the choices to choose from.
+如果没有选项,你很难有选择.这就是"生成选项"元素的意义所在."生成选项"的工作是识别各供选择的选项.
 
-If you’re making a decision in a domain you have a lot of experience in, generating choices can be pretty easy. But if there are lots of unknowns, you’ll need to spend more time identifying the possibilities. For example, an experienced C programmer already has a good idea of their options when they are deciding on a loop structure, but a beginner will probably need to do some investigation to learn that they can use a for loop or a while loop and the differences between the two.
+如果你在做出决策的领域拥有丰富的经验,那么生成选项会很容易.但是如果了解很少,你将需要花费更多的时间去确定选项.如:一个有经验的C语言程序员当他决定选择一个循环结构时,他已经有了好的选项.但是一个新手可能需要一些研究,去学习for循环和while循环,以及他们的不同.
 
-Even if you know a domain fairly well, you’ll probably spend more time on choice generation if the cost and impact of the decision are very high. For example, you may have intimate knowledge of the different cloud hosting environments, but will still perform your due diligence of research when it comes time to sign a contract with one of them. Are there new vendors available that you didn’t know about? Are the prices and terms still the same as you remember?
+即使你很了解的领域,如果决策的成本和影响很高,你也可能在生成选项上花费更多的时间.如:你可能对不同的云主机环境非常熟悉,但是在与其中一个云服务商签合同时,你依旧会尽职调查.是否你不知道的新的供应商可选?价格和条款是否和你记忆中的一样?
 
-From a governance perspective, choice generation is important because it’s where the boundaries of decision making are set. This is especially useful when the people coming up with the list of choices are not the same as the people making the selection. For example, you could standardize a list of possible API description formats, but let individual teams decide which format they like best. If you take this approach you’ll need to be careful about the quality of the “menu” you are providing. If the choices are overly restrictive or of poor quality, you’ll run into problems.
+从治理的角度来看,生成选项很重要,因为它是决策制定的边界所在.当提出选项的人和做出选择的人不同时,这一点尤其有用.如:你可以对一组可能的API描述格式进行标准化,但是让团队从中选择他们最喜欢的格式.如果采用这种方式,你则需要注意提供"菜单"的质量.如果选项过于严格或质量不佳,你就会遇到问题.
 
-SELECTION
+- 选择
+
 Selection is the act of choosing from the list of possible options. Selection is the heart of decision making and it’s the step most people focus on, but the importance of the selection element depends a lot on the scope of choices that have been made available. If that scope is very wide, then the selection process is integral to the quality of the decision. But if that scope has been constrained to safe choices with little differentiating them, the selection step can be quick and less impactful.
 
 Let’s walk through an example of this in action. Suppose you’re responsible for configuring Transport Layer Security (TLS) for your HTTP API. Part of that work includes a decision on which cipher suites (sets of cryptography algorithms) the server should support. It’s an important decision because some cipher suites have become vulnerable with age, so picking the wrong ones can make your API less secure. Also, if you choose cipher suites that your users’ client software doesn’t understand, nobody will be able to use your API.
