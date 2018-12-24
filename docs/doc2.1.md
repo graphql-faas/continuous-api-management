@@ -218,7 +218,7 @@ title: 第二章 API治理
 
 - 选择
 
-Selection is the act of choosing from the list of possible options. Selection is the heart of decision making and it’s the step most people focus on, but the importance of the selection element depends a lot on the scope of choices that have been made available. If that scope is very wide, then the selection process is integral to the quality of the decision. But if that scope has been constrained to safe choices with little differentiating them, the selection step can be quick and less impactful.
+选择是从可能的列表中进行选择的行为.选择是决策的核心,同时他也是大多数人关注的步骤,但是选择元素的重要性很大程度上取决于可用的选择范围.如果这个范围很广,那么选择过程是保障决策质量的必要的步骤.但是如果这个范围被限制在安全且差异很小的选项上,那么选择步骤会很快,影响也会很小.
 
 Let’s walk through an example of this in action. Suppose you’re responsible for configuring Transport Layer Security (TLS) for your HTTP API. Part of that work includes a decision on which cipher suites (sets of cryptography algorithms) the server should support. It’s an important decision because some cipher suites have become vulnerable with age, so picking the wrong ones can make your API less secure. Also, if you choose cipher suites that your users’ client software doesn’t understand, nobody will be able to use your API.
 
