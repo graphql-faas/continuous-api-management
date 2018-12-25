@@ -232,7 +232,8 @@ So, the importance of selection depends a lot on the scope of the choices offere
 
 It also means you can combine system scope and local scope by distributing choice generation and choice selection. For example, you can centralize the generation of development method choices based on the system context while still allowing individual teams to choose their preferred method using their local context. This happens to be a particularly useful pattern for governing large API landscapes at scale and preserving both safety and speed of change.
 
-AUTHORIZATION
+- AUTHORIZATION
+
 Just because a choice has been selected doesn’t mean the decision is done. The selection needs to be authorized before it can be realized. Authorization is the work of deciding on the validity of the selected choice. Was the right selection made? Is it implementable? Is it safe? Does it make sense in the context of other decisions that have been made?
 
 Authorization can be implicit or explicit. When authorization is explicit it means that someone or some team must expressly authorize the decision before it can go forward. It becomes an approval step in the decision-making process. We’re sure you’ve been involved in many decisions that required some kind of approval. For example, in many companies, workers can select their holiday time from a list of work dates, but it’s up to their manager to make the final approval decision on the schedule.

@@ -224,16 +224,17 @@ title: 第二章 API治理
 
 在一种场景中,可能会给你一个公认的密码集清单,让你从中选择服务器应该支持的密码集.在这种情况下,选择应该特别小心.你可能做大量的调查,并收集尽可能多的资料后,你才会对决策感到舒服.事实上,如果你没有丰富的服务安全经验,你可能会找有经验的人帮你做出决策.
 
-But what if instead of being given the set of all possible cipher suites, you were given a curated list of them? The list of options might also include relevant information about how well supported each cipher suite is and what the known vulnerabilities are. Armed with this information you could probably make a faster choice. Equally, you’re choice is likely to be safer because your decision scope is limited to choices that have been deemed safe enough to use. In this case, you’d make a decision based on what you know about the clients using the API and the sensitivity and business importance of the API.
+但如果给你的密码集不是所有的可能集,而是关于它们的策划列表那?这个选择列表可能包含每个密码集的支持程度和已知的漏洞等相关信息.拥有了这些信息你可以尽快做出决策.同样,你的选择可能更安全,因为你的选择范围仅限于被认为足够安全的选择.在这种情况下,你将根据客户端使用API情况,API的灵活度和业务重要性做出决策.
 
-Finally, you might be given only one choice: a single cipher suite that you must use. A single-choice decision makes selection a trivial affair—the decision has been made for you. In this case, the quality of the decision is entirely dependent on the people who generated that choice. Hopefully it’s a good fit for the specific requirements you have.
+最后,你可能只有一个选择:只支持一个密码集.单选项决策使得选择无足轻重,因为决策已经做出来了.在这种情况下,决策的质量完全依赖于生成选项的人.希望它能很好地满足你的特殊需求.
 
-So, the importance of selection depends a lot on the scope of the choices offered. There’s a bit of a trade-off at work here. If you push more of the decision-making investment into choice generation you’ll spend less time on selection, and vice-versa. That has implications for how you distribute decision elements and who should be responsible for them. Whichever decision element becomes more important will require a suitably talented decision maker to make it.
+因此,选择的重要性很大程度上取决于所提供的选择范围.在这里可以根据工作情形进行取舍.决策投入越多,生成选项的时间就会越短,反之亦然.这暗示着你如何分配决策元素,以及谁应该对它们负责.无论哪个决策要素变得更重要,都需要一个适当的有能力的决策者进行决策.
 
-It also means you can combine system scope and local scope by distributing choice generation and choice selection. For example, you can centralize the generation of development method choices based on the system context while still allowing individual teams to choose their preferred method using their local context. This happens to be a particularly useful pattern for governing large API landscapes at scale and preserving both safety and speed of change.
+这也意味着你可以通过分配生成选项和选择来整合系统范围和本地范围.如:你可以基于系统环境集中化生成开发方法选项,同时依旧允许每个团队根据本地环境选择自己的实现方式.这对于大规模地治理大型API景观,并保持安全性和迭代速度是一个特别有用的模式.
 
-AUTHORIZATION
-Just because a choice has been selected doesn’t mean the decision is done. The selection needs to be authorized before it can be realized. Authorization is the work of deciding on the validity of the selected choice. Was the right selection made? Is it implementable? Is it safe? Does it make sense in the context of other decisions that have been made?
+- 授权
+
+仅仅做出选择并不意味这完成了决策.在选择实现之前,还需要被授权.授权是确认选择有效性的工作.做出的选择是否正确?是否可实现?是否安全?在已经做出的决策中,它是否有意义?
 
 Authorization can be implicit or explicit. When authorization is explicit it means that someone or some team must expressly authorize the decision before it can go forward. It becomes an approval step in the decision-making process. We’re sure you’ve been involved in many decisions that required some kind of approval. For example, in many companies, workers can select their holiday time from a list of work dates, but it’s up to their manager to make the final approval decision on the schedule.
 
