@@ -220,9 +220,9 @@ title: 第二章 API治理
 
 选择是从可能的列表中进行选择的行为.选择是决策的核心,同时他也是大多数人关注的步骤,但是选择元素的重要性很大程度上取决于可用的选择范围.如果这个范围很广,那么选择过程是保障决策质量的必要的步骤.但是如果这个范围被限制在安全且差异很小的选项上,那么选择步骤会很快,影响也会很小.
 
-Let’s walk through an example of this in action. Suppose you’re responsible for configuring Transport Layer Security (TLS) for your HTTP API. Part of that work includes a decision on which cipher suites (sets of cryptography algorithms) the server should support. It’s an important decision because some cipher suites have become vulnerable with age, so picking the wrong ones can make your API less secure. Also, if you choose cipher suites that your users’ client software doesn’t understand, nobody will be able to use your API.
+让我们看一个实际的例子.假设你负责为HTTP API配置安全传输层协议(TLS).这就需要决策服务器应该支持哪些密码集(加密算法集).这个决策很重要,因为如果你选了安全性低的密码集,随着时间的推移它会变得很脆弱.同样,如果你选的密码集,用户的客户端不支持的话,那么你的API就无法使用.
 
-In one scenario, you might be given a list of all the known cipher suites and asked to select the ones that the server should support. In this case, selection would need special care. You’d probably do a lot of research and only feel comfortable making a selection once you’d gathered as much information as possible. In fact, if you didn’t have a good amount of experience securing servers, you’d probably look for someone who did and ask them to make a selection for you.
+在一种场景中,可能会给你一个公认的密码集清单,让你从中选择服务器应该支持的密码集.在这种情况下,选择应该特别小心.你可能做大量的调查,并收集尽可能多的资料后,你才会对决策感到舒服.事实上,如果你没有丰富的服务安全经验,你可能会找有经验的人帮你做出决策.
 
 But what if instead of being given the set of all possible cipher suites, you were given a curated list of them? The list of options might also include relevant information about how well supported each cipher suite is and what the known vulnerabilities are. Armed with this information you could probably make a faster choice. Equally, you’re choice is likely to be safer because your decision scope is limited to choices that have been deemed safe enough to use. In this case, you’d make a decision based on what you know about the clients using the API and the sensitivity and business importance of the API.
 
