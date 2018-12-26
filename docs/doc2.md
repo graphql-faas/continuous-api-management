@@ -244,12 +244,14 @@ Explicit authorization is useful because it can further improve the safety of th
 
 How authorization should be distributed will be an important decision for you to make in your governance design. You’ll need to consider the quality of decision makers, the business impact of bad decisions, and the amount of risk built into the choices offered. For highly sensitive decisions, you’ll probably want more explicit authorization. For time-sensitive, large-scale decisions you’ll need to figure out how to introduce an implicit authorization system.
 
-IMPLEMENTATION
+- IMPLEMENTATION
+
 The decision process doesn’t end when the choice is authorized. A decision isn’t realized until someone does the work of executing or implementing the choice that has been made. Implementation is an important part of API management work. If the implementation of decisions is too slow or of poor quality, then all of your decision making is for naught.
 
 Oftentimes a decision isn’t implemented by the people who made the selection. In these cases it’s important to understand what that means for the availability of accurate information gathering. For example, you might choose to introduce the hypermedia style of APIs into your landscape, but if the implementation of hypermedia APIs turns out to be too difficult for the designers and developers you’ll need to re-evaluate your decision. A good governance design will have to take these practicalities into account. It’s no good managing decisions in a way that makes them only theoretically better. When you are determining the quality of decision making you’ll need to include the implementability of the decision you are managing.
 
-CHALLENGE
+- CHALLENGE
+
 Decisions aren’t immutable, and each decision you make for your API management system should be open to being challenged. Oftentimes we don’t consider how the decisions we make may need to be revisited, altered, even reversed in the future. Defining a challenge element allows us to plan for continuous change at the decision-making level.
 
 For example, if you’ve defined a “menu” of choices for API teams to choose from, it’s wise to also define a process to go “off-menu.” That way you can sustain a decent level of innovation and prevent bad decisions from being made. But if everyone can challenge the decision to constrain these choices, then there aren’t really any constraints. So, you’ll need to identify who can challenge the decision and in what circumstances.

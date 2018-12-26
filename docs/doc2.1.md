@@ -185,7 +185,7 @@ title: 第二章 API治理
 
 你可以分配部分决策,而不是整个分配.这种方式可以让你同时从系统级优化和其关联的局部优化中获得好处.决策的一部分可以集中,其他部分可以分散.为了帮你完成这种类型的决策分配,我们将API决策分解为6种你需要分配的决策元素(见图2-3).
 
-![](../img/2/capi_0203.png "开始,生成选项,选择,授权,实现和挑战")
+![](../img/2/capi_0203.png "开始,生成选项,选择,授权,执行和挑战")
 <center>图 2-3. 决策元素</center>
 
 这并不是权威的,通用决策模型.相反,它是我们开发的一个模型,用来区分对系统影响最大的中心化或去中心化的决策部分.这些部分是基于业务管理领域中大量存在的五步,六步和七步决策模型.虽然我们描述的步骤可以应用于个人做出的决策,但是它应用于一群人协商做出的决策时是最有效的.
@@ -240,17 +240,19 @@ title: 第二章 API治理
 
 隐式授权意味着当条件满足时,授权自动发生.这方面的例子包括:决策人的角色,决策成本,坚持特定政策.特别是,当做出决策的人也是授权选择的人时,授权可变的隐式.实际上,他们成为自己的认证者.
 
-Explicit authorization is useful because it can further improve the safety of the decision. But if there are lots of decisions being made and all of them are being centrally authorized, then there is likely to be a reduction in decision speed. Lots of people will end up waiting for their approvals. Implicit authorization greatly increases the speed of decision making by empowering selection, but comes with greater risk.
+显示授权非常有用,因为它可以进一步提高决策的安全性.但是如果需要做出大量的且需要集中授权的决策,那么决策速度可能会降低.许多人会处于等待决策的批准状态.隐式授权通过授权选择可以极大的提供决策速度,但是会伴有更大的风险.
 
-How authorization should be distributed will be an important decision for you to make in your governance design. You’ll need to consider the quality of decision makers, the business impact of bad decisions, and the amount of risk built into the choices offered. For highly sensitive decisions, you’ll probably want more explicit authorization. For time-sensitive, large-scale decisions you’ll need to figure out how to introduce an implicit authorization system.
+在治理设计中,如何进行授权分配将是一个重要的决策.你需要考虑决策者的品质,错误决策的业务影响,以及提供选项中包含的风险.对于高度敏感的决策,你可能需要更明确的授权.对于时间敏感的大规模决策,你需要了解如何引入隐式授权系统.
 
-IMPLEMENTATION
-The decision process doesn’t end when the choice is authorized. A decision isn’t realized until someone does the work of executing or implementing the choice that has been made. Implementation is an important part of API management work. If the implementation of decisions is too slow or of poor quality, then all of your decision making is for naught.
+- 执行
 
-Oftentimes a decision isn’t implemented by the people who made the selection. In these cases it’s important to understand what that means for the availability of accurate information gathering. For example, you might choose to introduce the hypermedia style of APIs into your landscape, but if the implementation of hypermedia APIs turns out to be too difficult for the designers and developers you’ll need to re-evaluate your decision. A good governance design will have to take these practicalities into account. It’s no good managing decisions in a way that makes them only theoretically better. When you are determining the quality of decision making you’ll need to include the implementability of the decision you are managing.
+当选择被授权后,决策流程并没有结束.直到有人执行或实现做出的选择,决策才会实现.实现是API管理工作重要的组成部分.如果决策实现太慢或者质量太差,那么所有的决策都将是徒劳.
 
-CHALLENGE
-Decisions aren’t immutable, and each decision you make for your API management system should be open to being challenged. Oftentimes we don’t consider how the decisions we make may need to be revisited, altered, even reversed in the future. Defining a challenge element allows us to plan for continuous change at the decision-making level.
+通常,决策并不是由做出选择的人去执行.在这种情况下,重要的是认识到收集可用的精确信息的含义.如:你可能选择将API的超媒体类型引入你的景观中,但是如果超媒体API的实现对于设计师和开发来说太困难,你将需要重新评估你的决策.好的治理设计必须考虑到实际情况.决策管理只在理论上优化,并不是一个好现象.当你判断决策质量时,还应该包括决策的可实现性.
+
+- 挑战
+
+决策并不是一成不变的,并且你为API管理系统所做的每一个决策都应该面向挑战.通常,我们并没有考虑我们做出的决策会将来被重顾,改变,甚至重构.定义挑战元素可以让我们为决策级别的持续变化指定计划.
 
 For example, if you’ve defined a “menu” of choices for API teams to choose from, it’s wise to also define a process to go “off-menu.” That way you can sustain a decent level of innovation and prevent bad decisions from being made. But if everyone can challenge the decision to constrain these choices, then there aren’t really any constraints. So, you’ll need to identify who can challenge the decision and in what circumstances.
 
