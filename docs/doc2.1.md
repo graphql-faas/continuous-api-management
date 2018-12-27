@@ -254,14 +254,15 @@ title: 第二章 API治理
 
 决策并不是一成不变的,并且你为API管理系统所做的每一个决策都应该面向挑战.通常,我们并没有考虑我们做出的决策会将来被重顾,改变,甚至重构.定义挑战元素可以让我们为决策级别的持续变化指定计划.
 
-For example, if you’ve defined a “menu” of choices for API teams to choose from, it’s wise to also define a process to go “off-menu.” That way you can sustain a decent level of innovation and prevent bad decisions from being made. But if everyone can challenge the decision to constrain these choices, then there aren’t really any constraints. So, you’ll need to identify who can challenge the decision and in what circumstances.
+如:如果你为API团队定义了可供选择的"菜单",那么明智的做法是再定义一个"退出菜单"的流程.这种方式让你可以维持良好的创新水平,且可以阻止做出错误决策.但是如果每个人都可以挑战约束这些选择的决策,那么就没有任何限制了.所以,你需要确认谁可以挑战决策,并且说明在什么情况下.
 
-It’s also important to allow decisions to be challenged over time. As business strategies and context change, so too should the decisions of your system. To plan for that kind of adaptability you’ll need to build the challenge function into your system. That means you’ll need to think about whom in your organization will have the ability to “pull the cord” and challenge an existing decision.
+随着时间推移,允许决策被挑战也非常重要.随着业务策略和背景变化,决策系统也需要变化.为了规划这种适应性,你需要在系统中构建挑战功能.这意味着你需要思考你的组织中谁将拥有"拉响警报"并挑战已存在的决策的权力,
 
-Decision Mapping
-We now know that decisions are composed of a number of elements. Understanding that decisions have atomic elements allow us to distribute the pieces of a decision rather than the entire decision process. This turns out to be a powerful feature of organizational design and will allow you to exert greater influence over the balance of efficiency and thoroughness.
+#### Decision Mapping
 
-For example, a decision about the style a new API should have is an important one. In the clumsy, binary centralization versus decentralization discussion, the API management designer might consider whether the members of the API team should own the API style decision (decentralized) or a central body should maintain control of it (centralized). The advantage of distributing the decision-making power to the API teams is that each team can make the decision within a local context. The advantage of centralizing the decision within a single strategic team is that the variation in API styles is reduced and control over the quality of the style choice is maintained and controlled.
+我们现在知道决策由许多元素组成.明白了决策具有原子元素,它允许我们分配决策的各个部分,而不是整个决策流程.这在组织设计上被证明是一个强大特征,并将在效率和完整性的平衡上发挥更大的影响.
+
+如:对于API样式的决策是一个非常重要的.在粗略的二元化(中心化vs去中心化)讨论中,API管理设计师可能会考虑API团队是应该拥有API风格决策(去中心化),还是中心机构应该保持对它的控制(中心化).将决策权分配给API团队的优点是每个团队可以在局部环境做出决策.由单独的战略团队集中决策的优点是减少API风格变化,并维持和控制API风格选择的质量.
 
 This is a difficult trade-off to make. But, if instead you distribute the elements of the decision, it’s possible to design an API management system that lives somewhere in between these two binary options. For example, you might decide that for an API style decision, the elements of research and choice generation should be owned by a centralized, strategic API management team, while the elements of choice selection, authorization, and implementation are owned by the API teams themselves. In this way, you choose to sacrifice some of the innovation that comes from distributing choice generation in order to gain the benefits of a known set of API styles within the company. At the same time, distribution of the API style selection and authorization elements allows the API teams to continue to operate at speed (i.e., they do not need to ask permission in order to choose a suitable style).
 
