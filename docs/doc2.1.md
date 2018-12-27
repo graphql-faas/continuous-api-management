@@ -19,7 +19,7 @@ title: 第二章 API治理
 
 治理是API管理的核心部分,它将贯穿本书的其他部分.所以,API治理的实际含义和它如何帮助你构建更好的API管理系统值得你去花时间理解.
 
-- 理解API治理
+## 理解API治理
 
 事实上,大部分需要做出的决策都是技术活.一些决策是及其重要的,但是其他则是微不足道的.所有这些决策使得技术团队的工作是有技术含量的.一个好开发的核心技能是一遍又一遍的做出许多高质量的决策.这个相当明显的观点,但在管理API时总是很容易被人遗忘.
 
@@ -91,7 +91,7 @@ title: 第二章 API治理
 
 所有这些都说明:你无法通过实现大的更改,以及等待结果的方式从系统中获取所需的输出.相反,你需要通过小的修改和评估它们的影响来慢慢"推动"系统的发展.它需要一种不断跳转和改进的方法,就像照料花园一样,修建枝条,播种,浇水,同时不断观察和调整你的方法.在第5章,我们将更详细地探讨持续改进的概念.
 
-- 决策治理
+## 决策治理
 
 在最后一节,我们介绍了复杂系统内决策治理的概念.希望它有助于你理解API治理的基本规则:如果你想有效的治理系统,你需要更好的管理决策.我们它最好的实现方式是关注决策在哪发生以及由谁来做决定.事实证明,没有一种最好的方法能够将这些决策制定出来.如:思考如何在以下两个虚构的公司中进行API设计治理:
 
@@ -161,7 +161,7 @@ title: 第二章 API治理
 
 但是,只专注于优化局部范围做出的决策是有问题的,尤其是当这些决策对系统有潜在的不可逆转的负面影响时.亚马逊CEO杰夫·贝佐斯在谈到决策的影响时,将其分为两类:一类是错误的决策很容易被推翻,另一类是几乎是不可能恢复的决策.如:许多大公司在API安全配置上选择中心化决策,以防止本地优化造成的系统漏洞.
 
-除了对系统的危害之外,有时系统间的一致性比局部优化更有价值.如:单个团队可能会选择对问题领域内最有意义的API风格.但是如果每个API团队都有自己的API风格,由于缺少一致性,学习去使用每个API将变得更加困难,尤其是当多个API需要公共完成一件事时.在这种情况下,优化系统范围上的API风格决策可能更好.
+除了对系统的危害之外,有时系统间的一致性比局部优化更有价值.如:单个团队可能会选择对问题领域内最有意义的API样式.但是如果每个API团队都有自己的API样式,由于缺少一致性,学习去使用每个API将变得更加困难,尤其是当多个API需要公共完成一件事时.在这种情况下,优化系统范围上的API样式决策可能更好.
 
 当你规划应该在哪里进行决策时,你需要仔细考虑优化范围.如果决策对你的系统有潜在的不可逆转的影响,那么首先对它进行中心化决策,以便它在系统范围进行优化.如果局部环境信息有利于提高决策质量,那么应该先对它进行去中心化决策.如果去中心化决策在系统层面会造成不可接受的不一致性,那么考虑中心化决策.
 
@@ -258,57 +258,72 @@ title: 第二章 API治理
 
 随着时间推移,允许决策被挑战也非常重要.随着业务策略和背景变化,决策系统也需要变化.为了规划这种适应性,你需要在系统中构建挑战功能.这意味着你需要思考你的组织中谁将拥有"拉响警报"并挑战已存在的决策的权力,
 
-#### Decision Mapping
+### 决策映射(决策与二元化对应关系)
 
 我们现在知道决策由许多元素组成.明白了决策具有原子元素,它允许我们分配决策的各个部分,而不是整个决策流程.这在组织设计上被证明是一个强大特征,并将在效率和完整性的平衡上发挥更大的影响.
 
-如:对于API样式的决策是一个非常重要的.在粗略的二元化(中心化vs去中心化)讨论中,API管理设计师可能会考虑API团队是应该拥有API风格决策(去中心化),还是中心机构应该保持对它的控制(中心化).将决策权分配给API团队的优点是每个团队可以在局部环境做出决策.由单独的战略团队集中决策的优点是减少API风格变化,并维持和控制API风格选择的质量.
+如:对于API样式的决策是一个非常重要的.在粗略的二元化(中心化vs去中心化)讨论中,API管理设计师可能会考虑API团队是应该拥有API样式决策(去中心化),还是中心机构应该保持对它的控制(中心化).将决策权分配给API团队的优点是每个团队可以在局部环境做出决策.由单独的战略团队集中决策的优点是减少API样式变化,并维持和控制API样式选择的质量.
 
-This is a difficult trade-off to make. But, if instead you distribute the elements of the decision, it’s possible to design an API management system that lives somewhere in between these two binary options. For example, you might decide that for an API style decision, the elements of research and choice generation should be owned by a centralized, strategic API management team, while the elements of choice selection, authorization, and implementation are owned by the API teams themselves. In this way, you choose to sacrifice some of the innovation that comes from distributing choice generation in order to gain the benefits of a known set of API styles within the company. At the same time, distribution of the API style selection and authorization elements allows the API teams to continue to operate at speed (i.e., they do not need to ask permission in order to choose a suitable style).
+这很难去做出取舍.但是如果分配决策元素,它就可能设计出一个位于这个二元化选项中间的API管理系统.如:你可以为API样式决策做出下面的决定:研究和生成选项元素归属于中心化的,战略上的API管理团队,而选择,授权和实现元素归属于做出它们的团队.通过牺牲一些来自分配生成选项局部创新的方式,以获取公司内的一组众所周知的API样式.与此同时,API样式的选择和授权元素的分配使得API团队可以继续以最快的速度运作(即:他们不需要征求许可就可以选择合适的样式).
 
-To get the most out of decision mapping, you’ll need to distribute decisions based on your context and goals. Let’s take a look at two fairly common decision scenarios to see how decision mapping can be a useful tool.
+为了最大限度地利用决策映射,你需要基于所处背景和目标分配决策.让我们通过两个相当常见的决策场景,看看决策映射如何成为一个有用的工具的.
 
-DECISION MAPPING EXAMPLE: CHOOSING A PROGRAMMING LANGUAGE
-You’ve identified that the decision of which programming language to choose for API implementation is highly impactful, and you’d like to govern it. Your organization has adopted a microservices style of architecture, and freedom to choose the programming language for implementation has been raised as a requirement. But after running a few experiments, you’ve noticed that variation in programming languages makes it harder for developers to move between teams and harder for security and operations teams to support applications.
+#### 决策映射示例: 选择一种编程语言
 
-As a result, you’ve decided to try out the decision distribution in Table 2-1 for deciding on a programming language.
+你已经确定了选择哪个编程语言的决策对于API实现有巨大的影响,并且你希望管理这个语言.你的组织已经采用了微服务架构,并且自由选择实现语言已成为一种要求.但是做了一些尝试后,你发现多语言环境让开发者在团队间调动更加困难,安全和运营团队对于应用的支持也更加困难.
 
-Table 2-1. Programming language decision map
-Inception	Choice generation	Choice selection	Authorization	Implementation	Challenge
-Centralized
+因此,你决定尝试表2-1的决策分配方式选择编程语言.
 
-Centralized
+<center>表 2-1. 编程语言决策映射</center>
+<table>
+    <tr>
+        <td>开始</td>
+        <td>生成选项</td>
+        <td>选择</td>
+        <td>授权</td>
+        <td>实现</td>
+        <td>挑战</td>
+    </tr>
+    <tr>
+        <td>中心化</td>
+        <td>中心化</td>
+        <td>去中心化</td>
+        <td>去中心化</td>
+        <td>去中心化</td>
+        <td>去中心化</td>
+    </tr>
+</table>
 
-Decentralized
+将编程语言约束为一组选择的方式是针对整个系统的优化,但是它允许每个团队在这些约束下进行局部优化.你还允许API团队挑战这个决策,以便你能适应新的语言选择和不断变化的情况.
 
-Decentralized
+#### 决策映射示例: 选择工具
 
-Decentralized
+你的CTO试图提高软件平台的敏捷性和创新水平.作为计划的一部分,他们决定允许API团队选择自己的技术栈,包括使用开源软件.然而,你的采购和法律团队基于法律风险和供应关系风险提出了担忧.为了开始这种文化过渡,你已经决定在试验的基础上实现表2-2中的技术栈决策映射.
 
-Decentralized
-
-This way you constrain the programming languages to a set of choices that are optimized for the system as a whole, but allow the individual teams to optimize for their local contexts within those constraints. You’ve also allowed API teams to challenge the decision so that you can accommodate new language choices and changing situations.
-
-DECISION MAPPING EXAMPLE: TOOL SELECTION
-Your CTO is trying to improve the level of agility and innovation of your software platform. As part of this initiative they have decided to allow API teams to choose their own software stacks for implementations, including the use of open source software. However, your procurement and legal teams have raised concerns based on legal risks and risks to supplier relationships. To get started with this cultural transition, you’ve decided to implement the decision map in Table 2-2 for the software stack decision on a trial basis.
-
-Table 2-2. Tool selection decision map
-Inception	Choice generation	Choice selection	Authorization	Implementation	Challenge
-Decentralized
-
-Decentralized
-
-Decentralized
-
-Centralized
-
-Decentralized
-
-Centralized
+<center>表 2-2. 工具选择决策映射</center>
+<table>
+    <tr>
+        <td>开始</td>
+        <td>生成选项</td>
+        <td>选择</td>
+        <td>授权</td>
+        <td>实现</td>
+        <td>挑战</td>
+    </tr>
+    <tr>
+        <td>去中心化</td>
+        <td>去中心化</td>
+        <td>去中心化</td>
+        <td>中心化</td>
+        <td>去中心化</td>
+        <td>中心化</td>
+    </tr>
+</table>
 
 Local optimization is one of the keys to your CTO’s strategy, so you chose to completely decentralize inception, choice generation, and selection. However, to reduce the system-level risk of a choice, you’ve mapped the authorization element to the centralized procurement and legal teams. This should work for now, but you are also aware that over time and at scale this has the potential to be a big bottleneck in your system, so you make a note to keep measuring the process and tune it accordingly.
 
-Designing Your Governance System
+## Designing Your Governance System
+
 We’ve spent a lot of time going into the details of decision distribution because we think it’s a foundational concept for a governance system. But it’s not the only thing you’ll need to pay attention to if you want to introduce effective API governance. A good API governance system should have the following features:
 
 Decision distribution based on impact, scope, and scale

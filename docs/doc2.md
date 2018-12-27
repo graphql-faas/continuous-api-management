@@ -19,7 +19,7 @@ We’ll start by exploring the three foundational elements of good API governanc
 
 Governance is a core part of API management, and the concepts we introduce in this chapter will be built upon throughout the rest of this book. So, it’s worthwhile to spend some time understanding what API governance really means and how it can help you build a better API management system.
 
-- Understanding API Governance
+## Understanding API Governance
 
 Technology work is the work of making decisions—lots of decisions, in fact. Some of those decisions are vitally important, while others are trivial. All this decision making is the reason that we can say a technology team’s work is knowledge work. The key skill for a knowledge worker is to make many high-quality decisions, over and over again. That’s a fairly obvious concept, but also one that’s easy to forget when you’re managing APIs.
 
@@ -90,7 +90,7 @@ But working with a complex system requires a special kind of approach. It’s di
 
 All of this means that you can’t get the outputs you want from the system by implementing large changes and waiting for results. Instead, you’ll need to “nudge” the system by making smaller changes and assessing their impact. It requires an approach of continuous adjustment and improvement, in the same way you might tend to a garden, pruning branches, planting seeds, and watering while continuously observing and adjusting your approach. In Chapter 5, we’ll explore the concept of continuous improvement in more detail.
 
-- Governing Decisions
+## Governing Decisions
 
 In the last section we introduced the concept of governing decisions inside a complex system. Hopefully, that’s helped you to understand a fundamental rule for API governance: if you want your governance system to be effective, you’ll need to get better at managing decisions. We think one of the best ways to do that is to focus on where decisions are happening and who is making them. It turns out that there isn’t a single best way to map those decisions out. For example, consider how API design governance could be handled in two different fictional companies:
 
@@ -206,7 +206,7 @@ Decision blindness
 
 Not every decision needs to happen, and it’s perfectly fine for decisions to be missed or for a cultural habit to make them implicit. It’s only a problem if not making a decision negatively impacts the results you are getting from your APIs. Arbitrarily demanding that more decisions happen could have a nightmarish impact on productivity. Instead, the role of API governance is to generate more of the decisions that will lead to optimal results and less of the decisions that will provide little value.
 
-CHOICE GENERATION
+- CHOICE GENERATION
 
 It’s hard to choose if you don’t know your options, and that’s what this element is all about. Choice generation is the work of identifying the choices to choose from.
 
@@ -216,7 +216,7 @@ Even if you know a domain fairly well, you’ll probably spend more time on choi
 
 From a governance perspective, choice generation is important because it’s where the boundaries of decision making are set. This is especially useful when the people coming up with the list of choices are not the same as the people making the selection. For example, you could standardize a list of possible API description formats, but let individual teams decide which format they like best. If you take this approach you’ll need to be careful about the quality of the “menu” you are providing. If the choices are overly restrictive or of poor quality, you’ll run into problems.
 
--SELECTION
+- SELECTION
 
 Selection is the act of choosing from the list of possible options. Selection is the heart of decision making and it’s the step most people focus on, but the importance of the selection element depends a lot on the scope of choices that have been made available. If that scope is very wide, then the selection process is integral to the quality of the decision. But if that scope has been constrained to safe choices with little differentiating them, the selection step can be quick and less impactful.
 
@@ -268,47 +268,62 @@ This is a difficult trade-off to make. But, if instead you distribute the elemen
 
 To get the most out of decision mapping, you’ll need to distribute decisions based on your context and goals. Let’s take a look at two fairly common decision scenarios to see how decision mapping can be a useful tool.
 
-DECISION MAPPING EXAMPLE: CHOOSING A PROGRAMMING LANGUAGE
+#### DECISION MAPPING EXAMPLE: CHOOSING A PROGRAMMING LANGUAGE
+
 You’ve identified that the decision of which programming language to choose for API implementation is highly impactful, and you’d like to govern it. Your organization has adopted a microservices style of architecture, and freedom to choose the programming language for implementation has been raised as a requirement. But after running a few experiments, you’ve noticed that variation in programming languages makes it harder for developers to move between teams and harder for security and operations teams to support applications.
 
 As a result, you’ve decided to try out the decision distribution in Table 2-1 for deciding on a programming language.
 
-Table 2-1. Programming language decision map
-Inception	Choice generation	Choice selection	Authorization	Implementation	Challenge
-Centralized
-
-Centralized
-
-Decentralized
-
-Decentralized
-
-Decentralized
-
-Decentralized
+<center>Table 2-1. Programming language decision map</center>
+<table>
+    <tr>
+        <td>Inception</td>
+        <td>Choice generation</td>
+        <td>Choice selection</td>
+        <td>Authorization</td>
+        <td>Implementation</td>
+        <td>Challenge</td>
+    </tr>
+    <tr>
+        <td>Centralized</td>
+        <td>Centralized</td>
+        <td>Decentralized</td>
+        <td>Decentralized</td>
+        <td>Decentralized</td>
+        <td>Decentralized</td>
+    </tr>
+</table>
 
 This way you constrain the programming languages to a set of choices that are optimized for the system as a whole, but allow the individual teams to optimize for their local contexts within those constraints. You’ve also allowed API teams to challenge the decision so that you can accommodate new language choices and changing situations.
 
-DECISION MAPPING EXAMPLE: TOOL SELECTION
+#### DECISION MAPPING EXAMPLE: TOOL SELECTION
+
 Your CTO is trying to improve the level of agility and innovation of your software platform. As part of this initiative they have decided to allow API teams to choose their own software stacks for implementations, including the use of open source software. However, your procurement and legal teams have raised concerns based on legal risks and risks to supplier relationships. To get started with this cultural transition, you’ve decided to implement the decision map in Table 2-2 for the software stack decision on a trial basis.
 
-Table 2-2. Tool selection decision map
-Inception	Choice generation	Choice selection	Authorization	Implementation	Challenge
-Decentralized
-
-Decentralized
-
-Decentralized
-
-Centralized
-
-Decentralized
-
-Centralized
+<center>Table 2-2. Tool selection decision map</center>
+<table>
+    <tr>
+        <td>Inception</td>
+        <td>Choice generation</td>
+        <td>Choice selection</td>
+        <td>Authorization</td>
+        <td>Implementation</td>
+        <td>Challenge</td>
+    </tr>
+    <tr>
+        <td>Decentralized</td>
+        <td>Decentralized</td>
+        <td>Decentralized</td>
+        <td>Centralized</td>
+        <td>Decentralized</td>
+        <td>Centralized</td>
+    </tr>
+</table>
 
 Local optimization is one of the keys to your CTO’s strategy, so you chose to completely decentralize inception, choice generation, and selection. However, to reduce the system-level risk of a choice, you’ve mapped the authorization element to the centralized procurement and legal teams. This should work for now, but you are also aware that over time and at scale this has the potential to be a big bottleneck in your system, so you make a note to keep measuring the process and tune it accordingly.
 
-Designing Your Governance System
+## Designing Your Governance System
+
 We’ve spent a lot of time going into the details of decision distribution because we think it’s a foundational concept for a governance system. But it’s not the only thing you’ll need to pay attention to if you want to introduce effective API governance. A good API governance system should have the following features:
 
 Decision distribution based on impact, scope, and scale
