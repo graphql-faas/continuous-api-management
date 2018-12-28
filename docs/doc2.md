@@ -326,13 +326,13 @@ Local optimization is one of the keys to your CTO’s strategy, so you chose to 
 
 We’ve spent a lot of time going into the details of decision distribution because we think it’s a foundational concept for a governance system. But it’s not the only thing you’ll need to pay attention to if you want to introduce effective API governance. A good API governance system should have the following features:
 
-Decision distribution based on impact, scope, and scale
+- Decision distribution based on impact, scope, and scale
 
-Enforcement of system constraints and validation of implementation (from centralized decisions)
+- Enforcement of system constraints and validation of implementation (from centralized decisions)
 
-Incentivization to shape decision making (for decentralized decisions)
+- Incentivization to shape decision making (for decentralized decisions)
 
-Adaptiveness through impact measurement and continuous improvement
+- Adaptiveness through impact measurement and continuous improvement
 
 It’s difficult to get the advantages of decision centralization if the rest of the organization doesn’t conform to the decision. That’s why enforcement and validation needs to be a feature of an API governance system. We’ve purposefully steered away from the authoritative parts of governance so far, but ultimately you’ll need to build at least some constraints into your system. Even the most decentralized organizations have rules that need to be followed. Of course, validation and enforcement will require some level of obedience. If the centralized decision-making team has no authority, the decisions will carry no weight.
 
@@ -340,23 +340,36 @@ If you don’t have authority, you can use incentivization instead of enforcemen
 
 In truth, neither the “carrot” of incentivization nor the “stick” of enforcement is enough to steer your system on its own—you’ll need to use both. Generally speaking, if a decision’s authorization element has been decentralized, you’ll have to use incentivization if you want to shape it. If selection and authorization have been centralized and implementation is decentralized, you’ll need to make sure you’ve instituted some level of enforcement or validation. Table 2-3 highlights when you should enforce or incentivize a decision based on your decision mapping design.
 
-Table 2-3. When to enforce and when to incentivize
-Enforce or incentivize?	Inception	Choice generation	Choice selection	Authorization	Implementation	Challenge
-Enforce
-
-Centralized
-
-Centralized or decentralized
-
-Centralized or decentralized
-
-Incentivize
-
-Decentralized
-
-Decentralized
-
-Decentralized
+<center>Table 2-3. When to enforce and when to incentivize</center>
+<table>
+    <tr>
+        <td>Enforce or incentivize?</td>
+        <td>Inception</td>
+        <td>Choice generation</td>
+        <td>Choice selection</td>
+        <td>Authorization</td>
+        <td>Implementation</td>
+        <td>Challenge</td>
+    </tr>
+    <tr>
+        <td>Enforce</td>
+        <td></td>
+        <td>Centralized</td>
+        <td>Centralized or decentralized</td>
+        <td>Centralized or decentralized</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Incentivize</td>
+        <td></td>
+        <td>Decentralized</td>
+        <td>Decentralized</td>
+        <td>Decentralized</td>
+        <td></td>
+        <td></td>
+    </tr>
+</table>
 
 No matter how you distribute your decisions or change decision-making behavior, it’s crucial that you measure the impact you are having on the system itself. Ideally, your organization should have some existing process indicators and measurements that you can use to assess the impact of your changes. If there isn’t anything like that, instituting organizational measurements should be one of your first priorities. Later, in Chapter 6, we’ll talk about product measurement patterns for APIs. Although we’ll be focusing on API product measurement specifically, you can still use that section as an introductory guide for designing governance measurements for your system.
 

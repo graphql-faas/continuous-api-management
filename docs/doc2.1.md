@@ -320,19 +320,19 @@ title: 第二章 API治理
     </tr>
 </table>
 
-Local optimization is one of the keys to your CTO’s strategy, so you chose to completely decentralize inception, choice generation, and selection. However, to reduce the system-level risk of a choice, you’ve mapped the authorization element to the centralized procurement and legal teams. This should work for now, but you are also aware that over time and at scale this has the potential to be a big bottleneck in your system, so you make a note to keep measuring the process and tune it accordingly.
+局部优化是CTO策略的关键之一,所以你选择完全的去中心化开始,生成选项和选择.然而,为了降低选择的系统级风险,你将授权元素映射到中心化的采购和法律团队.虽然现在已经可以工作,但是你意识到随着时间的推移和规模的扩大,这可能成为系统的一个瓶颈,所以你记录了持续的流程测量数据,并适当的调整它.
 
-## Designing Your Governance System
+## 设计治理系统
 
-We’ve spent a lot of time going into the details of decision distribution because we think it’s a foundational concept for a governance system. But it’s not the only thing you’ll need to pay attention to if you want to introduce effective API governance. A good API governance system should have the following features:
+我们在决策分配细节上花费了很多时间,因为我们认为它是治理系统的基本概念.但是如果你想引入有效的API治理,你需要注意的不仅仅是这一点.一个好的API治理系统应该具备以下特征:
 
-Decision distribution based on impact, scope, and scale
+- 基于影响,范围和规模进行决策分配
 
-Enforcement of system constraints and validation of implementation (from centralized decisions)
+- (对于中心化决策)实施系统约束和实现校验
 
-Incentivization to shape decision making (for decentralized decisions)
+- (对于非中心化决策)激励具体决策
 
-Adaptiveness through impact measurement and continuous improvement
+- 通过影响测量和持续完善增强适应性
 
 It’s difficult to get the advantages of decision centralization if the rest of the organization doesn’t conform to the decision. That’s why enforcement and validation needs to be a feature of an API governance system. We’ve purposefully steered away from the authoritative parts of governance so far, but ultimately you’ll need to build at least some constraints into your system. Even the most decentralized organizations have rules that need to be followed. Of course, validation and enforcement will require some level of obedience. If the centralized decision-making team has no authority, the decisions will carry no weight.
 
@@ -340,23 +340,36 @@ If you don’t have authority, you can use incentivization instead of enforcemen
 
 In truth, neither the “carrot” of incentivization nor the “stick” of enforcement is enough to steer your system on its own—you’ll need to use both. Generally speaking, if a decision’s authorization element has been decentralized, you’ll have to use incentivization if you want to shape it. If selection and authorization have been centralized and implementation is decentralized, you’ll need to make sure you’ve instituted some level of enforcement or validation. Table 2-3 highlights when you should enforce or incentivize a decision based on your decision mapping design.
 
-Table 2-3. When to enforce and when to incentivize
-Enforce or incentivize?	Inception	Choice generation	Choice selection	Authorization	Implementation	Challenge
-Enforce
-
-Centralized
-
-Centralized or decentralized
-
-Centralized or decentralized
-
-Incentivize
-
-Decentralized
-
-Decentralized
-
-Decentralized
+<center>表 2-3. 何时强制和何时激励</center>
+<table>
+    <tr>
+        <td>强制或激励?</td>
+        <td>开始</td>
+        <td>生成选项</td>
+        <td>选择</td>
+        <td>授权</td>
+        <td>实现</td>
+        <td>挑战</td>
+    </tr>
+    <tr>
+        <td>强制</td>
+        <td></td>
+        <td>中心化</td>
+        <td>中心化或去中心化</td>
+        <td>中心化或去中心化</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>激励</td>
+        <td></td>
+        <td>去中心化</td>
+        <td>去中心化</td>
+        <td>去中心化</td>
+        <td></td>
+        <td></td>
+    </tr>
+</table>
 
 No matter how you distribute your decisions or change decision-making behavior, it’s crucial that you measure the impact you are having on the system itself. Ideally, your organization should have some existing process indicators and measurements that you can use to assess the impact of your changes. If there isn’t anything like that, instituting organizational measurements should be one of your first priorities. Later, in Chapter 6, we’ll talk about product measurement patterns for APIs. Although we’ll be focusing on API product measurement specifically, you can still use that section as an introductory guide for designing governance measurements for your system.
 
