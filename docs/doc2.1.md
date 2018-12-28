@@ -334,11 +334,11 @@ title: 第二章 API治理
 
 - 通过影响测量和持续完善增强适应性
 
-It’s difficult to get the advantages of decision centralization if the rest of the organization doesn’t conform to the decision. That’s why enforcement and validation needs to be a feature of an API governance system. We’ve purposefully steered away from the authoritative parts of governance so far, but ultimately you’ll need to build at least some constraints into your system. Even the most decentralized organizations have rules that need to be followed. Of course, validation and enforcement will require some level of obedience. If the centralized decision-making team has no authority, the decisions will carry no weight.
+如果组织的其他人不遵守决策,就很难发挥中心化决策的优势.这也是为什么强制和校验是API治理系统的特征的原因.到目前为止,我们都有意避开治理的授权部分,但是最终你需要在系统中至少设置一些约束.即使是最分散的组织也需要遵守一些规矩.当然,校验和强制需要一定程度的服从.如果中心化决策团队没有权威,那么决策也将无足轻重.
 
-If you don’t have authority, you can use incentivization instead of enforcement. This is especially useful when you’ve decided to decentralize decisions but still want to shape the selections that are being made. For example, an architecture team could alter a deployment process so that deployment of immutable containers is made much cheaper and easier than any other type of deployment. The goal here would be to incentivize API teams who have authority over their own implementation decisions to choose containerization more often.
+如果你没有权利,你可以采用激励替代强制.当你采用去中心化决策,但是仍然想对所做的决策进行定型时,这一点尤其有效.如:架构团队可以修改部署流程,以使得不可变的容器部署比其他类型的部署更便宜,更容易.这里的目标是激励拥有权利的API团队,通过他们的实现决策更多的选择容器化.
 
-In truth, neither the “carrot” of incentivization nor the “stick” of enforcement is enough to steer your system on its own—you’ll need to use both. Generally speaking, if a decision’s authorization element has been decentralized, you’ll have to use incentivization if you want to shape it. If selection and authorization have been centralized and implementation is decentralized, you’ll need to make sure you’ve instituted some level of enforcement or validation. Table 2-3 highlights when you should enforce or incentivize a decision based on your decision mapping design.
+事实上,无论是"胡萝卜"激励还是"棍子"强制,都不足以引导系统独立运行,你需要结合使用两种方法.通常来讲,如果决策授权元素是去中心化的,如果你想给它定型,就必须使用激励.如果选择和授权是中心化的,实现是去中心化的,你需要确保已经建立了某种级别的强制或校验.表2-3根据你的决策映射设计突出了什么时候你应该强制或激励决策.
 
 <center>表 2-3. 何时强制和何时激励</center>
 <table>
@@ -371,73 +371,72 @@ In truth, neither the “carrot” of incentivization nor the “stick” of enf
     </tr>
 </table>
 
-No matter how you distribute your decisions or change decision-making behavior, it’s crucial that you measure the impact you are having on the system itself. Ideally, your organization should have some existing process indicators and measurements that you can use to assess the impact of your changes. If there isn’t anything like that, instituting organizational measurements should be one of your first priorities. Later, in Chapter 6, we’ll talk about product measurement patterns for APIs. Although we’ll be focusing on API product measurement specifically, you can still use that section as an introductory guide for designing governance measurements for your system.
+无论如何分配你的决策或者改变决策制定的行为,衡量你对系统的影响都是至关重要的.理想情况下,你的组织应该有一些已有的流程指标和尺度,你可以使用它们评估修改的影响.如果没有类似的情况,你的首要任务就是制定组织的尺度.稍后,在第六章,我们将讨论API的产品尺度模式.虽然我们将专门关注API的产品尺度,但是你仍可以使用该部分,作为你的系统设计治理尺度的介绍性指南.
 
-To help tie all this together, let’s take a look at three API governance patterns. These patterns capture different approaches to API governance, but all of them use the core principles of decision distribution, enforcement, incentivization, and measurement. Keep in mind, we aren’t offering you a menu—you aren’t supposed to choose one of these to be your governance system. We are offering you these patterns as a way of illustrating how an API governance system can be implemented at a conceptual level.
+为了将所有这些联系在一起,让我们看一下三个API治理模式.这些模式汲取了API治理的不同方式,但是它们都使用了决策分配,强制,激励和度量的核心原则.请记住,我们并没有想你提供菜单--你不能只能选择它们中的一个作为你的治理系统.我们向你提供这些模式,以说明如何在概念上实现API治理系统.
 
-For each governance pattern described, we’ll identify a few key decisions and how they are mapped, how desired behaviors are enforced and incentivized, how talent is distributed, and the costs, benefits, and measures for the approach.
+对于每种被描述的治理模式,我们将识别一些关键决策,以及它们是如何被映射的,期望的行为是如何被强制和激励的,人才是如何分配的,以及这种方法的成本,收益和指标.
 
-Governance Pattern #1: Interface Supervision
-This pattern emphasizes the importance of the interface model for an API. Interface supervision centralizes all decisions related to the design of the interface in order to ensure that all interfaces are consistent, secure, and highly usable (see Table 2-4).
+### 治理模式#1: 接口监管
 
-Table 2-4. Decision map
-Decision space	Inception	Choice generation	Choice selection	Authorization	Implementation	Challenge
-API design
+这个模式强调了API接口模型的重要性.接口监管集中了所有接口设计的相关决策,以确保所有接口是一致,安全和高可用的(见表2-4).
 
-Centralized
+<center>表 2-4. 决策映射</center>
+<table>
+    <tr>
+        <td>决策范围</td>
+        <td>开始</td>
+        <td>生成选项</td>
+        <td>选择</td>
+        <td>授权</td>
+        <td>实现</td>
+        <td>挑战</td>
+    </tr>
+    <tr>
+        <td>API设计</td>
+        <td>中心化</td>
+        <td>中心化</td>
+        <td>去中心化</td>
+        <td>中心化</td>
+        <td>去中心化</td>
+        <td>去中心化</td>
+    </tr>
+    <tr>
+        <td>API实现</td>
+        <td>去中心化</td>
+        <td>去中心化</td>
+        <td>去中心化</td>
+        <td>去中心化</td>
+        <td>去中心化</td>
+        <td>中心化</td>
+    </tr>
+    <tr>
+        <td>API部署</td>
+        <td>去中心化</td>
+        <td>去中心化</td>
+        <td>去中心化</td>
+        <td>去中心化</td>
+        <td>去中心化</td>
+        <td>中心化</td>
+    </tr>
+</table>
 
-Centralized
-
-Decentralized
-
-Centralized
-
-Decentralized
-
-Decentralized
-
-API implementation
-
-Decentralized
-
-Decentralized
-
-Decentralized
-
-Decentralized
-
-Decentralized
-
-Centralized
-
-API deployment
-
-Decentralized
-
-Decentralized
-
-Decentralized
-
-Decentralized
-
-Decentralized
-
-Centralized
-
-Enforcement and incentivization
-API implementation and deployments are reviewed by the centralized interface design team. Although teams have the freedom to make their own implementation and deployment decisions, the central team can flag and remove an API if it doesn’t conform to the interface model.
+强制和激励
+> API implementation and deployments are reviewed by the centralized interface design team. Although teams have the freedom to make their own implementation and deployment decisions, the central team can flag and remove an API if it doesn’t conform to the interface model.
 
 Talent distribution
-Interface design talent is pooled in the central team, while programming and operations talent can be decentralized.
+> Interface design talent is pooled in the central team, while programming and operations talent can be decentralized.
 
 Costs and benefits
-The segregation of design and implementation teams means that there is a risk of making designs that are difficult or costly to implement. But this separation also benefits from a “pure design” perspective for the interface design team, which can produce more user-centric designs. At scale, there is a very high risk of a bottleneck due to the resource constraints of a centralized interface design team. This may especially be a problem when small changes to many interfaces are required.
+> The segregation of design and implementation teams means that there is a risk of making designs that are difficult or costly to implement. But this separation also benefits from a “pure design” perspective for the interface design team, which can produce more user-centric designs. At scale, there is a very high risk of a bottleneck due to the resource constraints of a centralized interface design team. This may especially be a problem when small changes to many interfaces are required.
 
 Impact measurements
-API usability measurements
-Product and project schedule metrics
-Implementation and operational issues
-Governance Pattern #2: Machine-Driven Governance
+- API usability measurements
+- Product and project schedule metrics
+- Implementation and operational issues
+
+### 治理模式 #2: Machine-Driven Governance
+
 Machine-driven governance uses the machinery of standardization and automation to constrain decision making. In this pattern, the centralized team tries to maximize control of the system with machinery, but limit the impact on decision-making throughput. This is done by only centralizing the decision space of API work (i.e., the choice generation element). Teams have the freedom to make decisions as long as they conform to the choices that have been codified into the standards (see Table 2-5).
 
 Table 2-5. Decision map

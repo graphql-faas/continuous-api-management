@@ -377,67 +377,66 @@ To help tie all this together, let’s take a look at three API governance patte
 
 For each governance pattern described, we’ll identify a few key decisions and how they are mapped, how desired behaviors are enforced and incentivized, how talent is distributed, and the costs, benefits, and measures for the approach.
 
-Governance Pattern #1: Interface Supervision
+### Governance Pattern #1: Interface Supervision
+
 This pattern emphasizes the importance of the interface model for an API. Interface supervision centralizes all decisions related to the design of the interface in order to ensure that all interfaces are consistent, secure, and highly usable (see Table 2-4).
 
-Table 2-4. Decision map
-Decision space	Inception	Choice generation	Choice selection	Authorization	Implementation	Challenge
-API design
-
-Centralized
-
-Centralized
-
-Decentralized
-
-Centralized
-
-Decentralized
-
-Decentralized
-
-API implementation
-
-Decentralized
-
-Decentralized
-
-Decentralized
-
-Decentralized
-
-Decentralized
-
-Centralized
-
-API deployment
-
-Decentralized
-
-Decentralized
-
-Decentralized
-
-Decentralized
-
-Decentralized
-
-Centralized
+<center>Table 2-4. Decision map</center>
+<table>
+    <tr>
+        <td>Decision space</td>
+        <td>Inception</td>
+        <td>Choice generation</td>
+        <td>Choice selection</td>
+        <td>Authorization</td>
+        <td>Implementation</td>
+        <td>Challenge</td>
+    </tr>
+    <tr>
+        <td>API design</td>
+        <td>Centralized</td>
+        <td>Centralized</td>
+        <td>Decentralized</td>
+        <td>Centralized</td>
+        <td>Decentralized</td>
+        <td>Decentralized</td>
+    </tr>
+    <tr>
+        <td>API implementation</td>
+        <td>Decentralized</td>
+        <td>Decentralized</td>
+        <td>Decentralized</td>
+        <td>Decentralized</td>
+        <td>Decentralized</td>
+        <td>Centralized</td>
+    </tr>
+    <tr>
+        <td>API deployment</td>
+        <td>Decentralized</td>
+        <td>Decentralized</td>
+        <td>Decentralized</td>
+        <td>Decentralized</td>
+        <td>Decentralized</td>
+        <td>Centralized</td>
+    </tr>
+</table>
 
 Enforcement and incentivization
-API implementation and deployments are reviewed by the centralized interface design team. Although teams have the freedom to make their own implementation and deployment decisions, the central team can flag and remove an API if it doesn’t conform to the interface model.
+> API implementation and deployments are reviewed by the centralized interface design team. Although teams have the freedom to make their own implementation and deployment decisions, the central team can flag and remove an API if it doesn’t conform to the interface model.
 
 Talent distribution
-Interface design talent is pooled in the central team, while programming and operations talent can be decentralized.
+> Interface design talent is pooled in the central team, while programming and operations talent can be decentralized.
 
 Costs and benefits
-The segregation of design and implementation teams means that there is a risk of making designs that are difficult or costly to implement. But this separation also benefits from a “pure design” perspective for the interface design team, which can produce more user-centric designs. At scale, there is a very high risk of a bottleneck due to the resource constraints of a centralized interface design team. This may especially be a problem when small changes to many interfaces are required.
+> The segregation of design and implementation teams means that there is a risk of making designs that are difficult or costly to implement. But this separation also benefits from a “pure design” perspective for the interface design team, which can produce more user-centric designs. At scale, there is a very high risk of a bottleneck due to the resource constraints of a centralized interface design team. This may especially be a problem when small changes to many interfaces are required.
 
 Impact measurements
-API usability measurements
-Product and project schedule metrics
-Implementation and operational issues
-Governance Pattern #2: Machine-Driven Governance
+- API usability measurements
+- Product and project schedule metrics
+- Implementation and operational issues
+
+### Governance Pattern #2: Machine-Driven Governance
+
 Machine-driven governance uses the machinery of standardization and automation to constrain decision making. In this pattern, the centralized team tries to maximize control of the system with machinery, but limit the impact on decision-making throughput. This is done by only centralizing the decision space of API work (i.e., the choice generation element). Teams have the freedom to make decisions as long as they conform to the choices that have been codified into the standards (see Table 2-5).
 
 Table 2-5. Decision map
