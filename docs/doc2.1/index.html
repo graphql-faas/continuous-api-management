@@ -269,26 +269,48 @@
         <td>中心化</td>
     </tr>
 </table>
-<p>Local optimization is one of the keys to your CTO’s strategy, so you chose to completely decentralize inception, choice generation, and selection. However, to reduce the system-level risk of a choice, you’ve mapped the authorization element to the centralized procurement and legal teams. This should work for now, but you are also aware that over time and at scale this has the potential to be a big bottleneck in your system, so you make a note to keep measuring the process and tune it accordingly.</p>
-<h2><a class="anchor" aria-hidden="true" id="designing-your-governance-system"></a><a href="#designing-your-governance-system" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Designing Your Governance System</h2>
-<p>We’ve spent a lot of time going into the details of decision distribution because we think it’s a foundational concept for a governance system. But it’s not the only thing you’ll need to pay attention to if you want to introduce effective API governance. A good API governance system should have the following features:</p>
-<p>Decision distribution based on impact, scope, and scale</p>
-<p>Enforcement of system constraints and validation of implementation (from centralized decisions)</p>
-<p>Incentivization to shape decision making (for decentralized decisions)</p>
-<p>Adaptiveness through impact measurement and continuous improvement</p>
+<p>局部优化是CTO策略的关键之一,所以你选择完全的去中心化开始,生成选项和选择.然而,为了降低选择的系统级风险,你将授权元素映射到中心化的采购和法律团队.虽然现在已经可以工作,但是你意识到随着时间的推移和规模的扩大,这可能成为系统的一个瓶颈,所以你记录了持续的流程测量数据,并适当的调整它.</p>
+<h2><a class="anchor" aria-hidden="true" id="设计治理系统"></a><a href="#设计治理系统" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>设计治理系统</h2>
+<p>我们在决策分配细节上花费了很多时间,因为我们认为它是治理系统的基本概念.但是如果你想引入有效的API治理,你需要注意的不仅仅是这一点.一个好的API治理系统应该具备以下特征:</p>
+<ul>
+<li><p>基于影响,范围和规模进行决策分配</p></li>
+<li><p>(对于中心化决策)实施系统约束和实现校验</p></li>
+<li><p>(对于非中心化决策)激励具体决策</p></li>
+<li><p>通过影响测量和持续完善增强适应性</p></li>
+</ul>
 <p>It’s difficult to get the advantages of decision centralization if the rest of the organization doesn’t conform to the decision. That’s why enforcement and validation needs to be a feature of an API governance system. We’ve purposefully steered away from the authoritative parts of governance so far, but ultimately you’ll need to build at least some constraints into your system. Even the most decentralized organizations have rules that need to be followed. Of course, validation and enforcement will require some level of obedience. If the centralized decision-making team has no authority, the decisions will carry no weight.</p>
 <p>If you don’t have authority, you can use incentivization instead of enforcement. This is especially useful when you’ve decided to decentralize decisions but still want to shape the selections that are being made. For example, an architecture team could alter a deployment process so that deployment of immutable containers is made much cheaper and easier than any other type of deployment. The goal here would be to incentivize API teams who have authority over their own implementation decisions to choose containerization more often.</p>
 <p>In truth, neither the “carrot” of incentivization nor the “stick” of enforcement is enough to steer your system on its own—you’ll need to use both. Generally speaking, if a decision’s authorization element has been decentralized, you’ll have to use incentivization if you want to shape it. If selection and authorization have been centralized and implementation is decentralized, you’ll need to make sure you’ve instituted some level of enforcement or validation. Table 2-3 highlights when you should enforce or incentivize a decision based on your decision mapping design.</p>
-<p>Table 2-3. When to enforce and when to incentivize
-Enforce or incentivize? Inception   Choice generation   Choice selection    Authorization   Implementation  Challenge
-Enforce</p>
-<p>Centralized</p>
-<p>Centralized or decentralized</p>
-<p>Centralized or decentralized</p>
-<p>Incentivize</p>
-<p>Decentralized</p>
-<p>Decentralized</p>
-<p>Decentralized</p>
+<p><center>表 2-3. 何时强制和何时激励</center></p>
+<table>
+    <tr>
+        <td>强制或激励?</td>
+        <td>开始</td>
+        <td>生成选项</td>
+        <td>选择</td>
+        <td>授权</td>
+        <td>实现</td>
+        <td>挑战</td>
+    </tr>
+    <tr>
+        <td>强制</td>
+        <td></td>
+        <td>中心化</td>
+        <td>中心化或去中心化</td>
+        <td>中心化或去中心化</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>激励</td>
+        <td></td>
+        <td>去中心化</td>
+        <td>去中心化</td>
+        <td>去中心化</td>
+        <td></td>
+        <td></td>
+    </tr>
+</table>
 <p>No matter how you distribute your decisions or change decision-making behavior, it’s crucial that you measure the impact you are having on the system itself. Ideally, your organization should have some existing process indicators and measurements that you can use to assess the impact of your changes. If there isn’t anything like that, instituting organizational measurements should be one of your first priorities. Later, in Chapter 6, we’ll talk about product measurement patterns for APIs. Although we’ll be focusing on API product measurement specifically, you can still use that section as an introductory guide for designing governance measurements for your system.</p>
 <p>To help tie all this together, let’s take a look at three API governance patterns. These patterns capture different approaches to API governance, but all of them use the core principles of decision distribution, enforcement, incentivization, and measurement. Keep in mind, we aren’t offering you a menu—you aren’t supposed to choose one of these to be your governance system. We are offering you these patterns as a way of illustrating how an API governance system can be implemented at a conceptual level.</p>
 <p>For each governance pattern described, we’ll identify a few key decisions and how they are mapped, how desired behaviors are enforced and incentivized, how talent is distributed, and the costs, benefits, and measures for the approach.</p>
@@ -409,4 +431,4 @@ Summary
 In this chapter we gave you our definition of governance: managing decision making and decision implementation. From that definition, we took a closer look at what it means to make a decision and what it means to govern a decision. You learned that API decisions can be small (“What should my next line of code be?”) or big (“Which supplier should we partner with?”) and can range massively in scope. Most importantly, you learned that the system you are trying to govern is a complex adaptive system, which means it’s difficult to predict the results of any decision management strategy you apply.</p>
 <p>Next, we took a closer look at decision distribution and compared centralization and decentralization. To help you understand the differences, we compared them in terms of the scope of optimization and scale of operation. Then we discussed how you can break decisions down into their essential elements of inception, choice generation, selection, authorization, implementation, and challenge. By putting all of these concepts together, along with some enforcement and incentivization, you can build an effective API governance system.</p>
 <p>Governance is at the heart of API management, so it’s not a big surprise that it’s a core concept for this book. Our goal in this chapter was to introduce the major concepts and levers of governance. In the rest of the book we’ll dive deeper into the domain of API governance by tackling the specific challenges of which decisions matter the most, how to manage the people involved, and what to do as APIs mature and the scale of the APIs grows. In the next chapter, we’ll start that journey by investigating how product thinking can help you identify the API work decisions that matter the most.</p>
-</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/continuous-api-management/docs/doc2"><span class="arrow-prev">← </span><span>Chapter 2. API Governance</span></a><a class="docs-next button" href="/continuous-api-management/docs/doc3"><span>Chapter 3. The API as a Product</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#理解api治理">理解API治理</a></li><li><a href="#决策治理">决策治理</a><ul class="toc-headings"><li><a href="#决策映射决策与二元化对应关系">决策映射(决策与二元化对应关系)</a></li></ul></li><li><a href="#designing-your-governance-system">Designing Your Governance System</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/continuous-api-management/" class="nav-home"><img src="/continuous-api-management/img/cover.jpg" alt="持续演进的API管理" width="66" height="58"/></a><div><h5>内容</h5><a href="/continuous-api-management/docs/en/doc1.html">查看书籍内容</a><a href="/continuous-api-management/docs/en/doc4.html">书籍参考资料</a></div><div><h5>更多</h5><a href="/continuous-api-management/blog">Blog</a><a href="https://github.com/graphql-faas/continuous-api-management">GitHub</a><a class="github-button" href="https://github.com/graphql-faas/continuous-api-management" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><section class="copyright">Copyright © 2018 翻译小组</section></footer></div></body></html>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/continuous-api-management/docs/doc2"><span class="arrow-prev">← </span><span>Chapter 2. API Governance</span></a><a class="docs-next button" href="/continuous-api-management/docs/doc3"><span>Chapter 3. The API as a Product</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#理解api治理">理解API治理</a></li><li><a href="#决策治理">决策治理</a><ul class="toc-headings"><li><a href="#决策映射决策与二元化对应关系">决策映射(决策与二元化对应关系)</a></li></ul></li><li><a href="#设计治理系统">设计治理系统</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/continuous-api-management/" class="nav-home"><img src="/continuous-api-management/img/cover.jpg" alt="持续演进的API管理" width="66" height="58"/></a><div><h5>内容</h5><a href="/continuous-api-management/docs/en/doc1.html">查看书籍内容</a><a href="/continuous-api-management/docs/en/doc4.html">书籍参考资料</a></div><div><h5>更多</h5><a href="/continuous-api-management/blog">Blog</a><a href="https://github.com/graphql-faas/continuous-api-management">GitHub</a><a class="github-button" href="https://github.com/graphql-faas/continuous-api-management" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><section class="copyright">Copyright © 2018 翻译小组</section></footer></div></body></html>
