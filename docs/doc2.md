@@ -439,49 +439,45 @@ Impact measurements
 
 Machine-driven governance uses the machinery of standardization and automation to constrain decision making. In this pattern, the centralized team tries to maximize control of the system with machinery, but limit the impact on decision-making throughput. This is done by only centralizing the decision space of API work (i.e., the choice generation element). Teams have the freedom to make decisions as long as they conform to the choices that have been codified into the standards (see Table 2-5).
 
-Table 2-5. Decision map
-Decision space	Inception	Choice generation	Choice selection	Authorization	Implementation	Challenge
-API design
-
-Decentralized
-
-Centralized
-
-Decentralized
-
-Decentralized
-
-Decentralized
-
-Decentralized
-
-API implementation
-
-Decentralized
-
-Centralized
-
-Decentralized
-
-Decentralized
-
-Decentralized
-
-Decentralized
-
-API deployment
-
-Decentralized
-
-Centralized
-
-Decentralized
-
-Decentralized
-
-Decentralized
-
-Decentralized
+<center>Table 2-5. Decision map</center>
+<table>
+    <tr>
+        <td>Decision space</td>
+        <td>Inception</td>
+        <td>Choice generation</td>
+        <td>Choice selection</td>
+        <td>Authorization</td>
+        <td>Implementation</td>
+        <td>Challenge</td>
+    </tr>
+    <tr>
+        <td>API design</td>
+        <td>Decentralized</td>
+        <td>Centralized</td>
+        <td>Decentralized</td>
+        <td>Decentralized</td>
+        <td>Decentralized</td>
+        <td>Decentralized</td>
+    </tr>
+    <tr>
+        <td>API implementation</td>
+        <td>Decentralized</td>
+        <td>Centralized</td>
+        <td>Decentralized</td>
+        <td>Decentralized</td>
+        <td>Decentralized</td>
+        <td>Decentralized</td>
+    </tr>
+    <tr>
+        <td>API deployment</td>
+        <td>Decentralized</td>
+        <td>Centralized</td>
+        <td>Decentralized</td>
+        <td>Decentralized</td>
+        <td>Decentralized</td>
+        <td>Decentralized</td>
+    </tr>
+</table>
 
 Enforcement and incentivization
 Because the choices have been implemented in a standardized way, all aspects of design, implementation, and deployment can be validated automatically with tooling. For example, API teams must document interface designs in a machine-readable language, which is validated using a “lint” tool.
@@ -499,8 +495,46 @@ API team metrics
 Governance Pattern #3: Collaborative Governance
 In the collaborative governance pattern, API decisions are made individually, but a shared understanding of system impacts is developed collaboratively. The goal is to create a “shared brain” in terms of the system-level view, but maintain the speed and local optimization scope of a decentralized system (see Table 2-6).
 
-Table 2-6. Decision map
-Decision space	Inception	Choice generation	Choice selection	Authorization	Implementation	Challenge
+<center>Table 2-6. Decision map</center>
+<table>
+    <tr>
+        <td>Decision space</td>
+        <td>Inception</td>
+        <td>Choice generation</td>
+        <td>Choice selection</td>
+        <td>Authorization</td>
+        <td>Implementation</td>
+        <td>Challenge</td>
+    </tr>
+    <tr>
+        <td>API design</td>
+        <td>centralized</td>
+        <td>Decentralized</td>
+        <td>Decentralized</td>
+        <td>Decentralized</td>
+        <td>Decentralized</td>
+        <td>Decentralized</td>
+    </tr>
+    <tr>
+        <td>API implementation</td>
+        <td>Decentralized</td>
+        <td>Centralized</td>
+        <td>Decentralized</td>
+        <td>Decentralized</td>
+        <td>Decentralized</td>
+        <td>Decentralized</td>
+    </tr>
+    <tr>
+        <td>API deployment</td>
+        <td>Decentralized</td>
+        <td>Centralized</td>
+        <td>Decentralized</td>
+        <td>Decentralized</td>
+        <td>Decentralized</td>
+        <td>Decentralized</td>
+    </tr>
+</table>
+
 API design
 
 Centralized

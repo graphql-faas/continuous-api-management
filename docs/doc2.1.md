@@ -422,66 +422,62 @@ title: 第二章 API治理
 </table>
 
 强制和激励
-> API implementation and deployments are reviewed by the centralized interface design team. Although teams have the freedom to make their own implementation and deployment decisions, the central team can flag and remove an API if it doesn’t conform to the interface model.
+> API的实现和部署有中心化接口设计团队审查.虽然团队拥有实现和部署决策的自由,但是如果它们不符合接口模型,中心化团队可以标记并清除这些API.
 
-Talent distribution
-> Interface design talent is pooled in the central team, while programming and operations talent can be decentralized.
+人才分配
+> 接口设计人才集中在中心化团队,而编程和运营人才可以分散.
 
-Costs and benefits
-> The segregation of design and implementation teams means that there is a risk of making designs that are difficult or costly to implement. But this separation also benefits from a “pure design” perspective for the interface design team, which can produce more user-centric designs. At scale, there is a very high risk of a bottleneck due to the resource constraints of a centralized interface design team. This may especially be a problem when small changes to many interfaces are required.
+成本和收益
+> 设计和实现团队的分离意味着存在设计的实现困难或者成本高昂的风险.但是单纯从设计角度,分离对于接口设计团队是有益的,他们可以创造出更多以用户为中心的设计.在规模上,用于中心化的接口设计团队的资源限制,会存在非常高的瓶颈风险.当需要对大量接口进行微调时,这种风险会尤其突出.
 
-Impact measurements
-- API usability measurements
-- Product and project schedule metrics
-- Implementation and operational issues
+影响指标
+- API可用性测量
+- 产品和项目进度指标
+- 实现和运营问题
 
 ### 治理模式 #2: Machine-Driven Governance
 
 Machine-driven governance uses the machinery of standardization and automation to constrain decision making. In this pattern, the centralized team tries to maximize control of the system with machinery, but limit the impact on decision-making throughput. This is done by only centralizing the decision space of API work (i.e., the choice generation element). Teams have the freedom to make decisions as long as they conform to the choices that have been codified into the standards (see Table 2-5).
 
-Table 2-5. Decision map
-Decision space	Inception	Choice generation	Choice selection	Authorization	Implementation	Challenge
-API design
-
-Decentralized
-
-Centralized
-
-Decentralized
-
-Decentralized
-
-Decentralized
-
-Decentralized
-
-API implementation
-
-Decentralized
-
-Centralized
-
-Decentralized
-
-Decentralized
-
-Decentralized
-
-Decentralized
-
-API deployment
-
-Decentralized
-
-Centralized
-
-Decentralized
-
-Decentralized
-
-Decentralized
-
-Decentralized
+<center>表 2-5. 决策映射</center>
+<table>
+    <tr>
+        <td>决策范围</td>
+        <td>开始</td>
+        <td>生成选项</td>
+        <td>选择</td>
+        <td>授权</td>
+        <td>实现</td>
+        <td>挑战</td>
+    </tr>
+    <tr>
+        <td>API设计</td>
+        <td>去中心化</td>
+        <td>中心化</td>
+        <td>去中心化</td>
+        <td>去中心化</td>
+        <td>去中心化</td>
+        <td>去中心化</td>
+    </tr>
+    <tr>
+        <td>API实现</td>
+        <td>去中心化</td>
+        <td>中心化</td>
+        <td>去中心化</td>
+        <td>去中心化</td>
+        <td>去中心化</td>
+        <td>去中心化</td>
+    </tr>
+    <tr>
+        <td>API部署</td>
+        <td>去中心化</td>
+        <td>中心化</td>
+        <td>去中心化</td>
+        <td>去中心化</td>
+        <td>去中心化</td>
+        <td>去中心化</td>
+    </tr>
+</table>
 
 Enforcement and incentivization
 Because the choices have been implemented in a standardized way, all aspects of design, implementation, and deployment can be validated automatically with tooling. For example, API teams must document interface designs in a machine-readable language, which is validated using a “lint” tool.
@@ -499,63 +495,54 @@ API team metrics
 Governance Pattern #3: Collaborative Governance
 In the collaborative governance pattern, API decisions are made individually, but a shared understanding of system impacts is developed collaboratively. The goal is to create a “shared brain” in terms of the system-level view, but maintain the speed and local optimization scope of a decentralized system (see Table 2-6).
 
-Table 2-6. Decision map
-Decision space	Inception	Choice generation	Choice selection	Authorization	Implementation	Challenge
-API design
-
-Centralized
-
-Decentralized
-
-Decentralized
-
-Decentralized
-
-Decentralized
-
-Decentralized
-
-API implementation
-
-Decentralized
-
-Decentralized
-
-Decentralized
-
-Decentralized
-
-Decentralized
-
-Decentralized
-
-API deployment
-
-Decentralized
-
-Decentralized
-
-Decentralized
-
-Decentralized
-
-Decentralized
-
-Centralized
-
-API measurement
-
-Centralized
-
-Centralized
-
-Centralized
-
-Centralized
-
-Decentralized
-
-Decentralized
+<center>表 2-6. 决策映射</center>
+<table>
+    <tr>
+        <td>决策范围</td>
+        <td>开始</td>
+        <td>生成选项</td>
+        <td>选择</td>
+        <td>授权</td>
+        <td>实现</td>
+        <td>挑战</td>
+    </tr>
+    <tr>
+        <td>API设计</td>
+        <td>中心化</td>
+        <td>去中心化</td>
+        <td>去中心化</td>
+        <td>去中心化</td>
+        <td>去中心化</td>
+        <td>去中心化</td>
+    </tr>
+    <tr>
+        <td>API实现</td>
+        <td>去中心化</td>
+        <td>去中心化</td>
+        <td>去中心化</td>
+        <td>去中心化</td>
+        <td>去中心化</td>
+        <td>去中心化</td>
+    </tr>
+    <tr>
+        <td>API部署</td>
+        <td>去中心化</td>
+        <td>去中心化</td>
+        <td>去中心化</td>
+        <td>去中心化</td>
+        <td>去中心化</td>
+        <td>中心化</td>
+    </tr>
+    <tr>
+        <td>API测量</td>
+        <td>中心化</td>
+        <td>中心化</td>
+        <td>中心化</td>
+        <td>中心化</td>
+        <td>去中心化</td>
+        <td>去中心化</td>
+    </tr>
+</table>
 
 Enforcement and incentivization
 In collaborative governance most of the decisions are completely decentralized, with the exception of an API’s inception and its measurement. This creates a “results-oriented” view of APIs in the system. It follows that enforcement is entirely results-oriented—if the API doesn’t achieve the expected result it is retired and the team may be disbanded. Although design, implementation, and deployment decisions are decentralized, those decisions are typically influenced through incentivization. For example, if a team’s decisions produce favorable results and those decisions are shared with the organization, they can be financially rewarded. The combination of a reward and transparency can influence the decisions of other teams in the organization.
