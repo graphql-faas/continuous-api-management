@@ -377,29 +377,45 @@
 </ul>
 <h3><a class="anchor" aria-hidden="true" id="governance-pattern-2-machine-driven-governance"></a><a href="#governance-pattern-2-machine-driven-governance" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Governance Pattern #2: Machine-Driven Governance</h3>
 <p>Machine-driven governance uses the machinery of standardization and automation to constrain decision making. In this pattern, the centralized team tries to maximize control of the system with machinery, but limit the impact on decision-making throughput. This is done by only centralizing the decision space of API work (i.e., the choice generation element). Teams have the freedom to make decisions as long as they conform to the choices that have been codified into the standards (see Table 2-5).</p>
-<p>Table 2-5. Decision map
-Decision space  Inception   Choice generation   Choice selection    Authorization   Implementation  Challenge
-API design</p>
-<p>Decentralized</p>
-<p>Centralized</p>
-<p>Decentralized</p>
-<p>Decentralized</p>
-<p>Decentralized</p>
-<p>Decentralized</p>
-<p>API implementation</p>
-<p>Decentralized</p>
-<p>Centralized</p>
-<p>Decentralized</p>
-<p>Decentralized</p>
-<p>Decentralized</p>
-<p>Decentralized</p>
-<p>API deployment</p>
-<p>Decentralized</p>
-<p>Centralized</p>
-<p>Decentralized</p>
-<p>Decentralized</p>
-<p>Decentralized</p>
-<p>Decentralized</p>
+<p><center>Table 2-5. Decision map</center></p>
+<table>
+    <tr>
+        <td>Decision space</td>
+        <td>Inception</td>
+        <td>Choice generation</td>
+        <td>Choice selection</td>
+        <td>Authorization</td>
+        <td>Implementation</td>
+        <td>Challenge</td>
+    </tr>
+    <tr>
+        <td>API design</td>
+        <td>Decentralized</td>
+        <td>Centralized</td>
+        <td>Decentralized</td>
+        <td>Decentralized</td>
+        <td>Decentralized</td>
+        <td>Decentralized</td>
+    </tr>
+    <tr>
+        <td>API implementation</td>
+        <td>Decentralized</td>
+        <td>Centralized</td>
+        <td>Decentralized</td>
+        <td>Decentralized</td>
+        <td>Decentralized</td>
+        <td>Decentralized</td>
+    </tr>
+    <tr>
+        <td>API deployment</td>
+        <td>Decentralized</td>
+        <td>Centralized</td>
+        <td>Decentralized</td>
+        <td>Decentralized</td>
+        <td>Decentralized</td>
+        <td>Decentralized</td>
+    </tr>
+</table>
 <p>Enforcement and incentivization
 Because the choices have been implemented in a standardized way, all aspects of design, implementation, and deployment can be validated automatically with tooling. For example, API teams must document interface designs in a machine-readable language, which is validated using a “lint” tool.</p>
 <p>Talent distribution
@@ -412,9 +428,46 @@ Choice popularity (tracking when and how standardized choices are used)
 API team metrics
 Governance Pattern #3: Collaborative Governance
 In the collaborative governance pattern, API decisions are made individually, but a shared understanding of system impacts is developed collaboratively. The goal is to create a “shared brain” in terms of the system-level view, but maintain the speed and local optimization scope of a decentralized system (see Table 2-6).</p>
-<p>Table 2-6. Decision map
-Decision space  Inception   Choice generation   Choice selection    Authorization   Implementation  Challenge
-API design</p>
+<p><center>Table 2-6. Decision map</center></p>
+<table>
+    <tr>
+        <td>Decision space</td>
+        <td>Inception</td>
+        <td>Choice generation</td>
+        <td>Choice selection</td>
+        <td>Authorization</td>
+        <td>Implementation</td>
+        <td>Challenge</td>
+    </tr>
+    <tr>
+        <td>API design</td>
+        <td>centralized</td>
+        <td>Decentralized</td>
+        <td>Decentralized</td>
+        <td>Decentralized</td>
+        <td>Decentralized</td>
+        <td>Decentralized</td>
+    </tr>
+    <tr>
+        <td>API implementation</td>
+        <td>Decentralized</td>
+        <td>Centralized</td>
+        <td>Decentralized</td>
+        <td>Decentralized</td>
+        <td>Decentralized</td>
+        <td>Decentralized</td>
+    </tr>
+    <tr>
+        <td>API deployment</td>
+        <td>Decentralized</td>
+        <td>Centralized</td>
+        <td>Decentralized</td>
+        <td>Decentralized</td>
+        <td>Decentralized</td>
+        <td>Decentralized</td>
+    </tr>
+</table>
+<p>API design</p>
 <p>Centralized</p>
 <p>Decentralized</p>
 <p>Decentralized</p>
