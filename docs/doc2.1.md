@@ -435,9 +435,9 @@ title: 第二章 API治理
 - 产品和项目进度指标
 - 实现和运营问题
 
-### 治理模式 #2: Machine-Driven Governance
+### 治理模式 #2: 机械驱动治理
 
-Machine-driven governance uses the machinery of standardization and automation to constrain decision making. In this pattern, the centralized team tries to maximize control of the system with machinery, but limit the impact on decision-making throughput. This is done by only centralizing the decision space of API work (i.e., the choice generation element). Teams have the freedom to make decisions as long as they conform to the choices that have been codified into the standards (see Table 2-5).
+机械驱动治理是使用机械的标准化和自动化去约束决策.在这种模式中,中心化团队尝试使用机械最大化地控制系统,但是会限制决策吞吐量.这是通过只中心化API工作的决策范围来实现(即:选项生成元素).团队有做出决策的自由,只要他们符合已经被编入标准的选项.(见表 2-5).
 
 <center>表 2-5. 决策映射</center>
 <table>
@@ -479,21 +479,23 @@ Machine-driven governance uses the machinery of standardization and automation t
     </tr>
 </table>
 
-Enforcement and incentivization
-Because the choices have been implemented in a standardized way, all aspects of design, implementation, and deployment can be validated automatically with tooling. For example, API teams must document interface designs in a machine-readable language, which is validated using a “lint” tool.
+强制和激励
+> 因为选择已经使用标准化的方式实现,所以可以使用工具自动校验设计,实现和部署的所有方面.如:API团队必须使用机器语言记录接口设计,这种语言使用"lint"工具校验.
 
-Talent distribution
-The central team needs to be populated with highly experienced designers, implementers, and architects to ensure that the centralized choices are the best ones. If the centralized choices have been made holistically and are of good quality, there is less of a talent requirement for designers and implementers in the decentralized teams.
+人才分配
+> 核心团队需要由经验丰富的设计师,实现者和架构师组成,已取保中心化选择是最好的选择.如果中心化选择是基于整体做出的,并且质量很好,那么在去中心化团队中,对设计师和实现者的能力要求会更低.
 
-Costs and benefits
-Machinery is always expensive to design, create, maintain, and tune. There will be a large initial investment to create the best set of standards for this type of system and a consistent challenge in keeping the choices and tools up to date as contexts change. But the payoff comes in the form of a reduced need for distributed decisions and an improvement in decision-making throughput thanks to automation. One possible system impact of this pattern is unhappiness within API teams due to a loss of freedom—if the choices are too constrained, it may be difficult to attract good people.
+成本和收益
+> 机械的设计,制造,维护和调试总是很昂贵.为了给这种类型的系统创建一组最好的标准,将会有大量的初始投资,并且随着环境的变化,在保持选择和工具的更新上存在一致性挑战.但是它会以减少分布式决策需求和由于自动化而提高决策吞吐量作为回报.这种模式一个可能的系统影响是API团队由于失去了自由会感到不快,可能吸引人才会更难.
 
-Impact measurements
-Product and project schedule metrics
-Choice popularity (tracking when and how standardized choices are used)
-API team metrics
-Governance Pattern #3: Collaborative Governance
-In the collaborative governance pattern, API decisions are made individually, but a shared understanding of system impacts is developed collaboratively. The goal is to create a “shared brain” in terms of the system-level view, but maintain the speed and local optimization scope of a decentralized system (see Table 2-6).
+影响指标
+- 产品和项目进度指标
+- 选择普及度(跟踪标准化选择的使用时间和方式)
+- API团队指标
+
+### 治理模式 #3: 协作治理
+
+在协作治理模式中,API决策是单独制定的,但是一个系统影响的共识是协作开发.其目标是在系统级角度创建一个"共享大脑",但是保持去中心化系统的速度和局部优化范围(见表 2-6).
 
 <center>表 2-6. 决策映射</center>
 <table>
@@ -544,22 +546,24 @@ In the collaborative governance pattern, API decisions are made individually, bu
     </tr>
 </table>
 
-Enforcement and incentivization
-In collaborative governance most of the decisions are completely decentralized, with the exception of an API’s inception and its measurement. This creates a “results-oriented” view of APIs in the system. It follows that enforcement is entirely results-oriented—if the API doesn’t achieve the expected result it is retired and the team may be disbanded. Although design, implementation, and deployment decisions are decentralized, those decisions are typically influenced through incentivization. For example, if a team’s decisions produce favorable results and those decisions are shared with the organization, they can be financially rewarded. The combination of a reward and transparency can influence the decisions of other teams in the organization.
+强制和激励
+> In collaborative governance most of the decisions are completely decentralized, with the exception of an API’s inception and its measurement. This creates a “results-oriented” view of APIs in the system. It follows that enforcement is entirely results-oriented—if the API doesn’t achieve the expected result it is retired and the team may be disbanded. Although design, implementation, and deployment decisions are decentralized, those decisions are typically influenced through incentivization. For example, if a team’s decisions produce favorable results and those decisions are shared with the organization, they can be financially rewarded. The combination of a reward and transparency can influence the decisions of other teams in the organization.
 
 Because most of the work is decentralized, collaboration between teams will need to be encouraged. That means that collaboration should be incentivized (or enforced) at the system level.
 
-Talent distribution
-A collaborative governance pattern is talent-intensive. This level of decentralization requires a suitable level of talent distributed amongst the teams. It doesn’t mean that every single worker has to be a star employee, but it does mean that each team needs enough talent to produce safe, high-quality decisions consistently.
+人才分配
+> A collaborative governance pattern is talent-intensive. This level of decentralization requires a suitable level of talent distributed amongst the teams. It doesn’t mean that every single worker has to be a star employee, but it does mean that each team needs enough talent to produce safe, high-quality decisions consistently.
 
-Costs and benefits
-Highly skilled decentralized teams can produce innovative APIs of high quality. The main costs to achieving this are in talent and support for collaboration. As the scale of work increases, so too will these costs.
+成本和收益
+> Highly skilled decentralized teams can produce innovative APIs of high quality. The main costs to achieving this are in talent and support for collaboration. As the scale of work increases, so too will these costs.
 
-Impact measurements
-API product metrics
-API team metrics
-Usability metrics
-Summary
+影响指标
+- API产品指标
+- API团队指标
+- 可用性指标
+
+## 概述
+
 In this chapter we gave you our definition of governance: managing decision making and decision implementation. From that definition, we took a closer look at what it means to make a decision and what it means to govern a decision. You learned that API decisions can be small (“What should my next line of code be?”) or big (“Which supplier should we partner with?”) and can range massively in scope. Most importantly, you learned that the system you are trying to govern is a complex adaptive system, which means it’s difficult to predict the results of any decision management strategy you apply.
 
 Next, we took a closer look at decision distribution and compared centralization and decentralization. To help you understand the differences, we compared them in terms of the scope of optimization and scale of operation. Then we discussed how you can break decisions down into their essential elements of inception, choice generation, selection, authorization, implementation, and challenge. By putting all of these concepts together, along with some enforcement and incentivization, you can build an effective API governance system.

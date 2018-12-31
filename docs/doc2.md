@@ -480,19 +480,21 @@ Machine-driven governance uses the machinery of standardization and automation t
 </table>
 
 Enforcement and incentivization
-Because the choices have been implemented in a standardized way, all aspects of design, implementation, and deployment can be validated automatically with tooling. For example, API teams must document interface designs in a machine-readable language, which is validated using a “lint” tool.
+> Because the choices have been implemented in a standardized way, all aspects of design, implementation, and deployment can be validated automatically with tooling. For example, API teams must document interface designs in a machine-readable language, which is validated using a “lint” tool.
 
 Talent distribution
-The central team needs to be populated with highly experienced designers, implementers, and architects to ensure that the centralized choices are the best ones. If the centralized choices have been made holistically and are of good quality, there is less of a talent requirement for designers and implementers in the decentralized teams.
+> The central team needs to be populated with highly experienced designers, implementers, and architects to ensure that the centralized choices are the best ones. If the centralized choices have been made holistically and are of good quality, there is less of a talent requirement for designers and implementers in the decentralized teams.
 
 Costs and benefits
-Machinery is always expensive to design, create, maintain, and tune. There will be a large initial investment to create the best set of standards for this type of system and a consistent challenge in keeping the choices and tools up to date as contexts change. But the payoff comes in the form of a reduced need for distributed decisions and an improvement in decision-making throughput thanks to automation. One possible system impact of this pattern is unhappiness within API teams due to a loss of freedom—if the choices are too constrained, it may be difficult to attract good people.
+> Machinery is always expensive to design, create, maintain, and tune. There will be a large initial investment to create the best set of standards for this type of system and a consistent challenge in keeping the choices and tools up to date as contexts change. But the payoff comes in the form of a reduced need for distributed decisions and an improvement in decision-making throughput thanks to automation. One possible system impact of this pattern is unhappiness within API teams due to a loss of freedom—if the choices are too constrained, it may be difficult to attract good people.
 
 Impact measurements
-Product and project schedule metrics
-Choice popularity (tracking when and how standardized choices are used)
-API team metrics
-Governance Pattern #3: Collaborative Governance
+- Product and project schedule metrics
+- Choice popularity (tracking when and how standardized choices are used)
+- API team metrics
+
+### Governance Pattern #3: Collaborative Governance
+
 In the collaborative governance pattern, API decisions are made individually, but a shared understanding of system impacts is developed collaboratively. The goal is to create a “shared brain” in terms of the system-level view, but maintain the speed and local optimization scope of a decentralized system (see Table 2-6).
 
 <center>Table 2-6. Decision map</center>
@@ -518,7 +520,7 @@ In the collaborative governance pattern, API decisions are made individually, bu
     <tr>
         <td>API implementation</td>
         <td>Decentralized</td>
-        <td>Centralized</td>
+        <td>Decentralized</td>
         <td>Decentralized</td>
         <td>Decentralized</td>
         <td>Decentralized</td>
@@ -527,86 +529,41 @@ In the collaborative governance pattern, API decisions are made individually, bu
     <tr>
         <td>API deployment</td>
         <td>Decentralized</td>
+        <td>Decentralized</td>
+        <td>Decentralized</td>
+        <td>Decentralized</td>
+        <td>Decentralized</td>
         <td>Centralized</td>
-        <td>Decentralized</td>
-        <td>Decentralized</td>
+    </tr>
+    <tr>
+        <td>API measurement</td>
+        <td>Centralized</td>
+        <td>Centralized</td>
+        <td>Centralized</td>
+        <td>Centralized</td>
         <td>Decentralized</td>
         <td>Decentralized</td>
     </tr>
 </table>
 
-API design
-
-Centralized
-
-Decentralized
-
-Decentralized
-
-Decentralized
-
-Decentralized
-
-Decentralized
-
-API implementation
-
-Decentralized
-
-Decentralized
-
-Decentralized
-
-Decentralized
-
-Decentralized
-
-Decentralized
-
-API deployment
-
-Decentralized
-
-Decentralized
-
-Decentralized
-
-Decentralized
-
-Decentralized
-
-Centralized
-
-API measurement
-
-Centralized
-
-Centralized
-
-Centralized
-
-Centralized
-
-Decentralized
-
-Decentralized
-
 Enforcement and incentivization
-In collaborative governance most of the decisions are completely decentralized, with the exception of an API’s inception and its measurement. This creates a “results-oriented” view of APIs in the system. It follows that enforcement is entirely results-oriented—if the API doesn’t achieve the expected result it is retired and the team may be disbanded. Although design, implementation, and deployment decisions are decentralized, those decisions are typically influenced through incentivization. For example, if a team’s decisions produce favorable results and those decisions are shared with the organization, they can be financially rewarded. The combination of a reward and transparency can influence the decisions of other teams in the organization.
+> In collaborative governance most of the decisions are completely decentralized, with the exception of an API’s inception and its measurement. This creates a “results-oriented” view of APIs in the system. It follows that enforcement is entirely results-oriented—if the API doesn’t achieve the expected result it is retired and the team may be disbanded. Although design, implementation, and deployment decisions are decentralized, those decisions are typically influenced through incentivization. For example, if a team’s decisions produce favorable results and those decisions are shared with the organization, they can be financially rewarded. The combination of a reward and transparency can influence the decisions of other teams in the organization.
 
 Because most of the work is decentralized, collaboration between teams will need to be encouraged. That means that collaboration should be incentivized (or enforced) at the system level.
 
 Talent distribution
-A collaborative governance pattern is talent-intensive. This level of decentralization requires a suitable level of talent distributed amongst the teams. It doesn’t mean that every single worker has to be a star employee, but it does mean that each team needs enough talent to produce safe, high-quality decisions consistently.
+> A collaborative governance pattern is talent-intensive. This level of decentralization requires a suitable level of talent distributed amongst the teams. It doesn’t mean that every single worker has to be a star employee, but it does mean that each team needs enough talent to produce safe, high-quality decisions consistently.
 
 Costs and benefits
-Highly skilled decentralized teams can produce innovative APIs of high quality. The main costs to achieving this are in talent and support for collaboration. As the scale of work increases, so too will these costs.
+> Highly skilled decentralized teams can produce innovative APIs of high quality. The main costs to achieving this are in talent and support for collaboration. As the scale of work increases, so too will these costs.
 
 Impact measurements
-API product metrics
-API team metrics
-Usability metrics
-Summary
+- API product metrics
+- API team metrics
+- Usability metrics
+
+## Summary
+
 In this chapter we gave you our definition of governance: managing decision making and decision implementation. From that definition, we took a closer look at what it means to make a decision and what it means to govern a decision. You learned that API decisions can be small (“What should my next line of code be?”) or big (“Which supplier should we partner with?”) and can range massively in scope. Most importantly, you learned that the system you are trying to govern is a complex adaptive system, which means it’s difficult to predict the results of any decision management strategy you apply.
 
 Next, we took a closer look at decision distribution and compared centralization and decentralization. To help you understand the differences, we compared them in terms of the scope of optimization and scale of operation. Then we discussed how you can break decisions down into their essential elements of inception, choice generation, selection, authorization, implementation, and challenge. By putting all of these concepts together, along with some enforcement and incentivization, you can build an effective API governance system.
