@@ -185,14 +185,14 @@ title: 第二章 API治理
 
 你可以分配部分决策,而不是整个分配.这种方式可以让你同时从系统级优化和其关联的局部优化中获得好处.决策的一部分可以集中,其他部分可以分散.为了帮你完成这种类型的决策分配,我们将API决策分解为6种你需要分配的决策元素(见图2-3).
 
-![](../img/2/capi_0203.png "开始,生成选项,选择,授权,执行和挑战")
+![](../img/2/capi_0203.png "初始化,生成选项,选择,授权,执行和挑战")
 <center>图 2-3. 决策元素</center>
 
 这并不是权威的,通用决策模型.相反,它是我们开发的一个模型,用来区分对系统影响最大的中心化或去中心化的决策部分.这些部分是基于业务管理领域中大量存在的五步,六步和七步决策模型.虽然我们描述的步骤可以应用于个人做出的决策,但是它应用于一群人协商做出的决策时是最有效的.
 
 首先,让我们看一下决策的初始分配是如何影响你的系统的.
 
-- 开始
+- 初始化
 
 决策的出现是因为有人认为需要做出决策.它意味着有人已经从多个可能的解决方案发现了存在的问题或机会.有时候这是显而易见的,但是大多数时,发现决策机会需要人才和专业知识.你需要考虑哪些决策可以自然出现,哪些需要特殊处理才能确保它发生.
 
@@ -277,7 +277,7 @@ title: 第二章 API治理
 <center>表 2-1. 编程语言决策映射</center>
 <table>
     <tr>
-        <td>开始</td>
+        <td>初始化</td>
         <td>生成选项</td>
         <td>选择</td>
         <td>授权</td>
@@ -303,7 +303,7 @@ title: 第二章 API治理
 <center>表 2-2. 工具选择决策映射</center>
 <table>
     <tr>
-        <td>开始</td>
+        <td>初始化</td>
         <td>生成选项</td>
         <td>选择</td>
         <td>授权</td>
@@ -320,7 +320,7 @@ title: 第二章 API治理
     </tr>
 </table>
 
-局部优化是CTO策略的关键之一,所以你选择完全的去中心化开始,生成选项和选择.然而,为了降低选择的系统级风险,你将授权元素映射到中心化的采购和法律团队.虽然现在已经可以工作,但是你意识到随着时间的推移和规模的扩大,这可能成为系统的一个瓶颈,所以你记录了持续的流程测量数据,并适当的调整它.
+局部优化是CTO策略的关键之一,所以你选择完全的去中心化初始化,生成选项和选择.然而,为了降低选择的系统级风险,你将授权元素映射到中心化的采购和法律团队.虽然现在已经可以工作,但是你意识到随着时间的推移和规模的扩大,这可能成为系统的一个瓶颈,所以你记录了持续的流程测量数据,并适当的调整它.
 
 ## 设计治理系统
 
@@ -344,7 +344,7 @@ title: 第二章 API治理
 <table>
     <tr>
         <td>强制或激励?</td>
-        <td>开始</td>
+        <td>初始化</td>
         <td>生成选项</td>
         <td>选择</td>
         <td>授权</td>
@@ -385,7 +385,7 @@ title: 第二章 API治理
 <table>
     <tr>
         <td>决策范围</td>
-        <td>开始</td>
+        <td>初始化</td>
         <td>生成选项</td>
         <td>选择</td>
         <td>授权</td>
@@ -443,7 +443,7 @@ title: 第二章 API治理
 <table>
     <tr>
         <td>决策范围</td>
-        <td>开始</td>
+        <td>初始化</td>
         <td>生成选项</td>
         <td>选择</td>
         <td>授权</td>
@@ -501,7 +501,7 @@ title: 第二章 API治理
 <table>
     <tr>
         <td>决策范围</td>
-        <td>开始</td>
+        <td>初始化</td>
         <td>生成选项</td>
         <td>选择</td>
         <td>授权</td>
@@ -547,15 +547,15 @@ title: 第二章 API治理
 </table>
 
 强制和激励
-> In collaborative governance most of the decisions are completely decentralized, with the exception of an API’s inception and its measurement. This creates a “results-oriented” view of APIs in the system. It follows that enforcement is entirely results-oriented—if the API doesn’t achieve the expected result it is retired and the team may be disbanded. Although design, implementation, and deployment decisions are decentralized, those decisions are typically influenced through incentivization. For example, if a team’s decisions produce favorable results and those decisions are shared with the organization, they can be financially rewarded. The combination of a reward and transparency can influence the decisions of other teams in the organization.
+> 在协作治理中,大多数决策是完全去中心化的,除了API的初始化和测量之外.这将在系统中创建一个"面向结果"的API视图.因此,强制是整个面向结果的,即:如果API没有实现预期结果,它就会被遗弃且它的团队可能会解散.虽然设计,实现和部署决策是去中心化的,这些决策通常是通过激励来被影响的.如:如果团队决策产生了良好的结果,且这些决策在组织内被共享,那么他们就可以获得物质奖励.奖励和透明度的结合可以影响组织内其他团队的决策.
 
-Because most of the work is decentralized, collaboration between teams will need to be encouraged. That means that collaboration should be incentivized (or enforced) at the system level.
+因为大多数工作是去中心化的,因此需要鼓励团队协作.这意味着应该在系统层面上激励(或强制)协作.
 
 人才分配
-> A collaborative governance pattern is talent-intensive. This level of decentralization requires a suitable level of talent distributed amongst the teams. It doesn’t mean that every single worker has to be a star employee, but it does mean that each team needs enough talent to produce safe, high-quality decisions consistently.
+> 协作治理模式是人才密集型的.这种程度的去中心化要求在团队中分配适当水平的人才.这并不意味着每个人必须是优秀员工,但这意味着每个团队需要足够的人才来持续的做出安全,高质量的决策.
 
 成本和收益
-> Highly skilled decentralized teams can produce innovative APIs of high quality. The main costs to achieving this are in talent and support for collaboration. As the scale of work increases, so too will these costs.
+> 高技能的去中心化团队可以生产出高质量的创新API.实现这一点主要的成本在于人才和协作支持.随着工作规模的扩大,这些成本也随之增加.
 
 影响指标
 - API产品指标
@@ -564,8 +564,8 @@ Because most of the work is decentralized, collaboration between teams will need
 
 ## 概述
 
-In this chapter we gave you our definition of governance: managing decision making and decision implementation. From that definition, we took a closer look at what it means to make a decision and what it means to govern a decision. You learned that API decisions can be small (“What should my next line of code be?”) or big (“Which supplier should we partner with?”) and can range massively in scope. Most importantly, you learned that the system you are trying to govern is a complex adaptive system, which means it’s difficult to predict the results of any decision management strategy you apply.
+在本章中,我们给出了治理的定义:管理决策制定和决策实现.对于这个定义,我们更深入地了解了决策的意义,以及治理决策的意义.你了解到,API决策可以是微小的("我的下一行代码应该是什么?")或者是重要的("我们应该和哪个供应商合作?"),而且范围可以很大.最重要的是,你了解到你试图去治理的系统是一个复杂的自适应系统,这意味着它很难预测所应用决策管理策略的结果.
 
-Next, we took a closer look at decision distribution and compared centralization and decentralization. To help you understand the differences, we compared them in terms of the scope of optimization and scale of operation. Then we discussed how you can break decisions down into their essential elements of inception, choice generation, selection, authorization, implementation, and challenge. By putting all of these concepts together, along with some enforcement and incentivization, you can build an effective API governance system.
+接下来,我们进一步研究了决策分配,并且比较了中心化和去中心化.为了帮你理解差异,我们按照优化范围和运营规模进行了比较.然后我们讨论了如何将决策分解为初始化,生成选项,选择,授权,实现和挑战等基本元素.通过将这些概念结合,连同一些强制和激励手段一起,你可以构建一个有效的API治理系统.
 
-Governance is at the heart of API management, so it’s not a big surprise that it’s a core concept for this book. Our goal in this chapter was to introduce the major concepts and levers of governance. In the rest of the book we’ll dive deeper into the domain of API governance by tackling the specific challenges of which decisions matter the most, how to manage the people involved, and what to do as APIs mature and the scale of the APIs grows. In the next chapter, we’ll start that journey by investigating how product thinking can help you identify the API work decisions that matter the most.
+治理API管理的核心,所以它是本书的核心概念并不奇怪.本章的目标是介绍治理的主要概念和levers.在本书的其余部分中,我们将通过解决哪个决策最重要,如何管理相关人员和随着API的成熟和规模的扩张,应该做些什么等具体问题,深入API治理领域.在下一章中,我们将通过研究产品思维如何帮助你识别最重要的API工作决策,来开始这个旅程.
