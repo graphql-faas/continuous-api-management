@@ -166,12 +166,12 @@
 </ul>
 <p>目前用上面我们描述的方式很难去分配决策,因为它们都是一些极端的处理方式.开发方法的选择是团队自己决定还是你来决定?你是让团队决定他们的API什么时候停用还是你来决定?实际上,治理要求的更精细.这本节中,我们将探索一种通过决策分解来更灵活的分配他们的方法.</p>
 <p>你可以分配部分决策,而不是整个分配.这种方式可以让你同时从系统级优化和其关联的局部优化中获得好处.决策的一部分可以集中,其他部分可以分散.为了帮你完成这种类型的决策分配,我们将API决策分解为6种你需要分配的决策元素(见图2-3).</p>
-<p><img src="../img/2/capi_0203.png" alt="" title="开始,生成选项,选择,授权,执行和挑战">
+<p><img src="../img/2/capi_0203.png" alt="" title="初始化,生成选项,选择,授权,执行和挑战">
 <center>图 2-3. 决策元素</center></p>
 <p>这并不是权威的,通用决策模型.相反,它是我们开发的一个模型,用来区分对系统影响最大的中心化或去中心化的决策部分.这些部分是基于业务管理领域中大量存在的五步,六步和七步决策模型.虽然我们描述的步骤可以应用于个人做出的决策,但是它应用于一群人协商做出的决策时是最有效的.</p>
 <p>首先,让我们看一下决策的初始分配是如何影响你的系统的.</p>
 <ul>
-<li>开始</li>
+<li>初始化</li>
 </ul>
 <p>决策的出现是因为有人认为需要做出决策.它意味着有人已经从多个可能的解决方案发现了存在的问题或机会.有时候这是显而易见的,但是大多数时,发现决策机会需要人才和专业知识.你需要考虑哪些决策可以自然出现,哪些需要特殊处理才能确保它发生.</p>
 <p>在日常解决问题的过程中,API工作的启动决策很常见.如:对于一个典型的实现人员来说,选择用于存储持久化数据的数据库将是一个难以忽视的决策.这个决策的出现是因为没有它就无法工作.但是也会有需要强制启动的情形,这通常有两个原因:</p>
@@ -231,7 +231,7 @@
 <p><center>表 2-1. 编程语言决策映射</center></p>
 <table>
     <tr>
-        <td>开始</td>
+        <td>初始化</td>
         <td>生成选项</td>
         <td>选择</td>
         <td>授权</td>
@@ -253,7 +253,7 @@
 <p><center>表 2-2. 工具选择决策映射</center></p>
 <table>
     <tr>
-        <td>开始</td>
+        <td>初始化</td>
         <td>生成选项</td>
         <td>选择</td>
         <td>授权</td>
@@ -269,7 +269,7 @@
         <td>中心化</td>
     </tr>
 </table>
-<p>局部优化是CTO策略的关键之一,所以你选择完全的去中心化开始,生成选项和选择.然而,为了降低选择的系统级风险,你将授权元素映射到中心化的采购和法律团队.虽然现在已经可以工作,但是你意识到随着时间的推移和规模的扩大,这可能成为系统的一个瓶颈,所以你记录了持续的流程测量数据,并适当的调整它.</p>
+<p>局部优化是CTO策略的关键之一,所以你选择完全的去中心化初始化,生成选项和选择.然而,为了降低选择的系统级风险,你将授权元素映射到中心化的采购和法律团队.虽然现在已经可以工作,但是你意识到随着时间的推移和规模的扩大,这可能成为系统的一个瓶颈,所以你记录了持续的流程测量数据,并适当的调整它.</p>
 <h2><a class="anchor" aria-hidden="true" id="设计治理系统"></a><a href="#设计治理系统" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>设计治理系统</h2>
 <p>我们在决策分配细节上花费了很多时间,因为我们认为它是治理系统的基本概念.但是如果你想引入有效的API治理,你需要注意的不仅仅是这一点.一个好的API治理系统应该具备以下特征:</p>
 <ul>
@@ -285,7 +285,7 @@
 <table>
     <tr>
         <td>强制或激励?</td>
-        <td>开始</td>
+        <td>初始化</td>
         <td>生成选项</td>
         <td>选择</td>
         <td>授权</td>
@@ -320,7 +320,7 @@
 <table>
     <tr>
         <td>决策范围</td>
-        <td>开始</td>
+        <td>初始化</td>
         <td>生成选项</td>
         <td>选择</td>
         <td>授权</td>
@@ -379,7 +379,7 @@
 <table>
     <tr>
         <td>决策范围</td>
-        <td>开始</td>
+        <td>初始化</td>
         <td>生成选项</td>
         <td>选择</td>
         <td>授权</td>
@@ -438,7 +438,7 @@
 <table>
     <tr>
         <td>决策范围</td>
-        <td>开始</td>
+        <td>初始化</td>
         <td>生成选项</td>
         <td>选择</td>
         <td>授权</td>
@@ -484,16 +484,16 @@
 </table>
 <p>强制和激励</p>
 <blockquote>
-<p>In collaborative governance most of the decisions are completely decentralized, with the exception of an API’s inception and its measurement. This creates a “results-oriented” view of APIs in the system. It follows that enforcement is entirely results-oriented—if the API doesn’t achieve the expected result it is retired and the team may be disbanded. Although design, implementation, and deployment decisions are decentralized, those decisions are typically influenced through incentivization. For example, if a team’s decisions produce favorable results and those decisions are shared with the organization, they can be financially rewarded. The combination of a reward and transparency can influence the decisions of other teams in the organization.</p>
+<p>在协作治理中,大多数决策是完全去中心化的,除了API的初始化和测量之外.这将在系统中创建一个&quot;面向结果&quot;的API视图.因此,强制是整个面向结果的,即:如果API没有实现预期结果,它就会被遗弃且它的团队可能会解散.虽然设计,实现和部署决策是去中心化的,这些决策通常是通过激励来被影响的.如:如果团队决策产生了良好的结果,且这些决策在组织内被共享,那么他们就可以获得物质奖励.奖励和透明度的结合可以影响组织内其他团队的决策.</p>
 </blockquote>
-<p>Because most of the work is decentralized, collaboration between teams will need to be encouraged. That means that collaboration should be incentivized (or enforced) at the system level.</p>
+<p>因为大多数工作是去中心化的,因此需要鼓励团队协作.这意味着应该在系统层面上激励(或强制)协作.</p>
 <p>人才分配</p>
 <blockquote>
-<p>A collaborative governance pattern is talent-intensive. This level of decentralization requires a suitable level of talent distributed amongst the teams. It doesn’t mean that every single worker has to be a star employee, but it does mean that each team needs enough talent to produce safe, high-quality decisions consistently.</p>
+<p>协作治理模式是人才密集型的.这种程度的去中心化要求在团队中分配适当水平的人才.这并不意味着每个人必须是优秀员工,但这意味着每个团队需要足够的人才来持续的做出安全,高质量的决策.</p>
 </blockquote>
 <p>成本和收益</p>
 <blockquote>
-<p>Highly skilled decentralized teams can produce innovative APIs of high quality. The main costs to achieving this are in talent and support for collaboration. As the scale of work increases, so too will these costs.</p>
+<p>高技能的去中心化团队可以生产出高质量的创新API.实现这一点主要的成本在于人才和协作支持.随着工作规模的扩大,这些成本也随之增加.</p>
 </blockquote>
 <p>影响指标</p>
 <ul>
@@ -502,7 +502,7 @@
 <li>可用性指标</li>
 </ul>
 <h2><a class="anchor" aria-hidden="true" id="概述"></a><a href="#概述" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>概述</h2>
-<p>In this chapter we gave you our definition of governance: managing decision making and decision implementation. From that definition, we took a closer look at what it means to make a decision and what it means to govern a decision. You learned that API decisions can be small (“What should my next line of code be?”) or big (“Which supplier should we partner with?”) and can range massively in scope. Most importantly, you learned that the system you are trying to govern is a complex adaptive system, which means it’s difficult to predict the results of any decision management strategy you apply.</p>
-<p>Next, we took a closer look at decision distribution and compared centralization and decentralization. To help you understand the differences, we compared them in terms of the scope of optimization and scale of operation. Then we discussed how you can break decisions down into their essential elements of inception, choice generation, selection, authorization, implementation, and challenge. By putting all of these concepts together, along with some enforcement and incentivization, you can build an effective API governance system.</p>
-<p>Governance is at the heart of API management, so it’s not a big surprise that it’s a core concept for this book. Our goal in this chapter was to introduce the major concepts and levers of governance. In the rest of the book we’ll dive deeper into the domain of API governance by tackling the specific challenges of which decisions matter the most, how to manage the people involved, and what to do as APIs mature and the scale of the APIs grows. In the next chapter, we’ll start that journey by investigating how product thinking can help you identify the API work decisions that matter the most.</p>
-</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/continuous-api-management/docs/doc2"><span class="arrow-prev">← </span><span>Chapter 2. API Governance</span></a><a class="docs-next button" href="/continuous-api-management/docs/doc3"><span>Chapter 3. The API as a Product</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#理解api治理">理解API治理</a></li><li><a href="#决策治理">决策治理</a><ul class="toc-headings"><li><a href="#决策映射决策与二元化对应关系">决策映射(决策与二元化对应关系)</a></li></ul></li><li><a href="#设计治理系统">设计治理系统</a><ul class="toc-headings"><li><a href="#治理模式-1-接口监管">治理模式#1: 接口监管</a></li><li><a href="#治理模式-2-机械驱动治理">治理模式 #2: 机械驱动治理</a></li><li><a href="#治理模式-3-协作治理">治理模式 #3: 协作治理</a></li></ul></li><li><a href="#概述">概述</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/continuous-api-management/" class="nav-home"><img src="/continuous-api-management/img/cover.jpg" alt="持续演进的API管理" width="66" height="58"/></a><div><h5>内容</h5><a href="/continuous-api-management/docs/en/doc1.html">查看书籍内容</a><a href="/continuous-api-management/docs/en/doc4.html">书籍参考资料</a></div><div><h5>更多</h5><a href="/continuous-api-management/blog">Blog</a><a href="https://github.com/graphql-faas/continuous-api-management">GitHub</a><a class="github-button" href="https://github.com/graphql-faas/continuous-api-management" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><section class="copyright">Copyright © 2018 翻译小组</section></footer></div></body></html>
+<p>在本章中,我们给出了治理的定义:管理决策制定和决策实现.对于这个定义,我们更深入地了解了决策的意义,以及治理决策的意义.你了解到,API决策可以是微小的(&quot;我的下一行代码应该是什么?&quot;)或者是重要的(&quot;我们应该和哪个供应商合作?&quot;),而且范围可以很大.最重要的是,你了解到你试图去治理的系统是一个复杂的自适应系统,这意味着它很难预测所应用决策管理策略的结果.</p>
+<p>接下来,我们进一步研究了决策分配,并且比较了中心化和去中心化.为了帮你理解差异,我们按照优化范围和运营规模进行了比较.然后我们讨论了如何将决策分解为初始化,生成选项,选择,授权,实现和挑战等基本元素.通过将这些概念结合,连同一些强制和激励手段一起,你可以构建一个有效的API治理系统.</p>
+<p>治理API管理的核心,所以它是本书的核心概念并不奇怪.本章的目标是介绍治理的主要概念和levers.在本书的其余部分中,我们将通过解决哪个决策最重要,如何管理相关人员和随着API的成熟和规模的扩张,应该做些什么等具体问题,深入API治理领域.在下一章中,我们将通过研究产品思维如何帮助你识别最重要的API工作决策,来开始这个旅程.</p>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/continuous-api-management/docs/doc2"><span class="arrow-prev">← </span><span>Chapter 2. API Governance</span></a><a class="docs-next button" href="/continuous-api-management/docs/doc3"><span>Chapter 3. The API as a Product</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#理解api治理">理解API治理</a></li><li><a href="#决策治理">决策治理</a><ul class="toc-headings"><li><a href="#决策映射决策与二元化对应关系">决策映射(决策与二元化对应关系)</a></li></ul></li><li><a href="#设计治理系统">设计治理系统</a><ul class="toc-headings"><li><a href="#治理模式-1-接口监管">治理模式#1: 接口监管</a></li><li><a href="#治理模式-2-机械驱动治理">治理模式 #2: 机械驱动治理</a></li><li><a href="#治理模式-3-协作治理">治理模式 #3: 协作治理</a></li></ul></li><li><a href="#概述">概述</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/continuous-api-management/" class="nav-home"><img src="/continuous-api-management/img/cover.jpg" alt="持续演进的API管理" width="66" height="58"/></a><div><h5>内容</h5><a href="/continuous-api-management/docs/en/doc1.html">查看书籍内容</a><a href="/continuous-api-management/docs/en/doc4.html">书籍参考资料</a></div><div><h5>更多</h5><a href="/continuous-api-management/blog">Blog</a><a href="https://github.com/graphql-faas/continuous-api-management">GitHub</a><a class="github-button" href="https://github.com/graphql-faas/continuous-api-management" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><section class="copyright">Copyright © 2019 翻译小组</section></footer></div></body></html>
