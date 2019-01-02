@@ -7,21 +7,21 @@ title: 第三章 API即产品
 
 > 杰夫·贝索斯,亚马逊创始人和CEO
 
-"API即产品"(AaaP)是当我们跟那些已经构建和维护了成功的API项目的公司交流时,经常听到的一个短语.它替换了"<什么>即服务"中的名字,这是技术圈常用手法(如:软件即服务,平台即服务等),并且它通常表明当设计,实现和发布API时的一个重要观点:API是一个产品,它完全值得进行适当的设计思考,原型设计,客户研究,和测试,以及长期监测和维护.这个短语的常见含义是:我们对待API就像对待我们提供的产品一样.
+"API即产品"(AaaP)是当我们跟那些已经构建和维护了成功的API项目的公司交流时,经常听到的一个短语.它替换了"<什么>即服务"中的名字,这是技术圈常用手法(如:软件即服务,平台即服务等),并且它通常表明当设计,实现和发布API时的一个重要观点:API是一个产品,它完全值得进行适当的设计思考,原型设计,客户研究和测试,以及长期监测和维护.这个短语的常见含义是:我们对待API就像对待我们提供的产品一样.
 
 在本章中,我们将探索AaaP方法,以及如何用它去更好的设计,部署和管理API.正如你从第二章中了解到的,AaaP方法涉及到理解哪些决策对于API成功至关重要,以及这些决策需要在组织哪里做出.它可以帮助你考虑什么工作需要中心化,什么你可以去中心化,哪里最好应用强制和激励,以及如何评估这些决策的影响,以便在需要时更快地适应产品(你的API).
 
-There are lots of decisions to make when creating new products for your customers. That is true whether you are creating a portable music player, a laptop computer, or a message queuing API. In all three cases, you need to know your audience, understand and solve their most pressing problems, and pay attention to customers when they give you feedback on how you can improve your product. These three things can be encapsulated in three lessons we will focus on in this chapter:
+当为客户生产新产品时,需要做出很多决策.无论你生产MP3,笔记本还是消息队列API,都是这样.在这三种情况下,你需要了解你的客户,理解和解决他们迫切的问题,并且当他们反馈如何改善产品时,要重视他们.这三件可以概括为三个警示,我们将在本章关注他们:
 
-- Design thinking in order to make sure you know your audience and understand their problems
+- 设计思维是为了确保你了解客户和理解他们的问题.
 
-- Customer onboarding as a way to quickly show customers how they can succeed with your product
+- 客户培训作为一种快速展示给客户,他们使用你的产品如何可以成功的方式.
 
-- Developer experience for managing the post-release lifecycle of your product and to gain insights for future modifications.
+- 开发者管理产品发布后的生命周期的经验,并获得未来调整的远见.
 
-Along the way we’ll learn from companies like Apple about the power of design thinking and customer onboarding. We will also see how Jeff Bezos helped the Amazon Web Services (AWS) division create an implementation mandate that establishes a clear, predictable developer experience. Most companies we talk to understand the notion of AaaP, but not all of them are able to turn this understanding into tangible action. However, the organizations that have a good track record for designing and releasing successful API products all have figured out how to meet the three big challenges we’ve just mentioned—the first of which has to do with how your teams think about the API products they are creating.
+在此过程中,我们将向苹果等公司学习设计思维和客户培训的能力.我们还将看到杰夫·贝索斯如何帮助亚马逊网络服务(AWS)部门,创建一个建立了清晰,可预测的开发者体验的托管实现.我们交谈过的大多数公司理解AaaP概念,但是并非所有的公司都能将这种理解转变为实际行动.然而,那些有良好的设计和发布成功API产品的跟踪记录的组织,都解决了我们刚才提及的三大挑战--第一个是关于你的团队如何考虑他们正在创建的API产品.
 
-## Design Thinking
+## 设计思维
 
 One of the things that Apple is known for in product design circles is its ability to engage in design thinking. For example, when describing the work that went into Apple’s Mac OS X, one of the key software architects, Cordell Ratzlaff, said: “We focused on what we thought people would need and want, and how they would interact with their computer.” And this focus played out in real and tangible ways. “There were three evaluations required at the inception of a product idea: a marketing requirement document, an engineering requirement document, and a user-experience document,” explained onetime Apple vice president (and one of the people credited with founding the field of human–computer interaction design) Donald Norman.
 
