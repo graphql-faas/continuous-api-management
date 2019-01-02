@@ -1,6 +1,6 @@
 ---
-id: doc3
-title: Chapter 3. The API as a Product
+id: doc3.1
+title: 第三章 API即产品
 ---
 
 > If you build a great experience, customers tell each other about that. Word of mouth is really powerful.
