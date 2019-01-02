@@ -3,13 +3,13 @@ id: doc3.1
 title: 第三章 API即产品
 ---
 
-> If you build a great experience, customers tell each other about that. Word of mouth is really powerful.
+> 如果你建立了良好的体验,客户就会相互转告.口碑真的很有力量.
 
-> Jeff Bezos, founder and CEO of Amazon
+> 杰夫·贝索斯,亚马逊创始人和CEO
 
-The phrase “API-as-a-Product” (AaaP) is something we hear often when talking to companies who have built and maintained sucessful API programs. It’s a play on the <Something>-as-a-Service monikers that are often used in technical circles (Software-as-a-Service, Platform-as-a-Service, etc.) and is usually meant to indicate an important point of view when designing, implementing, and releasing APIs: that the API is a product fully deserving of proper design thinking, prototyping, customer research, and testing, as well as long-term monitoring and maintenance. “We treat our APIs just like any other product we offer” is the common meaning of the phrase.
+"API即产品"(AaaP)是当我们跟那些已经构建和维护了成功的API项目的公司交流时,经常听到的一个短语.它替换了"<什么>即服务"中的名字,这是技术圈常用手法(如:软件即服务,平台即服务等),并且它通常表明当设计,实现和发布API时的一个重要观点:API是一个产品,它完全值得进行适当的设计思考,原型设计,客户研究,和测试,以及长期监测和维护.这个短语的常见含义是:我们对待API就像对待我们提供的产品一样.
 
-In this chapter, we’ll explore the AaaP approach and how you can use it to better design, deploy, and manage your APIs. As you may have gathered from Chapter 2, the AaaP approach involves understanding which decisions are critical for the success of your APIs and where within your organization those decisions should be made. It can help you think about what work needs to be centralized and what you can successfully decentralize, where enforcement and incentives are best applied, and how you can measure the impact of these decisions in order to quickly adapt your products (your APIs) when needed.
+在本章中,我们将探索AaaP方法,以及如何用它去更好的设计,部署和管理API.正如你从第二章中了解到的,AaaP方法涉及到理解哪些决策对于API成功至关重要,以及这些决策需要在组织哪里做出.它可以帮助你考虑什么工作需要中心化,什么你可以去中心化,哪里最好应用强制和激励,以及如何评估这些决策的影响,以便在需要时更快地适应产品(你的API).
 
 There are lots of decisions to make when creating new products for your customers. That is true whether you are creating a portable music player, a laptop computer, or a message queuing API. In all three cases, you need to know your audience, understand and solve their most pressing problems, and pay attention to customers when they give you feedback on how you can improve your product. These three things can be encapsulated in three lessons we will focus on in this chapter:
 
