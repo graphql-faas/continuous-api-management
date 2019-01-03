@@ -23,7 +23,7 @@ title: 第三章 API即产品
 
 ## 设计思维
 
-One of the things that Apple is known for in product design circles is its ability to engage in design thinking. For example, when describing the work that went into Apple’s Mac OS X, one of the key software architects, Cordell Ratzlaff, said: “We focused on what we thought people would need and want, and how they would interact with their computer.” And this focus played out in real and tangible ways. “There were three evaluations required at the inception of a product idea: a marketing requirement document, an engineering requirement document, and a user-experience document,” explained onetime Apple vice president (and one of the people credited with founding the field of human–computer interaction design) Donald Norman.
+苹果公司在设计界的一个众所周知的能力就是设计思维.如:当描述加入苹果的Mac OS X操作系统的工作时,核心软件架构之一科德尔·拉茨拉夫(Cordell Ratzlaff)说:"我们关注那些我们认为人们需要和想要的,以及他们如何和电脑交互的东西".这种关注以真实和实际的方式展示出来."在产品构思阶段,需要进行三种评估:市场需求记录,工程需求记录和用户体验记录",曾任苹果副总裁(其中一人被誉为人机交互设计领域的奠基人)的唐纳德·诺曼(Donald Norman)解释说.
 
 This attention to meeting people’s needs definitely resulted in creating viable business for Apple. A continuing string of products over multiple decades contributed to Apple’s reputation for defining new trends in technology and helped it capture the greater market share more than once.
 
