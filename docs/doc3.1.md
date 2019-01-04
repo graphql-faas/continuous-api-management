@@ -25,9 +25,9 @@ title: 第三章 API即产品
 
 苹果公司在设计界的一个众所周知的能力就是设计思维.如:当描述加入苹果的Mac OS X操作系统的工作时,核心软件架构之一科德尔·拉茨拉夫(Cordell Ratzlaff)说:"我们关注那些我们认为人们需要和想要的,以及他们如何和电脑交互的东西".这种关注以真实和实际的方式展示出来."在产品构思阶段,需要进行三种评估:市场需求记录,工程需求记录和用户体验记录",曾任苹果副总裁(其中一人被誉为人机交互设计领域的奠基人)的唐纳德·诺曼(Donald Norman)解释说.
 
-This attention to meeting people’s needs definitely resulted in creating viable business for Apple. A continuing string of products over multiple decades contributed to Apple’s reputation for defining new trends in technology and helped it capture the greater market share more than once.
+这种对满足人们需求的关注无疑为苹果公司创造了可行的业务.几十年来,不断推出的一系列产品,成就了苹果在技术圈领导新趋势的声誉,并帮助它不止一次占领了更大的市场份额.
 
-Tim Brown, CEO of the California-based design and consulting firm, IDEO, defines the term “design thinking” as:
+加州设计咨询公司IDEO的首席执行官蒂姆•布朗将"设计思维"定义为:
 
 > A design discipline that uses the designer’s sensibility and methods to match people’s needs with what is technologically feasible and what a viable business strategy can convert into customer value and market opportunity.
 
