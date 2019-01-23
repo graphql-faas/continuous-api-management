@@ -29,7 +29,7 @@ title: 第三章 API即产品
 
 加州设计咨询公司IDEO的首席执行官蒂姆•布朗将"设计思维"定义为:
 
-> A design discipline that uses the designer’s sensibility and methods to match people’s needs with what is technologically feasible and what a viable business strategy can convert into customer value and market opportunity.
+> 一门运用设计师的创意和方式,将人们的需求与可行的技术和可转换为客户价值和市场机遇的商业策略相结合的设计学科.
 
 There is a lot to unpack in that definition. For our purposes we’ll focus on the ideas of “matching people’s needs” and a “viable business strategy.”
 
